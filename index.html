@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="views/img/logo.png">
     <link rel="stylesheet" href="views/css/styles.css">
+    <link rel="stylesheet" href="views/css/sobreNosotros.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Glow-fit</title>
 </head>
 
@@ -13,7 +15,7 @@
 
     <main>
         <nav class="nav">
-            <article class="contenedor-logo">
+            <article  class="contenedor-logo">
                 <img src="views/img/logo.png" alt="logotipo">
             </article>
             <article class="contenedor-enlaces">
@@ -23,13 +25,13 @@
                 <a href="#" class="enlace">enlace cuatro</a>
             </article>
             <article class="contenedor-botones-nav">
-                <button>UN BOTON</button>
+                <button >UN BOTON</button>
                 <button>OTRO BOTON</button>
             </article>
         </nav>
 
         <section class="contenedor-portada">
-            <div class="contenedor-titulos">
+            <div data-aos="zoom-in-up" class="contenedor-titulos">
                 <h1>DOMINA TU MENTE,</h1>
                 <h1>CAMBIA TU CUERPO</h1>
                 <p>Con Glow-fit transforma tu cuerpo por medio de un plan estricto y una alimentacion balanceada</p>
@@ -41,16 +43,20 @@
         </section>
 
         <section class="contenedor-imagen-portada">
-            <img src="views/img/training-828726_1280.jpg" alt="mujer en gimnasio">
+            <img class="imagen-portada" src="views/img/logo-animacion.jpg"mujer en gimnasio">
         </section>
 
-        <section class="contenedor-razones">
+        <section data-aos="zoom-in-up" class="contenedor-razones">
             <article class="titulos">
                 <h1>RAZONES POR LAS QUE</h1>
                 <h1>MARCAMOS LA DIFERENCIA</h1>
             </article>
+<<<<<<< HEAD
             <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, laborum exercitationem
                 suscipit esse
+=======
+            <p data-aos="zoom-in-up" class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, laborum exercitationem suscipit esse
+>>>>>>> 8440a960eba2a5205e274e1bbbbdcaeffd7755aa
                 consectetur
                 quasi aperiam, impedit quidem perspiciatis molestias omnis, ducimus at optio voluptatum saepe voluptates
                 asperiores
@@ -64,7 +70,7 @@
             </p>
         </section>
 
-        <section class="contenedor-cards">
+        <section data-aos="zoom-in-up" class="contenedor-cards">
             <article>
                 <img src="views/img/hacer-subir.png" alt="icono">
                 <h2>una razon</h2>
@@ -103,8 +109,8 @@
         </section>
 
         <section class="contenedor-imagen-parrafos">
-            <img src="views/img/pexels-maksim-goncharenok-4348638.jpg" alt="mujer-corriendo">
-            <article>
+            <img  class="imagen-levitar" src="views/img/imagen-gym.png" alt="mujer-corriendo">
+            <article data-aos="zoom-in-up">
                 <h1>LO QUE OBTENDRAS</h1>
                 <h1>UNA VIDA MAS SANA</h1>
                 <p>Donde va la mente, el cuerpo la sigue. La mentalidad es importante cuando se trata de desarrollar
@@ -115,6 +121,64 @@
                 <button>LEER MAS</button>
             </article>
         </section>
+        <div class="contenedor-carta">
+            <h1 class="titulo-nosotros">Sobre nosotros</h1>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="./views/img/sebas-logo.png" alt="">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description">
+                    <h2>Sebitas el mejor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam.</p>
+                    <div class="redes-sociales">
+                       <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff4d00}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                       <a href=""></a>
+                       <a href=""></a>
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover">
+                    <img src="./views/img/sebas-logo.png" alt="">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description">
+                    <h2>Sebitas el mejor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam.</p>
+                    <div class="redes-sociales">
+                       <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff4d00}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                       <a href=""></a>
+                       <a href=""></a>
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover">
+                    <img src="./views/img/sebas-logo.png" alt="">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description">
+                    <h2>Sebitas el mejor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam.</p>
+                    <div class="redes-sociales">
+                       <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff4d00}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                       <a href=""></a>
+                       <a href=""></a>
+
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+
+        </div>
 
         <footer class="footer">
             <ul class="lista">
@@ -137,6 +201,10 @@
     </main>
 
     <script src="controller/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script> 
 </body>
 
 </html>
