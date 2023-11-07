@@ -1,37 +1,123 @@
+
+
+.titulo-nosotros{
+  position: absolute;
+  top: 2200px;
+}
+
+
+
+
+
+
 .contenedor-carta{
     width: 100%;
     height: 100vh;
-    display: flex;
     justify-content: space-around;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+
 
 }
-.card {
-    width: 190px;
-    height: 254px;
-    border-radius: 20px;
-    padding: 5px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    background-image: linear-gradient(144deg,#F96D00, #ffffff 50%,#F96D00);
-  }
+
   
-  .card__content {
-    background: #393E46;
-    border-radius: 17px;
+  .card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+    
+}
+
+.card:hover{
+    width: 300px;
+    bottom: 50px;
+}
+
+.card .cover{
     width: 100%;
-    height: 100%;
-  }
-  
-  
-  .card:hover{
-    padding: 10px;
-    width: 200px;
-    height: 260px;
-    cursor: pointer;
-    background-image: linear-gradient(144deg,#F96D00, #ffffff 50%,#F96D00);
-  }
-  .titulo-nosotros{
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    filter: none;
+    top: 0px;
+    
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
     position: absolute;
-    top: 2200px;
-  }
-  
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(../img/bg1.jpg);
+}
+.card:nth-of-type(2) .img__back{
+  background-image: url(../img/bg2.jpg);
+}
+
+.card:nth-of-type(3) .img__back{
+  background-image: url(../img/bg3.jpg);
+}
+
+
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.redes-sociales a{
+  margin-top: 15px;
+  transition: 300ms;
+}
+
+
+.redes-sociales{
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+
+}

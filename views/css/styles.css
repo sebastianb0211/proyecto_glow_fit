@@ -186,13 +186,13 @@
     justify-content: space-between;
     align-items: center;
     width: 80vw;
-    height: 60vh;
+    height: 70vh;
     margin-left: 10vw;
     margin-bottom: 4%;
 }
 
 .contenedor-imagen-parrafos img{
-    width: 40%;
+    width: 60%;
     height: 100%;
     border-radius: 7px;
     object-fit: cover;
@@ -228,4 +228,20 @@
     flex-direction: column;
     color: #F2F2F2;
 }
+.imagen-levitar{
+    transform: translate(0px);
+    animation: float 4s ease-out infinite;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 
