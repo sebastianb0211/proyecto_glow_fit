@@ -3,13 +3,15 @@ let semiPremium = document.getElementById("semiPremium")
 let basico = document.getElementById("basico")
 let containerRegistro = document.getElementById("container-registro")
 let containerLogin = document.getElementById("container-login")
+let loginContainer = document.getElementById("login-container")
 
 let login = document.getElementById("login")
 let registro = document.getElementById("registro")
 
 
 function mostrarRegistro(){
-    containerRegistro.style.display="block"
+    loginContainer.style.display="block"
+    containerRegistro.style.display="block" 
 }
 
 premium.addEventListener('click', function(){
