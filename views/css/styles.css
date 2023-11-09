@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body{
+   overflow-x: hidden;
 }
 
 /*-----ESTILOS MENU DE NAVEGACION-----*/
@@ -94,26 +98,62 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    bottom: 15%;
+    gap: 50px;
+    
 }
 
-.botones-planes button{
-    width: 45%;
-    height: 80%;
-    border-radius: 7px;
+.planes-boton {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fa8b03;
     border: none;
-    color: #F96D00;
-    background-color: #393E46;
-    font-weight: bold;
-    border: 1px solid #222831;
-}
-
-.botones-planes button:hover{
-    box-shadow: 0.1rem 0.1rem 1rem #F2F2F2;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
     cursor: pointer;
-    transform: scale(1.1);
-}
+    outline: none;
+  }
+  
+  .planes-boton:hover {
+    background-color: #F96D00;
+    box-shadow: 0px 15px 20px #f94f00;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .planes-boton:active {
+    transform: translateY(-1px);
+  }
+  .planes-boton1 {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .planes-boton1:hover {
+    background-color: #F96D00;
+    box-shadow: 0px 15px 20px #f94f00;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .planes-boton1:active {
+    transform: translateY(-1px);
+  }
 
 .contenedor-imagen-portada{
     width: 70vw;
@@ -248,3 +288,13 @@
 }
 
 
+
+
+.gorilla{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: -50px;
+    background: rgb(57,62,70);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(255,255,255,0) 100%);
+}

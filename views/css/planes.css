@@ -221,22 +221,43 @@
   }
   .contenedor-premium{
     width: 100%;
-    height: 50%;
+    height: 40%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
     
   }
   .contenedor-premium img{
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
+  }
+  .contenedor-premium h1{
+    color: white;
+    letter-spacing: 2px;
   }
   .contenedor-texto-premium{
     width: 100%;
-    height: 50%;
+    height: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 20px;
+    gap: 8px;
 
 
   }
+  .contenedor-texto-premium p{
+    color: white;
+  }
+  .contenedor-texto-premium h2{
+    color: #F96D00;
+  }
+  
+  .cheque{
+    width: 20px;
+    height: 20px;
+  }
+ 
   
