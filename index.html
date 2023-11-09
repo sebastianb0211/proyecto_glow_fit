@@ -10,14 +10,68 @@
     <link rel="stylesheet" href="views/css/cargador.css">
     <link rel="stylesheet" href="views/css/planes.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="views/css/login.css">
     <title>Glow-fit</title>
 </head>
 
 <body>
+    <div class="container-registro" id="container-login">
+        <div class="form-value">
+            <form action="">
+                <section class="container-h2">
+                    <h2>Registro</h2>
+                </section>
+                <section class="container-input">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <input type="text" required>
+                    <label for="">Nombre</label>
+                </section>
+                <section class="container-input">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </section>
+                <section class="container-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </section>
+                <button class="button">Iniciar sesión</button>
+                <div class="login" id="login">
+                    <p>Ya tengo cuenta <a href="">Iniciar sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container-login" id="container-login">
+        <div class="form-value">
+            <form action="">
+                <h2>Login</h2>
+                
+                <section class="container-input">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </section>
+                <section class="container-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </section>
+                <section class="forget">
+                    <label for=""><input type="checkbox">Recordar <a href="#">Olvide la contraseña</a></label>
+                </section>
+                <button class="button">Iniciar sesión</button>
+                <div class="registrar">
+                    <p>No tengo cuenta <a href="">Registrarme</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <main>
         <nav class="nav">
-            <article  class="contenedor-logo">
+            <article class="contenedor-logo">
                 <img src="views/img/logo.png" alt="logotipo">
             </article>
             <article class="contenedor-enlaces">
@@ -27,7 +81,7 @@
                 <a href="#" class="enlace">enlace cuatro</a>
             </article>
             <article class="contenedor-botones-nav">
-                <button >UN BOTON</button>
+                <button>UN BOTON</button>
                 <button>OTRO BOTON</button>
             </article>
         </nav>
@@ -37,10 +91,10 @@
             <h2>Cargando planes...</h2>
         </div>
         <section class="contenedor-planes" id="contenedor-planes">
-            <div class="container">
+            <div class="container" id="basico">
                 <div class="card_box">
                     <span class="gratis"></span>
-                    <div class="contenedor-premium"> 
+                    <div class="contenedor-premium">
                         <h1>0$</h1>
                         <img src="views/img/mono-gratis.png" alt="">
                     </div>
@@ -50,18 +104,18 @@
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Recetas saludables.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Seguimiento de progreso.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Recomendaciones del plan.</p>
-                    
+
 
                     </div>
-                    
-                    
+
+
                 </div>
-                
+
             </div>
-            <div class="container">
+            <div class="container" id="semiPremium">
                 <div class="card_box">
                     <span class="master"></span>
-                    <div class="contenedor-premium"> 
+                    <div class="contenedor-premium">
                         <h1>50$</h1>
                         <img src="views/img/mono-master.png" alt="">
                     </div>
@@ -72,15 +126,15 @@
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Seguimiento avanzado.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Soporte de expertos.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Recetas exclusivas.</p>
-                    
+
 
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="card_box">
+            <div class="container" >
+                <div class="card_box" id="premium">
                     <span class="premium"></span>
-                    <div class="contenedor-premium"> 
+                    <div class="contenedor-premium">
                         <h1>100$</h1>
                         <img src="views/img/logo.png" alt="">
                     </div>
@@ -91,23 +145,23 @@
                         <p><img class="cheque" src="views/img/cheque.png" alt="">Evaluaciones de salud.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Asesoramiento personal.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Planificación personalizada.</p>
-                    
+
 
                     </div>
-                   
+
                 </div>
             </div>
 
-            
+
         </section>
         <div class="boton-salir-planes" id="boton-salir">
             <button class="pushable" id="boton-salir-naranja">
                 <span class="shadow"></span>
                 <span class="edge"></span>
                 <span class="front">
-                  Volver
+                    Volver
                 </span>
-              </button>
+            </button>
 
         </div>
 
@@ -124,7 +178,7 @@
         </section>
 
         <section id="imagen-principal" class="contenedor-imagen-portada">
-            <img class="imagen-portada" src="views/img/logo-animacion.jpg"mujer en gimnasio">
+            <img class="imagen-portada" src="views/img/logo-animacion.jpg" mujer en gimnasio">
         </section>
 
         <section id="razones" data-aos="zoom-in-up" class="contenedor-razones">
@@ -132,8 +186,9 @@
                 <h1>RAZONES POR LAS QUE</h1>
                 <h1>MARCAMOS LA DIFERENCIA</h1>
             </article>
-            
-            <p data-aos="zoom-in-up" class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, laborum exercitationem suscipit esse
+
+            <p data-aos="zoom-in-up" class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                laborum exercitationem suscipit esse
                 consectetur
                 quasi aperiam, impedit quidem perspiciatis molestias omnis, ducimus at optio voluptatum saepe voluptates
                 asperiores
@@ -151,31 +206,45 @@
             <article>
                 <img src="views/img/razon-ejercicio.gif" alt="icono">
                 <h2>una razon</h2>
-                <p>Será mucho más probable que sigas hábitos saludables, como hacer ejercicio o meditar, si defines los días en los que deseas abordarlos. Hágalo parte de su plan semanal y cúmplalo lo mejor que puedas. Sea realista y no se castigue si necesita reajustarse a veces, pero asegúrese de planificar cualquier sesión trasladada para otro momento para que no se olvide.</p>
+                <p>Será mucho más probable que sigas hábitos saludables, como hacer ejercicio o meditar, si defines los
+                    días en los que deseas abordarlos. Hágalo parte de su plan semanal y cúmplalo lo mejor que puedas.
+                    Sea realista y no se castigue si necesita reajustarse a veces, pero asegúrese de planificar
+                    cualquier sesión trasladada para otro momento para que no se olvide.</p>
             </article>
             <article>
                 <img src="views/img/razon-dos.gif" alt="icono">
                 <h2>una razon</h2>
-                <p>Prepárese mentalmente para una reunión difícil, una sesión de entrenamiento u otros eventos próximos la noche anterior. Ya sea que se trate de preparar su equipo de entrenamiento o simplemente preparar el almuerzo, esta es una táctica bastante sencilla que le ahorrará algo de tiempo. De esa manera podrás concentrarte en descansar bien por la noche, dormir más y recuperarte del día anterior.</p>
+                <p>Prepárese mentalmente para una reunión difícil, una sesión de entrenamiento u otros eventos próximos
+                    la noche anterior. Ya sea que se trate de preparar su equipo de entrenamiento o simplemente preparar
+                    el almuerzo, esta es una táctica bastante sencilla que le ahorrará algo de tiempo. De esa manera
+                    podrás concentrarte en descansar bien por la noche, dormir más y recuperarte del día anterior.</p>
             </article>
             <article>
                 <img src="views/img/razon-tres.gif" alt="icono">
                 <h2>una razon</h2>
-                <p>Si tu tiempo de entrenamiento es AHORA, pero simplemente no te gusta, ¡no enrolles tu tapete todavía! Desarrollar hábitos a largo plazo a veces requiere que superes esta barrera mental y pienses en tu objetivo a largo plazo: tu "por qué". Si estás atrapado en esta batalla mental, intenta realizar un buen calentamiento y reevaluar cómo te sientes. A veces, simplemente mover el cuerpo generará esa motivación adicional. También puedes adaptar tu rutina de ejercicios para adaptarla al entrenamiento que necesitas.</p>
+                <p>Si tu tiempo de entrenamiento es AHORA, pero simplemente no te gusta, ¡no enrolles tu tapete todavía!
+                    Desarrollar hábitos a largo plazo a veces requiere que superes esta barrera mental y pienses en tu
+                    objetivo a largo plazo: tu "por qué". Si estás atrapado en esta batalla mental, intenta realizar un
+                    buen calentamiento y reevaluar cómo te sientes. A veces, simplemente mover el cuerpo generará esa
+                    motivación adicional. También puedes adaptar tu rutina de ejercicios para adaptarla al entrenamiento
+                    que necesitas.</p>
             </article>
             <article>
                 <img src="views/img/razon-cuatro.gif" alt="icono">
                 <h2>una razon</h2>
-                <p>Si estás ansioso por algo, sé amable contigo mismo y adopta una actitud mental positiva. Aquí hay algunas estrategias para afrontar la situación:
-                        <br>
-                    Divide tu "problema" en hitos  <br>
+                <p>Si estás ansioso por algo, sé amable contigo mismo y adopta una actitud mental positiva. Aquí hay
+                    algunas estrategias para afrontar la situación:
+                    <br>
+                    Divide tu "problema" en hitos <br>
                     Visualízate triunfando en cada uno de ellos. <br>
-                    Habla contigo mismo positivamente al respecto.</p>
+                    Habla contigo mismo positivamente al respecto.
+                </p>
             </article>
             <article>
                 <img src="views/img/razon-cinco.gif" alt="icono">
                 <h2>una razon</h2>
-                <p>Prioriza el sueño y tómalo en serio. Dormir entre 7 y 9 horas al día te ayudará a recuperarte mejor y más rápido y a afrontar situaciones difíciles con mayor facilidad.</p>
+                <p>Prioriza el sueño y tómalo en serio. Dormir entre 7 y 9 horas al día te ayudará a recuperarte mejor y
+                    más rápido y a afrontar situaciones difíciles con mayor facilidad.</p>
             </article>
             <article>
                 <img src="views/img/razon-seis.gif" alt="icono">
@@ -186,7 +255,7 @@
         </section>
 
         <section id="imagen-parrafos" class="contenedor-imagen-parrafos">
-            <img  class="imagen-levitar" src="views/img/imagen-gym.png" alt="mujer-corriendo">
+            <img class="imagen-levitar" src="views/img/imagen-gym.png" alt="mujer-corriendo">
             <article data-aos="zoom-in-up">
                 <h1>LO QUE OBTENDRAS</h1>
                 <h1>UNA VIDA MAS SANA</h1>
@@ -199,7 +268,7 @@
             </article>
         </section>
         <div id="nosotros" class="contenedor-carta">
-            
+
 
             <div class="card">
                 <div class="cover">
@@ -210,12 +279,21 @@
                     <h2>Sebitas el mejor</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam.</p>
                     <div class="redes-sociales">
-                       <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff4d00}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-                       <a href=""></a>
-                       <a href=""></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #ff4d00
+                                    }
+                                </style>
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                        <a href=""></a>
+                        <a href=""></a>
 
                     </div>
-                    
+
                 </div>
             </div>
             <div class="card">
@@ -227,12 +305,21 @@
                     <h2>Sebitas el mejor</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam.</p>
                     <div class="redes-sociales">
-                       <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff4d00}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-                       <a href=""></a>
-                       <a href=""></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #ff4d00
+                                    }
+                                </style>
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                        <a href=""></a>
+                        <a href=""></a>
 
                     </div>
-                    
+
                 </div>
             </div>
             <div class="card">
@@ -244,16 +331,25 @@
                     <h2>Sebitas el mejor</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quam.</p>
                     <div class="redes-sociales">
-                       <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff4d00}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-                       <a href=""></a>
-                       <a href=""></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #ff4d00
+                                    }
+                                </style>
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                        <a href=""></a>
+                        <a href=""></a>
 
                     </div>
-                    
+
                 </div>
             </div>
-            
-            
+
+
 
         </div>
 
@@ -277,11 +373,18 @@
 
     </main>
 
+
+
+
+
     <script src="controller/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
-</script> 
+        AOS.init();
+    </script>
+    <script src="controller/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
