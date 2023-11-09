@@ -1,8 +1,8 @@
 .container-login{
     position: absolute;
     width: 30%;
-    height: 75%;
-    background: violet;
+    height: 60%;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
     border: 2px solid rgba(255, 255, 255, 0.5); 
     display: none;
     justify-content: center;
@@ -15,8 +15,8 @@
 .container-registro{
     position: absolute;
     width: 30%;
-    height: 450px;
-    background: red;
+    height: 60%;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
     border: 2px solid rgba(255, 255, 255, 0.5); /* Bordes con transparencia */
     display: none;
     justify-content: center;
@@ -92,7 +92,7 @@ input:valid ~ label{
     justify-content: center;
 }
 .forget label input{
-    margin-right: 3px;
+    margin-right: 5px;
 }
 .forget label a{
     color: #F2F2F2;
@@ -124,6 +124,21 @@ input:valid ~ label{
     font-weight: 600;
 }
 .login p a:hover{
+    text-decoration: underline;
+    color: #F96D00;
+}
+.registrar{
+    font-size: 0.9em;
+    color: #F2F2F2;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.registrar p a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-weight: 600;
+}
+.registrar p a:hover{
     text-decoration: underline;
     color: #F96D00;
 }
