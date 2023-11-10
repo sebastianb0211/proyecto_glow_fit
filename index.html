@@ -7,12 +7,70 @@
     <link rel="icon" href="views/img/logo.png">
     <link rel="stylesheet" href="views/css/styles.css">
     <link rel="stylesheet" href="views/css/sobreNosotros.css">
+    <link rel="stylesheet" href="views/css/cargador.css">
+    <link rel="stylesheet" href="views/css/planes.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="views/css/login.css">
     <title>Glow-fit</title>
 </head>
 
 <body>
-
+    <div class="login-container" id="login-container">
+        <div class="container-registro" id="container-registro">
+            <div class="form-value">
+                <form action="">
+                    <section class="container-h2">
+                        <h2>Registro</h2>
+                    </section>
+                    <section class="container-input">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <input type="text" required>
+                        <label for="">Nombre</label>
+                    </section>
+                    <section class="container-input">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </section>
+                    <section class="container-input">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </section>
+                    <button class="button">Registrar cuenta</button>
+                    <div class="login">
+                        <p>Ya tengo cuenta <a href="#" id="login">Iniciar sesión</a></p>
+                    </div>
+                </form> 
+            </div>
+        </div>
+        <div class="container-login" id="container-login">
+            <div class="form-value">
+                <form action="">
+                    <section class="container-h2">
+                        <h2>Iniciar sesión</h2>
+                    </section>
+                    <section class="container-input">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </section>
+                    <section class="container-input">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </section>
+                    <section class="forget">
+                        <label for=""><input type="checkbox">Recordar <a href="#">Olvide la contraseña</a></label>
+                    </section>
+                    <button class="button">Iniciar sesión</button>
+                    <div class="registrar">
+                        <p>No tengo cuenta <a href="#" id="registro">Registrarme</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <main>
         <nav class="nav">
             <article class="contenedor-logo">
@@ -30,23 +88,102 @@
             </article>
         </nav>
 
-        <section class="contenedor-portada">
+        <div class="contenedor-cargador" id="cargador">
+            <img class="loader" src="views/img/logo.png" alt="">
+            <h2>Cargando planes...</h2>
+        </div>
+        <section class="contenedor-planes" id="contenedor-planes">
+            <div class="container" id="basico">
+                <div class="card_box">
+                    <span class="gratis"></span>
+                    <div class="contenedor-premium">
+                        <h1>0$</h1>
+                        <img src="views/img/mono-gratis.png" alt="">
+                    </div>
+                    <div class="contenedor-texto-premium">
+                        <h2>Plan Gratuito (15 días):</h2>
+                        <p><img class="cheque" src="views/img/cheque.png" alt="">Ejercicios básicos.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Recetas saludables.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Seguimiento de progreso.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Recomendaciones del plan.</p>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="container" id="semiPremium">
+                <div class="card_box">
+                    <span class="master"></span>
+                    <div class="contenedor-premium">
+                        <h1>50$</h1>
+                        <img src="views/img/mono-master.png" alt="">
+                    </div>
+                    <div class="contenedor-texto-premium">
+                        <h2>Plan Master (30 días):</h2>
+                        <p><img class="cheque" src="views/img/cheque.png" alt="">Ejercicios avanzados.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Personalización.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Seguimiento avanzado.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Soporte de expertos.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Recetas exclusivas.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card_box" id="premium">
+                    <span class="premium"></span>
+                    <div class="contenedor-premium">
+                        <h1>100$</h1>
+                        <img src="views/img/logo.png" alt="">
+                    </div>
+                    <div class="contenedor-texto-premium">
+                        <h2>Plan Premium (90 días):</h2>
+                        <p><img class="cheque" src="views/img/cheque.png" alt="">Todo lo del Plan Master.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Sesiones en vivo.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt="">Evaluaciones de salud.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Asesoramiento personal.</p>
+                        <p><img class="cheque" src="views/img/cheque.png" alt=""> Planificación personalizada.</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+        <div class="boton-salir-planes" id="boton-salir">
+            <button class="pushable" id="boton-salir-naranja">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front">
+                    Volver
+                </span>
+            </button>
+
+        </div>
+
+        <section id="portada" class="contenedor-portada">
             <div data-aos="zoom-in-up" class="contenedor-titulos">
                 <h1>DOMINA TU MENTE,</h1>
                 <h1>CAMBIA TU CUERPO</h1>
                 <p>Con Glow-fit transforma tu cuerpo por medio de un plan estricto y una alimentacion balanceada</p>
             </div>
             <div class="botones-planes">
-                <button>CONTACTANOS</button>
-                <button>COTIZA UN PLAN</button>
+                <button class="planes-boton1">CONTACTANOS</button>
+                <button class="planes-boton" id="cotiza-plan">COTIZAR PLANES</button>
             </div>
         </section>
 
-        <section class="contenedor-imagen-portada">
+        <section id="imagen-principal" class="contenedor-imagen-portada">
             <img class="imagen-portada" src="views/img/logo-animacion.jpg" mujer en gimnasio">
         </section>
 
-        <section data-aos="zoom-in-up" class="contenedor-razones">
+        <section id="razones" data-aos="zoom-in-up" class="contenedor-razones">
             <article class="titulos">
                 <h1>RAZONES POR LAS QUE</h1>
                 <h1>MARCAMOS LA DIFERENCIA</h1>
@@ -99,39 +236,39 @@
             </div>
         </section>
 
-        <section data-aos="zoom-in-up" class="contenedor-cards">
+        <section id="articulos" data-aos="zoom-in-up" class="contenedor-cards">
             <article>
-                <img src="views/img/hacer-subir.png" alt="icono">
+                <img src="views/img/razon-ejercicio.gif" alt="icono">
                 <h2>una razon</h2>
                 <p> <strong>Acceso a Entrenamientos Personalizados:</strong> ofrecer programas personalizados según tus
                     metas, nivel de condición física y preferencias. </p>
             </article>
             <article>
-                <img src="views/img/hacer-subir.png" alt="icono">
+                <img src="views/img/razon-dos.gif" alt="icono">
                 <h2>una razon</h2>
                 <p><strong>Flexibilidad en el Horario:</strong> puedes hacer ejercicio en cualquier momento y en
                     cualquier lugar.</p>
             </article>
             <article>
-                <img src="views/img/hacer-subir.png" alt="icono">
+                <img src="views/img/razon-tres.gif" alt="icono">
                 <h2>una razon</h2>
                 <p><strong>Seguimiento y Registro de Progresos:</strong> Puedes hacer un seguimiento de tu progreso.
                 </p>
             </article>
             <article>
-                <img src="views/img/hacer-subir.png" alt="icono">
+                <img src="views/img/razon-cuatro.gif" alt="icono">
                 <h2>una razon</h2>
                 <p><strong>Variedad de Entrenamientos:</strong> ofrecen una amplia variedad de entrenamientos, desde
                     yoga hasta entrenamientos de alta intensidad.</p>
             </article>
             <article>
-                <img src="views/img/hacer-subir.png" alt="icono">
+                <img src="views/img/razon-cinco.gif" alt="icono">
                 <h2>una razon</h2>
                 <p><strong>Motivación y Desafíos:</strong> Competir contra ti mismo o contra otros usuarios puede hacer
                     que el proceso de ejercicio sea más divertido y estimulante. </p>
             </article>
             <article>
-                <img src="views/img/hacer-subir.png" alt="icono">
+                <img src="views/img/razon-seis.gif" alt="icono">
                 <h2>una razon</h2>
                 <p><strong>Guía Visual y Instrucciones Detalladas:</strong> Esto asegura que estás realizando los
                     movimientos correctamente, reduciendo el riesgo de lesiones y mejorando la eficacia de tu
@@ -140,7 +277,7 @@
 
         </section>
 
-        <section class="contenedor-imagen-parrafos">
+        <section id="imagen-parrafos" class="contenedor-imagen-parrafos">
             <img class="imagen-levitar" src="views/img/imagen-gym.png" alt="mujer-corriendo">
             <article data-aos="zoom-in-up">
                 <h1>LO QUE OBTENDRAS</h1>
@@ -153,8 +290,8 @@
                 
             </article>
         </section>
-        <d iv class="contenedor-carta">
-            <h1 class="titulo-nosotros">Sobre nosotros</h1>
+        <div id="nosotros" class="contenedor-carta">
+
 
             <div class="card">
                 <div class="cover">
@@ -291,7 +428,7 @@
 
         </d>
 
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <ul class="lista">
                 <h2>Productos</h2>
                 <li><a class="enlaces-footer" href="">Entrenamiento</a></li>
@@ -311,11 +448,18 @@
 
     </main>
 
+
+
+
+
     <script src="controller/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="controller/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
