@@ -16,7 +16,8 @@
     justify-content: space-around;
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow: hidden;
     
 
 
