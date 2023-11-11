@@ -33,3 +33,68 @@ registro.addEventListener('click', function(){
     containerLogin.style.display="none"
 })
 
+const usuarioRegistrados = JSON.parse(localStorage.getItem('usuario')) || []
+const userRegistrationRegex =
+{
+    username: /^[ a-zA-Z]{3,20}$/,
+    email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+    password: /^(?=.*[A-Z]).{8,20}$/
+}
+
+document.getElementById('button-registro').addEventListener('click', function registroUsuario() {
+    const nombreUsuario = document.getElementById('nombre-usuario').value
+    const correoRegistro = document.getElementById('email-registro').value
+    const passRegistro = document.getElementById('pass-registro').value
+    
+
+    if (correoRegistro && passRegistro) {
+        let todasLasCondicionesCumplidas = true
+        if (!userRegistrationRegex.username.test(nombreUsuario)) {
+            nombreRegexError()
+            todasLasCondicionesCumplidas = false
+        } else if (!userRegistrationRegex.email.test(correoRegistro)) {
+            correoRegistroRegex()
+            todasLasCondicionesCumplidas = false
+        } else if (!userRegistrationRegex.password.test(passRegistro)) {
+            passRegistroRegex()
+            todasLasCondicionesCumplidas = false
+        } 
+        if (todasLasCondicionesCumplidas) {
+            const usuarioExistente = usuarioRegistrados.find(usuario => usuario.correoRegistro === correoRegistro)
+            if (usuarioExistente) {
+                usuarioExistenteRegistro()
+            } else if (!usuarioExistente) {
+                const nuevoUsuario = {
+                    correoRegistro,
+                    passRegistro,
+                    nombreUsuario,
+                }
+                usuarioRegistrados.push(nuevoUsuario)
+                localStorage.setItem('usuario', JSON.stringify(usuarioRegistrados))
+                usuarioRegistrado()
+            } else {
+                
+            }
+        }
+    }
+
+})
+const correoUsuario = ''
+document.getElementById('login').addEventListener('submit', function loginUsuario() {
+    correoUsuario = document.getElementById('email-login').value
+    const passUsuario = document.getElementById('pass-login').value
+
+    if (correoUsuario && passUsuario) {
+        if (!userRegistrationRegex.email.test(correoUsuario)) {
+            correoUsuarioRegex()
+        } else if (!userRegistrationRegex.password.test(passUsuario)) {
+            contraseñaUsuarioRegex()
+        }
+        const usuario = usuarioRegistrados.find(usuario => usuario.correoRegistro === correoUsuario && usuario.passRegistro === passUsuario)
+        if (usuario) {
+                correoUsuario = correoUsuario;
+        }else{
+            correoNoRegistrado()
+        }
+    }
+})
