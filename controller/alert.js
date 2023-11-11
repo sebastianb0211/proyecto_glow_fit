@@ -75,7 +75,7 @@ function correoNoRegistrado(){
     Swal.fire({
         icon: 'info',
         title: 'Correo electronico no registrado',
-        text: 'Registrate para accerder al banco',
+        text: 'Registrate para accerder a los planes',
         width: '40%',
         background: '#78D6C6',
         backdrop: true,

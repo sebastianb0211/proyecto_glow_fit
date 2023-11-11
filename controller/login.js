@@ -13,6 +13,10 @@ function mostrarRegistro(){
     loginContainer.style.display="block"
     containerRegistro.style.display="block" 
 }
+function quitarRegistro(){
+    loginContainer.style.display="none"
+    containerRegistro.style.display="none"
+}
 
 premium.addEventListener('click', function(){
    mostrarRegistro()
@@ -79,8 +83,8 @@ document.getElementById('button-registro').addEventListener('click', function re
     }
 
 })
-const correoUsuario = ''
-document.getElementById('login').addEventListener('submit', function loginUsuario() {
+let correoUsuario = ''
+document.getElementById('button-login').addEventListener('click', function loginUsuario() {
     correoUsuario = document.getElementById('email-login').value
     const passUsuario = document.getElementById('pass-login').value
 
@@ -93,6 +97,7 @@ document.getElementById('login').addEventListener('submit', function loginUsuari
         const usuario = usuarioRegistrados.find(usuario => usuario.correoRegistro === correoUsuario && usuario.passRegistro === passUsuario)
         if (usuario) {
                 correoUsuario = correoUsuario;
+                quitarRegistro()
         }else{
             correoNoRegistrado()
         }
