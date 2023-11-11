@@ -4,7 +4,7 @@
     position: absolute;
     background: #fafafa10;
     backdrop-filter: blur(0.4rem);
-    z-index: 100000;
+    z-index: 1001;
     display: none;
     align-items: center;
 }
