@@ -81,6 +81,29 @@ body{
     align-items: center;
 }
 
+.carrousel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.elementos-carrusel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: #393E46;
+    width: 200px;
+    height: 200px;
+    color: #F2F2F2;
+}
+
+.elementos-carrusel img{
+    width: 80px;
+    height: 120pxpx;
+}
+
 .contenedor-portada h1{
     font-size: 50px;
     text-align: center;
@@ -94,7 +117,7 @@ body{
 
 .botones-planes{
     height: 60px;
-    width: 300px;
+    width: 450px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -103,10 +126,11 @@ body{
 }
 
 .planes-boton {
+    
     padding: 1.3em 3em;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 1px;
     font-weight: 500;
     color: #000;
     background-color: #fa8b03;
@@ -132,7 +156,7 @@ body{
     padding: 1.3em 3em;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     font-weight: 500;
     color: #000;
     background-color: #ffffff;
@@ -266,10 +290,19 @@ body{
     background-color: #393E46;
 }
 
+.enlaces-footer{
+    color: white;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+.enlaces-footer:hover{
+    transform: scale(1.1);
+}
+
 .lista{
     display: flex;
     flex-direction: column;
-    color: #F2F2F2;
+    color:  #F96D00;
 }
 .imagen-levitar{
     transform: translate(0px);

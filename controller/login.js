@@ -8,7 +8,13 @@ let loginContainer = document.getElementById("login-container")
 let login = document.getElementById("login")
 let registro = document.getElementById("registro")
 
+loginContainer.addEventListener("click",function(){
 
+    
+    
+    
+
+})
 function mostrarRegistro(){
     loginContainer.style.display="block"
     containerRegistro.style.display="block" 

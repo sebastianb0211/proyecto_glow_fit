@@ -24,7 +24,7 @@ cotizar.addEventListener("click", function () {
     cargador.style.display = "none";
     planes.style.display = "flex";
     botonSalirPlanes.style.display = "flex";
-  }, 2500);
+  }, 1200);
 });
 let botonSalirPlanesReal = document.getElementById("boton-salir-naranja");
 botonSalirPlanesReal.addEventListener("click", function () {
