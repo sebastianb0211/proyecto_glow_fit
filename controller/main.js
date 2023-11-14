@@ -9,6 +9,7 @@ let footer = document.getElementById("footer");
 let cargador = document.getElementById("cargador");
 let planes = document.getElementById("contenedor-planes");
 let botonSalirPlanes = document.getElementById("boton-salir");
+let testimonios = document.getElementById("testimonios")
 
 cotizar.addEventListener("click", function () {
   portada.style.display = "none";
@@ -18,7 +19,9 @@ cotizar.addEventListener("click", function () {
   imagenParrafos.style.display = "none";
   nosotros.style.display = "none";
   footer.style.display = "none";
+  testimonios.style.display = "none";
   cargador.style.display = "flex";
+  
 
   setTimeout(function () {
     cargador.style.display = "none";

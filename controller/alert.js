@@ -1,4 +1,4 @@
-function nombreRegexError(){
+export function nombreRegexError(){
     Swal.fire({
         icon: 'error',
         title: 'El nombre no es valido',
@@ -8,7 +8,7 @@ function nombreRegexError(){
         backdrop: true
       })
 }
-function correoRegistroRegex(){
+export function correoRegistroRegex(){
     Swal.fire({
         icon: 'error',
         title: 'El Correo electronico no es valido',
@@ -18,7 +18,7 @@ function correoRegistroRegex(){
         backdrop: true
       })         
 }
-function passRegistroRegex(){
+export function passRegistroRegex(){
     Swal.fire({
         icon: 'error',
         title: 'La contrasela no es valida',
@@ -28,7 +28,7 @@ function passRegistroRegex(){
         backdrop: true
       })         
 }
-function usuarioExistenteRegistro(){
+export function usuarioExistenteRegistro(){
     Swal.fire({
         icon: 'error',
         title: 'Cuenta ya registrada inicie sesion',
@@ -38,7 +38,7 @@ function usuarioExistenteRegistro(){
         backdrop: true
       })
 }
-function usuarioRegistrado(){
+ export function usuarioRegistrado(){
     Swal.fire({
         icon: 'success',
         title: 'Bienvenido ' + nombreUsuario + ' inicia session para acceder a tu cuenta',
@@ -50,7 +50,7 @@ function usuarioRegistrado(){
     })
 }
 
-function correoUsuarioRegex(){
+export function correoUsuarioRegex(){
     Swal.fire({
         icon: 'error',
         title: 'Correo electronico no válido',
@@ -60,7 +60,7 @@ function correoUsuarioRegex(){
         backdrop: true
       })
 }
-function contraseñaUsuarioRegex(){
+export function contraseñaUsuarioRegex(){
     Swal.fire({
         icon: 'error',
         title: 'Contraseña incorrecta',
@@ -71,7 +71,7 @@ function contraseñaUsuarioRegex(){
       })
 }
 
-function correoNoRegistrado(){
+ export function correoNoRegistrado(){
     Swal.fire({
         icon: 'info',
         title: 'Correo electronico no registrado',
