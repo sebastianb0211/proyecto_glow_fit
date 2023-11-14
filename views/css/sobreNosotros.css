@@ -1,124 +1,171 @@
-
-
-.titulo-nosotros{
+.titulo-nosotros {
   position: absolute;
   top: 2200px;
 }
 
-
-
-
-
-
-.contenedor-carta{
-    width: 100%;
-    height: 100vh;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    overflow-x: auto;
-    overflow: hidden;
-    
-
-
-}
-
+.contenedor-cartas {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: flex-start;
   
-  .card{
-    width: 300px;
-    margin: 10px;
-    transition: all 300ms;
-    
+}
+.contenedor-creadores {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-creadores {
+  width: 60px;
+  height: 60px;
 }
 
-.card:hover{
-    width: 300px;
-    bottom: 50px;
+.contenedor-carta {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.imagen-pablo {
+  width: 250px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  transition: all 400ms;
+}
+.imagen-Camilo {
+  width: 250px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  transition: all 400ms;
+}
+.imagen-sebas {
+  width: 250px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -50px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  transition: all 400ms;
+}
+.imagen-andres {
+  width: 250px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 30px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  transition: all 400ms;
+}
+.imagen-boris{
+  width: 250px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -50px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  transition: all 400ms;
+}
+.imagen-pablo:hover {
+  top: -10px;
+}
+.imagen-Camilo:hover {
+  top: -18px;
+}
+.imagen-sebas:hover {
+  top: -100px;
+}
+.imagen-andres:hover {
+    top: -11px;
+}
+.imagen-boris:hover {
+  top: -85px;
+}
+.instagram,
+.github,
+.whatsapp {
+  width: 40px;
+  height: 40px;
 }
 
-.card .cover{
-    width: 100%;
-    height: 250px;
-    position: relative;
-    overflow: hidden;
+.card {
+  width: 300px;
+  margin-left: 20px;
+  transition: all 300ms;
 }
 
-.card .cover img{
-    width: 250px;
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 10px;
-    z-index: 1;
-    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
-    transition: all 400ms;
+.card:hover {
+  width: 300px;
+  bottom: 20px;
 }
 
-.card:hover .cover img{
-    filter: none;
-    top: 0px;
-    
+.card .cover {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
-.card .img__back{
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    bottom: -80px;
-    left: 0;
-    background-size: cover;
-    border-radius: 20px;
-    transition: all 300ms;
+.card .img__back {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 300ms;
 }
 
-.card:nth-of-type(1) .img__back{
-    background-image: url(../img/bg1.jpg);
-}
-.card:nth-of-type(2) .img__back{
-  background-image: url(../img/bg2.jpg);
+.card:nth-of-type(1) .img__back {
+  background-image: url(../img/bg1.jpg);
 }
 
-.card:nth-of-type(3) .img__back{
-  background-image: url(../img/bg3.jpg);
+.card:hover .img__back {
+  bottom: -40px;
 }
 
-
-
-.card:hover .img__back{
-    bottom: -40px;
+.card .description {
+  background: white;
+  margin-top: -10px;
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
+  transition: all 300ms;
 }
 
-.card .description{
-    background: white;
-    margin-top: -10px;
-    padding: 20px;
-    border-radius: 0px 0px 20px 20px;
-    transition: all 300ms;
+.card:hover .description {
+  padding: 40px;
 }
 
-.card:hover .description{
-    padding: 40px;
+.card .description h2 {
+  margin-top: 10px;
 }
 
-.card .description h2{
-    margin-top: 10px;
+.card .description p {
+  margin-top: 10px;
 }
 
-.card .description p{
-    margin-top: 10px;
-}
-
-.redes-sociales a{
+.redes-sociales a {
   margin-top: 15px;
   transition: 300ms;
 }
 
-
-.redes-sociales{
+.redes-sociales {
   width: 100%;
   height: 100%;
   gap: 10px;
   display: flex;
   align-items: center;
-
 }

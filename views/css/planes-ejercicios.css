@@ -1,0 +1,81 @@
+
+.contenedor-planes-ejercicio{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	display: none;
+    
+
+}
+.contenedor-planes-nav{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.nav-planes{
+	position: relative;
+	margin-top: 50px;
+	width: 590px;
+	height: 50px;
+	background: #393E46;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+.nav-planes a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+.nav-planes .animation{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	background: #F96D00;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+.nav-planes a:nth-child(1){
+	width: 200px;
+}
+.nav-planes .start-home, a:nth-child(1):hover~.animation{
+	width: 200px;
+	left: 0;
+}
+.nav-planes a:nth-child(2){
+	width: 210px;
+}
+.nav-planes a:nth-child(2):hover~.animation{
+	width: 210px;
+	left: 200px;
+}
+.nav-planesa:nth-child(3){
+	width: 200px;
+}
+
+.nav-planes a:nth-child(3):hover~.animation{
+	width: 200px;
+	left: 390px;
+}
+
+.contenedor-plan-Alimenticion{
+	width: 100%;
+	height: 100vh;
+	background-color: #F96D00;
+}
+.contenedor-dias{
+	width: 100%;
+	height: 50%;
+	
+}
+
+   

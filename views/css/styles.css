@@ -10,8 +10,8 @@ body{
 
 /*-----ESTILOS MENU DE NAVEGACION-----*/
 .nav{
-    width: 100vw;
-    height: 15vh;
+    width: 103%;
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,28 +81,7 @@ body{
     align-items: center;
 }
 
-.carrousel{
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-}
 
-.elementos-carrusel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 0 auto;
-    margin: 0 50px;
-    background-color: #393E46;
-    width: 200px;
-    height: 200px;
-    color: #F2F2F2;
-}
-
-.elementos-carrusel img{
-    width: 80px;
-    height: 120pxpx;
-}
 
 .contenedor-portada h1{
     font-size: 50px;
