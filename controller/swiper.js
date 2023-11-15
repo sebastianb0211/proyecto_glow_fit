@@ -5,9 +5,9 @@ var swiper = new Swiper(".SwiperTestimonios", {
   centeredSlides: true,
   loop: true,
   
-  slidesPerView: "auto",
+  slidesPerView:"auto",
   coverflowEffect: {
-    rotate: 0,
+    rotate:50,
     stretch: 0,
     depth: 300,
     modifier: 1,
