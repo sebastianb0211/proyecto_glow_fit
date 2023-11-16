@@ -68,14 +68,85 @@
 }
 
 .contenedor-plan-Alimenticion{
-	width: 100%;
-	height: 100vh;
-	background-color: #F96D00;
+    width: 100vw;
+    height: 85vh;
+    border: 1px solid red;
+    display: flex;
 }
+
+.menu{
+    border: 1px solid green;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.semanas{
+    width: 100%;
+    border: 1px solid slateblue;
+    height: 7%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido{
+    border: 1px solid blue;
+    width: 85%;
+    height: 100%;
+    display: flex;
+}
+
+.dia{
+    border: 1px solid red;
+    width: 30%;
+    height: 45%;
+}
+
 .contenedor-dias{
-	width: 100%;
-	height: 50%;
-	
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ejercicio-diario{
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+    height: 75%;
+}
+
+.ejercicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ejercicio p{
+    border-bottom: 1px solid black;
+}
+
+.titulo-dia{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid salmon;
+}
+
+.titulo-dia h3{
+    font-size: 30px;
+}
+
+.titulo-dia h4{
+    font-size: 25px;
 }
 
    
