@@ -1,0 +1,46 @@
+#titulo_dos,
+#titulo_tres,
+#titulo_cuatro,
+#titulo_cinco,
+#titulo_seis,
+#titulo_siete,
+#titulo_ocho,
+#titulo_nueve,
+#titulo_diez,
+#titulo_once,
+#titulo_doce {
+  display: none;
+}
+.ejercicioSemana2,
+.ejercicioSemana3,
+.ejercicioSemana4,
+.ejercicioSemana5,
+.ejercicioSemana6,
+.ejercicioSemana7,
+.ejercicioSemana8,
+.ejercicioSemana9,
+.ejercicioSemana10,
+.ejercicioSemana11,
+.ejercicioSemana12
+{
+display: none;
+cursor: pointer;
+}
+.ejercicioSemana1{
+  cursor: pointer;
+}
+.ejercicioSemana1:hover,
+.ejercicioSemana2:hover,
+.ejercicioSemana3:hover,
+.ejercicioSemana4:hover,
+.ejercicioSemana5:hover,
+.ejercicioSemana6:hover,
+.ejercicioSemana7:hover,
+.ejercicioSemana8:hover,
+.ejercicioSemana9:hover,
+.ejercicioSemana10:hover,
+.ejercicioSemana11:hover,
+.ejercicioSemana12:hover{
+ color: #F96D00;
+  zoom: 1.1;
+}

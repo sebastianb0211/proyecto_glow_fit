@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./views/css/testimonios.css">
     <link rel="stylesheet" href="views/css/swiper.css">
     <link rel="stylesheet" href="views/css/planes-ejercicios.css">
+    <link rel="stylesheet" href="./views/css/ejercicios.css">
     
     <title>Glow-fit</title>
 </head>
@@ -83,7 +84,7 @@
     <main>
         <nav class="nav">
             <article class="contenedor-logo">
-                <img src="views/img/logo.png" alt="logotipo">
+                <img  src="views/img/logo.png" alt="logotipo">
             </article>
             <article class="contenedor-enlaces">
                 <a href="#" class="enlace">Entrenamiento </a>
@@ -100,8 +101,8 @@
         <div class="contenedor-planes-ejercicio" id="contenedor-planes-ejercicio">
             <div class="contenedor-planes-nav">
                 <nav class="nav-planes">
-                    <a href="#">planes Alimenticios</a>
                     <a href="#">Planes de Ejercicios</a>
+                    <a href="#">Planes Alimenticios</a>
                     <a href="#">Recomendaciones</a>
                    
                     <div class="animation start-home"></div>
@@ -111,54 +112,134 @@
            
             <div class="contenedor-plan-Alimenticion">
                 <div class="menu">
-                    <p class="semanas">semana 1</p>
-                    <p class="semanas">semana 2</p>
-                    <p class="semanas">semana 3</p>
-                    <p class="semanas">semana 4</p>
-                    <p class="semanas">semana 5</p>
-                    <p class="semanas">semana 6</p>
-                    <p class="semanas">semana 7</p>
-                    <p class="semanas">semana 8</p>
-                    <p class="semanas">semana 9</p>
-                    <p class="semanas">semana 10</p>
-                    <p class="semanas">semana 11</p>
-                    <p class="semanas">semana 12</p>
+                    <p class="semanas" id="semana1">semana 1</p>
+                    <p class="semanas" id="semana2">semana 2</p>
+                    <p class="semanas" id="semana3">semana 3</p>
+                    <p class="semanas" id="semana4">semana 4</p>
+                    <p class="semanas" id="semana5">semana 5</p>
+                    <p class="semanas" id="semana6">semana 6</p>
+                    <p class="semanas" id="semana7">semana 7</p>
+                    <p class="semanas" id="semana8">semana 8</p>
+                    <p class="semanas" id="semana9">semana 9</p>
+                    <p class="semanas" id="semana10">semana 10</p>
+                    <p class="semanas" id="semana11">semana 11</p>
+                    <p class="semanas" id="semana12">semana 12</p>
                 </div>
                 <div class="contenido">
                     <div class="contenedor-dias">
                         <div class="dia">
                             <div class="titulo-dia">
-                                <h3>semana 1</h3>
+                                <h3 id="titulo_uno">semana 1</h3><h3 id="titulo_dos">semana 2</h3><h3 id="titulo_tres">semana 3</h3><h3 id="titulo_cuatro">semana 4</h3><h3 id="titulo_cinco">semana 5</h3><h3 id="titulo_seis">semana 6</h3><h3 id="titulo_siete">semana 7</h3><h3 id="titulo_ocho">semana 8</h3><h3 id="titulo_nueve">semana 9</h3><h3 id="titulo_diez">semana 10</h3><h3 id="titulo_once">semana 11</h3><h3 id="titulo_doce">semana 12</h3>
                                 <h4>Lunes</h4>
                             </div>
                             
                             <div class="ejercicio-diario">
                                 <div class="ejercicio">
                                     <h3>ejercicio</h3>
-                                    <p>sentadilla</p>
-                                    <p>peso muerto</p>
-                                    <p>sentadilla</p>
-                                    <p>peso muerto</p>
-                                    <p>sentadilla</p>
-                                    <p>peso muerto</p>
+                                
+                                    <!-- Semana 1 -->
+                                    <p class="ejercicioSemana1">Sentadillas</p>
+                                    <p class="ejercicioSemana1">Press de banca</p>
+                                    <p class="ejercicioSemana1">Dominadas</p>
+                                    <p class="ejercicioSemana1">Plancha</p>
+                                    <p class="ejercicioSemana1">Curl de bíceps</p>
+                                
+                                    <!-- Semana 2 -->
+                                    <p class="ejercicioSemana2">Zancadas</p>
+                                    <p class="ejercicioSemana2">Fondos</p>
+                                    <p class="ejercicioSemana2">Pull-ups</p>
+                                    <p class="ejercicioSemana2">Mountain climbers</p>
+                                    <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                                
+                                    <!-- Semana 3 -->
+                                    <p class="ejercicioSemana3">Peso muerto</p>
+                                    <p class="ejercicioSemana3">Flexiones</p>
+                                    <p class="ejercicioSemana3">Remo con barra</p>
+                                    <p class="ejercicioSemana3">Plancha lateral</p>
+                                    <p class="ejercicioSemana3">Martillo de bíceps</p>
+                                
+                                    <!-- Semana 4 -->
+                                    <p class="ejercicioSemana4">Squats</p>
+                                    <p class="ejercicioSemana4">Bench press</p>
+                                    <p class="ejercicioSemana4">Pull-ups</p>
+                                    <p class="ejercicioSemana4">Russian twists</p>
+                                    <p class="ejercicioSemana4">Concentration curls</p>
+                                
+                                    <!-- Semana 5 -->
+                                    <p class="ejercicioSemana5">Leg press</p>
+                                    <p class="ejercicioSemana5">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana5">Chin-ups</p>
+                                    <p class="ejercicioSemana5">Plank with knee tucks</p>
+                                    <p class="ejercicioSemana5">Incline curls</p>
+                                
+                                    <!-- Semana 6 -->
+                                    <p class="ejercicioSemana6">Step-ups</p>
+                                    <p class="ejercicioSemana6">Chest press</p>
+                                    <p class="ejercicioSemana6">Wide grip pull-ups</p>
+                                    <p class="ejercicioSemana6">Side plank</p>
+                                    <p class="ejercicioSemana6">Preacher curls</p>
+                                
+                                    <!-- Semana 7 -->
+                                    <p class="ejercicioSemana7">Hack squats</p>
+                                    <p class="ejercicioSemana7">Dips</p>
+                                    <p class="ejercicioSemana7">Muscle-ups</p>
+                                    <p class="ejercicioSemana7">Reverse plank</p>
+                                    <p class="ejercicioSemana7">Hammer curls</p>
+                                
+                                    <!-- Semana 8 -->
+                                    <p class="ejercicioSemana8">Lunges</p>
+                                    <p class="ejercicioSemana8">Incline bench press</p>
+                                    <p class="ejercicioSemana8">Close grip pull-ups</p>
+                                    <p class="ejercicioSemana8">Plank with shoulder taps</p>
+                                    <p class="ejercicioSemana8">Spider curls</p>
+                                
+                                    <!-- Semana 9 -->
+                                    <p class="ejercicioSemana9">Deadlifts</p>
+                                    <p class="ejercicioSemana9">Decline bench press</p>
+                                    <p class="ejercicioSemana9">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana9">Russian twists</p>
+                                    <p class="ejercicioSemana9">Concentration curls</p>
+                                
+                                    <!-- Semana 10 -->
+                                    <p class="ejercicioSemana10">Box jumps</p>
+                                    <p class="ejercicioSemana10">Cable flyes</p>
+                                    <p class="ejercicioSemana10">Assisted pull-ups</p>
+                                    <p class="ejercicioSemana10">Plank with knee tucks</p>
+                                    <p class="ejercicioSemana10">Incline curls</p>
+                                
+                                    <!-- Semana 11 -->
+                                    <p class="ejercicioSemana11">Front squats</p>
+                                    <p class="ejercicioSemana11">Dumbbell press</p>
+                                    <p class="ejercicioSemana11">Chin-ups</p>
+                                    <p class="ejercicioSemana11">Side plank</p>
+                                    <p class="ejercicioSemana11">Hammer curls</p>
+                                
+                                    <!-- Semana 12 -->
+                                    <p class="ejercicioSemana12">Sumo squats</p>
+                                    <p class="ejercicioSemana12">Machine chest press</p>
+                                    <p class="ejercicioSemana12">Pull-ups with knee raises</p>
+                                    <p class="ejercicioSemana12">Plank variations</p>
+                                    <p class="ejercicioSemana12">Reverse curls</p>
+                                
                                 </div>
+                                
                                 <div class="ejercicio">
                                     <h3>repeticiones</h3>
-                                    <p>2-5</p>
-                                    <p>5-10</p>
-                                    <p>2-5</p>
-                                    <p>5-10</p>
-                                    <p>2-5</p>
-                                    <p>5-10</p>
+                                    <p>12</p>
+                                    <p>10</p>
+                                    <p>10</p>
+                                    <p>14</p>
+                                    <p>10</p>
+                                    
                                 </div>
                                 <div class="ejercicio">
                                     <h3>series</h3>
-                                    <p>3-10</p>
-                                    <p>2-5</p>
-                                    <p>3-10</p>
-                                    <p>2-5</p>
-                                    <p>3-10</p>
-                                    <p>2-5</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    
                                 </div>
                                 <div class="ejercicio">
                                     <h3>descanso</h3>
@@ -167,15 +248,624 @@
                                     <p>3-5 min</p>
                                     <p>3-5 min</p>
                                     <p>3-5 min</p>
-                                    <p>3-5 min</p>
+                                
                                 </div>
                             </div>
                         </div>
-                        <div class="dia">Martes</div>
-                        <div class="dia">Miercoles</div>
-                        <div class="dia">Jueves</div>
-                        <div class="dia">Viernes</div>
-                        <div class="dia">Sabado</div>
+                        <div class="dia">
+                            <div class="titulo-dia">
+                                <h4>Martes</h4>
+                            </div>
+                            
+                            <div class="ejercicio-diario">
+                                <div class="ejercicio">
+                                    <h3>ejercicio</h3>
+                                   <!-- Semana 1 -->
+                                   <p class="ejercicioSemana1">Sentadillas</p>
+                                   <p class="ejercicioSemana1">Press de banca</p>
+                                   <p class="ejercicioSemana1">Dominadas</p>
+                                   <p class="ejercicioSemana1">Plancha</p>
+                                   <p class="ejercicioSemana1">Curl de bíceps</p>
+                               
+                                   <!-- Semana 2 -->
+                                   <p class="ejercicioSemana2">Zancadas</p>
+                                   <p class="ejercicioSemana2">Fondos</p>
+                                   <p class="ejercicioSemana2">Pull-ups</p>
+                                   <p class="ejercicioSemana2">Mountain climbers</p>
+                                   <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                               
+                                   <!-- Semana 3 -->
+                                   <p class="ejercicioSemana3">Peso muerto</p>
+                                   <p class="ejercicioSemana3">Flexiones</p>
+                                   <p class="ejercicioSemana3">Remo con barra</p>
+                                   <p class="ejercicioSemana3">Plancha lateral</p>
+                                   <p class="ejercicioSemana3">Martillo de bíceps</p>
+                               
+                                   <!-- Semana 4 -->
+                                   <p class="ejercicioSemana4">Squats</p>
+                                   <p class="ejercicioSemana4">Bench press</p>
+                                   <p class="ejercicioSemana4">Pull-ups</p>
+                                   <p class="ejercicioSemana4">Russian twists</p>
+                                   <p class="ejercicioSemana4">Concentration curls</p>
+                               
+                                   <!-- Semana 5 -->
+                                   <p class="ejercicioSemana5">Leg press</p>
+                                   <p class="ejercicioSemana5">Dumbbell flyes</p>
+                                   <p class="ejercicioSemana5">Chin-ups</p>
+                                   <p class="ejercicioSemana5">Plank with knee tucks</p>
+                                   <p class="ejercicioSemana5">Incline curls</p>
+                               
+                                   <!-- Semana 6 -->
+                                   <p class="ejercicioSemana6">Step-ups</p>
+                                   <p class="ejercicioSemana6">Chest press</p>
+                                   <p class="ejercicioSemana6">Wide grip pull-ups</p>
+                                   <p class="ejercicioSemana6">Side plank</p>
+                                   <p class="ejercicioSemana6">Preacher curls</p>
+                               
+                                   <!-- Semana 7 -->
+                                   <p class="ejercicioSemana7">Hack squats</p>
+                                   <p class="ejercicioSemana7">Dips</p>
+                                   <p class="ejercicioSemana7">Muscle-ups</p>
+                                   <p class="ejercicioSemana7">Reverse plank</p>
+                                   <p class="ejercicioSemana7">Hammer curls</p>
+                               
+                                   <!-- Semana 8 -->
+                                   <p class="ejercicioSemana8">Lunges</p>
+                                   <p class="ejercicioSemana8">Incline bench press</p>
+                                   <p class="ejercicioSemana8">Close grip pull-ups</p>
+                                   <p class="ejercicioSemana8">Plank with shoulder taps</p>
+                                   <p class="ejercicioSemana8">Spider curls</p>
+                               
+                                   <!-- Semana 9 -->
+                                   <p class="ejercicioSemana9">Deadlifts</p>
+                                   <p class="ejercicioSemana9">Decline bench press</p>
+                                   <p class="ejercicioSemana9">Mixed grip pull-ups</p>
+                                   <p class="ejercicioSemana9">Russian twists</p>
+                                   <p class="ejercicioSemana9">Concentration curls</p>
+                               
+                                   <!-- Semana 10 -->
+                                   <p class="ejercicioSemana10">Box jumps</p>
+                                   <p class="ejercicioSemana10">Cable flyes</p>
+                                   <p class="ejercicioSemana10">Assisted pull-ups</p>
+                                   <p class="ejercicioSemana10">Plank with knee tucks</p>
+                                   <p class="ejercicioSemana10">Incline curls</p>
+                               
+                                   <!-- Semana 11 -->
+                                   <p class="ejercicioSemana11">Front squats</p>
+                                   <p class="ejercicioSemana11">Dumbbell press</p>
+                                   <p class="ejercicioSemana11">Chin-ups</p>
+                                   <p class="ejercicioSemana11">Side plank</p>
+                                   <p class="ejercicioSemana11">Hammer curls</p>
+                               
+                                   <!-- Semana 12 -->
+                                   <p class="ejercicioSemana12">Sumo squats</p>
+                                   <p class="ejercicioSemana12">Machine chest press</p>
+                                   <p class="ejercicioSemana12">Pull-ups with knee raises</p>
+                                   <p class="ejercicioSemana12">Plank variations</p>
+                                   <p class="ejercicioSemana12">Reverse curls</p>
+                
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>repeticiones</h3>
+                                    <p>12</p>
+                                    <p>10</p>
+                                    <p>10</p>
+                                    <p>14</p>
+                                    <p>10</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>series</h3>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>descanso</h3>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dia">
+                            <div class="titulo-dia">
+
+                                <h4>Miercoles</h4>
+                            </div>
+                            
+                            <div class="ejercicio-diario">
+                                <div class="ejercicio">
+                                    <h3>ejercicio</h3>
+                                    <!-- Semana 1 -->
+                                    <p class="ejercicioSemana1">Sentadillas</p>
+                                    <p class="ejercicioSemana1">Press de banca</p>
+                                    <p class="ejercicioSemana1">Dominadas</p>
+                                    <p class="ejercicioSemana1">Plancha</p>
+                                    <p class="ejercicioSemana1">Curl de bíceps</p>
+                                
+                                    <!-- Semana 2 -->
+                                    <p class="ejercicioSemana2">Zancadas</p>
+                                    <p class="ejercicioSemana2">Fondos</p>
+                                    <p class="ejercicioSemana2">Pull-ups</p>
+                                    <p class="ejercicioSemana2">Mountain climbers</p>
+                                    <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                                
+                                    <!-- Semana 3 -->
+                                    <p class="ejercicioSemana3">Peso muerto</p>
+                                    <p class="ejercicioSemana3">Flexiones</p>
+                                    <p class="ejercicioSemana3">Remo con barra</p>
+                                    <p class="ejercicioSemana3">Plancha lateral</p>
+                                    <p class="ejercicioSemana3">Martillo de bíceps</p>
+                                
+                                    <!-- Semana 4 -->
+                                    <p class="ejercicioSemana4">Squats</p>
+                                    <p class="ejercicioSemana4">Bench press</p>
+                                    <p class="ejercicioSemana4">Pull-ups</p>
+                                    <p class="ejercicioSemana4">Russian twists</p>
+                                    <p class="ejercicioSemana4">Concentration curls</p>
+                                
+                                    <!-- Semana 5 -->
+                                    <p class="ejercicioSemana5">Leg press</p>
+                                    <p class="ejercicioSemana5">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana5">Chin-ups</p>
+                                    <p class="ejercicioSemana5">Plank with knee tucks</p>
+                                    <p class="ejercicioSemana5">Incline curls</p>
+                                
+                                    <!-- Semana 6 -->
+                                    <p class="ejercicioSemana6">Step-ups</p>
+                                    <p class="ejercicioSemana6">Chest press</p>
+                                    <p class="ejercicioSemana6">Wide grip pull-ups</p>
+                                    <p class="ejercicioSemana6">Side plank</p>
+                                    <p class="ejercicioSemana6">Preacher curls</p>
+                                
+                                    <!-- Semana 7 -->
+                                    <p class="ejercicioSemana7">Hack squats</p>
+                                    <p class="ejercicioSemana7">Dips</p>
+                                    <p class="ejercicioSemana7">Muscle-ups</p>
+                                    <p class="ejercicioSemana7">Reverse plank</p>
+                                    <p class="ejercicioSemana7">Hammer curls</p>
+                                
+                                    <!-- Semana 8 -->
+                                    <p class="ejercicioSemana8">Lunges</p>
+                                    <p class="ejercicioSemana8">Incline bench press</p>
+                                    <p class="ejercicioSemana8">Close grip pull-ups</p>
+                                    <p class="ejercicioSemana8">Plank with shoulder taps</p>
+                                    <p class="ejercicioSemana8">Spider curls</p>
+                                
+                                    <!-- Semana 9 -->
+                                    <p class="ejercicioSemana9">Deadlifts</p>
+                                    <p class="ejercicioSemana9">Decline bench press</p>
+                                    <p class="ejercicioSemana9">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana9">Russian twists</p>
+                                    <p class="ejercicioSemana9">Concentration curls</p>
+                                
+                                    <!-- Semana 10 -->
+                                    <p class="ejercicioSemana10">Box jumps</p>
+                                    <p class="ejercicioSemana10">Cable flyes</p>
+                                    <p class="ejercicioSemana10">Assisted pull-ups</p>
+                                    <p class="ejercicioSemana10">Plank with knee tucks</p>
+                                    <p class="ejercicioSemana10">Incline curls</p>
+                                
+                                    <!-- Semana 11 -->
+                                    <p class="ejercicioSemana11">Front squats</p>
+                                    <p class="ejercicioSemana11">Dumbbell press</p>
+                                    <p class="ejercicioSemana11">Chin-ups</p>
+                                    <p class="ejercicioSemana11">Side plank</p>
+                                    <p class="ejercicioSemana11">Hammer curls</p>
+                                
+                                    <!-- Semana 12 -->
+                                    <p class="ejercicioSemana12">Sumo squats</p>
+                                    <p class="ejercicioSemana12">Machine chest press</p>
+                                    <p class="ejercicioSemana12">Pull-ups with knee raises</p>
+                                    <p class="ejercicioSemana12">Plank variations</p>
+                                    <p class="ejercicioSemana12">Reverse curls</p>
+                
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>repeticiones</h3>
+                                    <p>12</p>
+                                    <p>10</p>
+                                    <p>10</p>
+                                    <p>14</p>
+                                    <p>10</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>series</h3>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>descanso</h3>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dia">
+                            <div class="titulo-dia">
+                            
+                                <h4>Jueves</h4>
+                            </div>
+                            
+                            <div class="ejercicio-diario">
+                                <div class="ejercicio">
+                                    <h3>ejercicio</h3>
+                                    <!-- Semana 1 -->
+                                    <p class="ejercicioSemana1" id="gifSentadilla">Sentadillas</p>
+                                    <p class="ejercicioSemana1" id="gifPress" >Press de banca</p>
+                                    <p class="ejercicioSemana1" id="gifDominada">Dominadas</p>
+                                    <p class="ejercicioSemana1" id="gifPlancha">Plancha</p>
+                                    <p class="ejercicioSemana1" id="gifCurlBiceps">Curl de bíceps</p>
+                                
+                                    <!-- Semana 2 -->
+                                    <p class="ejercicioSemana2">Zancadas</p>
+                                    <p class="ejercicioSemana2">Fondos</p>
+                                    <p class="ejercicioSemana2">Pull-ups</p>
+                                    <p class="ejercicioSemana2">Mountain climbers</p>
+                                    <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                                
+                                    <!-- Semana 3 -->
+                                    <p class="ejercicioSemana3">Peso muerto</p>
+                                    <p class="ejercicioSemana3">Flexiones</p>
+                                    <p class="ejercicioSemana3">Remo con barra</p>
+                                    <p class="ejercicioSemana3">Plancha lateral</p>
+                                    <p class="ejercicioSemana3">Martillo de bíceps</p>
+                                
+                                    <!-- Semana 4 -->
+                                    <p class="ejercicioSemana4">Squats</p>
+                                    <p class="ejercicioSemana4">Bench press</p>
+                                    <p class="ejercicioSemana4">Pull-ups</p>
+                                    <p class="ejercicioSemana4">Russian twists</p>
+                                    <p class="ejercicioSemana4">Concentration curls</p>
+                                
+                                    <!-- Semana 5 -->
+                                    <p class="ejercicioSemana5">Leg press</p>
+                                    <p class="ejercicioSemana5">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana5">Chin-ups</p>
+                                    <p class="ejercicioSemana5">Plank with knee tucks</p>
+                                    <p class="ejercicioSemana5">Incline curls</p>
+                                
+                                    <!-- Semana 6 -->
+                                    <p class="ejercicioSemana6">Step-ups</p>
+                                    <p class="ejercicioSemana6">Chest press</p>
+                                    <p class="ejercicioSemana6">Wide grip pull-ups</p>
+                                    <p class="ejercicioSemana6">Side plank</p>
+                                    <p class="ejercicioSemana6">Preacher curls</p>
+                                
+                                    <!-- Semana 7 -->
+                                    <p class="ejercicioSemana7">Hack squats</p>
+                                    <p class="ejercicioSemana7">Dips</p>
+                                    <p class="ejercicioSemana7">Muscle-ups</p>
+                                    <p class="ejercicioSemana7">Reverse plank</p>
+                                    <p class="ejercicioSemana7">Hammer curls</p>
+                                
+                                    <!-- Semana 8 -->
+                                    <p class="ejercicioSemana8">Lunges</p>
+                                    <p class="ejercicioSemana8">Incline bench press</p>
+                                    <p class="ejercicioSemana8">Close grip pull-ups</p>
+                                    <p class="ejercicioSemana8">Plank with shoulder taps</p>
+                                    <p class="ejercicioSemana8">Spider curls</p>
+                                
+                                    <!-- Semana 9 -->
+                                    <p class="ejercicioSemana9">Deadlifts</p>
+                                    <p class="ejercicioSemana9">Decline bench press</p>
+                                    <p class="ejercicioSemana9">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana9">Russian twists</p>
+                                    <p class="ejercicioSemana9">Concentration curls</p>
+                                
+                                    <!-- Semana 10 -->
+                                    <p class="ejercicioSemana10">Box jumps</p>
+                                    <p class="ejercicioSemana10">Cable flyes</p>
+                                    <p class="ejercicioSemana10">Assisted pull-ups</p>
+                                    <p class="ejercicioSemana10">Plank with knee tucks</p>
+                                    <p class="ejercicioSemana10">Incline curls</p>
+                                
+                                    <!-- Semana 11 -->
+                                    <p class="ejercicioSemana11">Front squats</p>
+                                    <p class="ejercicioSemana11">Dumbbell press</p>
+                                    <p class="ejercicioSemana11">Chin-ups</p>
+                                    <p class="ejercicioSemana11">Side plank</p>
+                                    <p class="ejercicioSemana11">Hammer curls</p>
+                                
+                                    <!-- Semana 12 -->
+                                    <p class="ejercicioSemana12">Sumo squats</p>
+                                    <p class="ejercicioSemana12">Machine chest press</p>
+                                    <p class="ejercicioSemana12">Pull-ups with knee raises</p>
+                                    <p class="ejercicioSemana12">Plank variations</p>
+                                    <p class="ejercicioSemana12">Reverse curls</p>
+                
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>repeticiones</h3>
+                                    <p>12</p>
+                                    <p>10</p>
+                                    <p>10</p>
+                                    <p>14</p>
+                                    <p>10</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>series</h3>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>descanso</h3>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dia">
+                            <div class="titulo-dia">
+                                
+                                <h4>Viernes</h4>
+                            </div>
+                            
+                            <div class="ejercicio-diario">
+                                <div class="ejercicio">
+                                    <h3>ejercicio</h3>
+                                   <!-- Semana 1 -->
+                                   <p class="ejercicioSemana1">Sentadillas</p>
+                                   <p class="ejercicioSemana1">Press de banca</p>
+                                   <p class="ejercicioSemana1">Dominadas</p>
+                                   <p class="ejercicioSemana1">Plancha</p>
+                                   <p class="ejercicioSemana1">Curl de bíceps</p>
+                               
+                                   <!-- Semana 2 -->
+                                   <p class="ejercicioSemana2">Zancadas</p>
+                                   <p class="ejercicioSemana2">Fondos</p>
+                                   <p class="ejercicioSemana2">Pull-ups</p>
+                                   <p class="ejercicioSemana2">Mountain climbers</p>
+                                   <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                               
+                                   <!-- Semana 3 -->
+                                   <p class="ejercicioSemana3">Peso muerto</p>
+                                   <p class="ejercicioSemana3">Flexiones</p>
+                                   <p class="ejercicioSemana3">Remo con barra</p>
+                                   <p class="ejercicioSemana3">Plancha lateral</p>
+                                   <p class="ejercicioSemana3">Martillo de bíceps</p>
+                               
+                                   <!-- Semana 4 -->
+                                   <p class="ejercicioSemana4">Squats</p>
+                                   <p class="ejercicioSemana4">Bench press</p>
+                                   <p class="ejercicioSemana4">Pull-ups</p>
+                                   <p class="ejercicioSemana4">Russian twists</p>
+                                   <p class="ejercicioSemana4">Concentration curls</p>
+                               
+                                   <!-- Semana 5 -->
+                                   <p class="ejercicioSemana5">Leg press</p>
+                                   <p class="ejercicioSemana5">Dumbbell flyes</p>
+                                   <p class="ejercicioSemana5">Chin-ups</p>
+                                   <p class="ejercicioSemana5">Plank with knee tucks</p>
+                                   <p class="ejercicioSemana5">Incline curls</p>
+                               
+                                   <!-- Semana 6 -->
+                                   <p class="ejercicioSemana6">Step-ups</p>
+                                   <p class="ejercicioSemana6">Chest press</p>
+                                   <p class="ejercicioSemana6">Wide grip pull-ups</p>
+                                   <p class="ejercicioSemana6">Side plank</p>
+                                   <p class="ejercicioSemana6">Preacher curls</p>
+                               
+                                   <!-- Semana 7 -->
+                                   <p class="ejercicioSemana7">Hack squats</p>
+                                   <p class="ejercicioSemana7">Dips</p>
+                                   <p class="ejercicioSemana7">Muscle-ups</p>
+                                   <p class="ejercicioSemana7">Reverse plank</p>
+                                   <p class="ejercicioSemana7">Hammer curls</p>
+                               
+                                   <!-- Semana 8 -->
+                                   <p class="ejercicioSemana8">Lunges</p>
+                                   <p class="ejercicioSemana8">Incline bench press</p>
+                                   <p class="ejercicioSemana8">Close grip pull-ups</p>
+                                   <p class="ejercicioSemana8">Plank with shoulder taps</p>
+                                   <p class="ejercicioSemana8">Spider curls</p>
+                               
+                                   <!-- Semana 9 -->
+                                   <p class="ejercicioSemana9">Deadlifts</p>
+                                   <p class="ejercicioSemana9">Decline bench press</p>
+                                   <p class="ejercicioSemana9">Mixed grip pull-ups</p>
+                                   <p class="ejercicioSemana9">Russian twists</p>
+                                   <p class="ejercicioSemana9">Concentration curls</p>
+                               
+                                   <!-- Semana 10 -->
+                                   <p class="ejercicioSemana10">Box jumps</p>
+                                   <p class="ejercicioSemana10">Cable flyes</p>
+                                   <p class="ejercicioSemana10">Assisted pull-ups</p>
+                                   <p class="ejercicioSemana10">Plank with knee tucks</p>
+                                   <p class="ejercicioSemana10">Incline curls</p>
+                               
+                                   <!-- Semana 11 -->
+                                   <p class="ejercicioSemana11">Front squats</p>
+                                   <p class="ejercicioSemana11">Dumbbell press</p>
+                                   <p class="ejercicioSemana11">Chin-ups</p>
+                                   <p class="ejercicioSemana11">Side plank</p>
+                                   <p class="ejercicioSemana11">Hammer curls</p>
+                               
+                                   <!-- Semana 12 -->
+                                   <p class="ejercicioSemana12">Sumo squats</p>
+                                   <p class="ejercicioSemana12">Machine chest press</p>
+                                   <p class="ejercicioSemana12">Pull-ups with knee raises</p>
+                                   <p class="ejercicioSemana12">Plank variations</p>
+                                   <p class="ejercicioSemana12">Reverse curls</p>
+                
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>repeticiones</h3>
+                                    <p>12</p>
+                                    <p>10</p>
+                                    <p>10</p>
+                                    <p>14</p>
+                                    <p>10</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>series</h3>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>descanso</h3>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dia">
+                            <div class="titulo-dia">
+                                
+                                <h4>Sabado</h4>
+                            </div>
+                            
+                            <div class="ejercicio-diario">
+                                <div class="ejercicio">
+                                    <h3>ejercicio</h3>
+                                    <!-- Semana 1 -->
+                                    <p class="ejercicioSemana1">Sentadillas</p>
+                                    <p class="ejercicioSemana1">Press de banca</p>
+                                    <p class="ejercicioSemana1">Dominadas</p>
+                                    <p class="ejercicioSemana1">Plancha</p>
+                                    <p class="ejercicioSemana1">Curl de bíceps</p>
+                                
+                                    <!-- Semana 2 -->
+                                    <p class="ejercicioSemana2">Zancadas</p>
+                                    <p class="ejercicioSemana2">Fondos</p>
+                                    <p class="ejercicioSemana2">Pull-ups</p>
+                                    <p class="ejercicioSemana2">Mountain climbers</p>
+                                    <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                                
+                                    <!-- Semana 3 -->
+                                    <p class="ejercicioSemana3">Peso muerto</p>
+                                    <p class="ejercicioSemana3">Flexiones</p>
+                                    <p class="ejercicioSemana3">Remo con barra</p>
+                                    <p class="ejercicioSemana3">Plancha lateral</p>
+                                    <p class="ejercicioSemana3">Martillo de bíceps</p>
+                                
+                                    <!-- Semana 4 -->
+                                    <p class="ejercicioSemana4">Squats</p>
+                                    <p class="ejercicioSemana4">Bench press</p>
+                                    <p class="ejercicioSemana4">Pull-ups</p>
+                                    <p class="ejercicioSemana4">Russian twists</p>
+                                    <p class="ejercicioSemana4">Concentration curls</p>
+                                
+                                    <!-- Semana 5 -->
+                                    <p class="ejercicioSemana5">Leg press</p>
+                                    <p class="ejercicioSemana5">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana5">Chin-ups</p>
+                                    <p class="ejercicioSemana5">Plank with knee tucks</p>
+                                    <p class="ejercicioSemana5">Incline curls</p>
+                                
+                                    <!-- Semana 6 -->
+                                    <p class="ejercicioSemana6">Step-ups</p>
+                                    <p class="ejercicioSemana6">Chest press</p>
+                                    <p class="ejercicioSemana6">Wide grip pull-ups</p>
+                                    <p class="ejercicioSemana6">Side plank</p>
+                                    <p class="ejercicioSemana6">Preacher curls</p>
+                                
+                                    <!-- Semana 7 -->
+                                    <p class="ejercicioSemana7">Hack squats</p>
+                                    <p class="ejercicioSemana7">Dips</p>
+                                    <p class="ejercicioSemana7">Muscle-ups</p>
+                                    <p class="ejercicioSemana7">Reverse plank</p>
+                                    <p class="ejercicioSemana7">Hammer curls</p>
+                                
+                                    <!-- Semana 8 -->
+                                    <p class="ejercicioSemana8">Lunges</p>
+                                    <p class="ejercicioSemana8">Incline bench press</p>
+                                    <p class="ejercicioSemana8">Close grip pull-ups</p>
+                                    <p class="ejercicioSemana8">Plank with shoulder taps</p>
+                                    <p class="ejercicioSemana8">Spider curls</p>
+                                
+                                    <!-- Semana 9 -->
+                                    <p class="ejercicioSemana9">Deadlifts</p>
+                                    <p class="ejercicioSemana9">Decline bench press</p>
+                                    <p class="ejercicioSemana9">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana9">Russian twists</p>
+                                    <p class="ejercicioSemana9">Concentration curls</p>
+                                
+                                    <!-- Semana 10 -->
+                                    <p class="ejercicioSemana10">Box jumps</p>
+                                    <p class="ejercicioSemana10">Cable flyes</p>
+                                    <p class="ejercicioSemana10">Assisted pull-ups</p>
+                                    <p class="ejercicioSemana10">Plank with knee tucks</p>
+                                    <p class="ejercicioSemana10">Incline curls</p>
+                                
+                                    <!-- Semana 11 -->
+                                    <p class="ejercicioSemana11">Front squats</p>
+                                    <p class="ejercicioSemana11">Dumbbell press</p>
+                                    <p class="ejercicioSemana11">Chin-ups</p>
+                                    <p class="ejercicioSemana11">Side plank</p>
+                                    <p class="ejercicioSemana11">Hammer curls</p>
+                                
+                                    <!-- Semana 12 -->
+                                    <p class="ejercicioSemana12">Sumo squats</p>
+                                    <p class="ejercicioSemana12">Machine chest press</p>
+                                    <p class="ejercicioSemana12">Pull-ups with knee raises</p>
+                                    <p class="ejercicioSemana12">Plank variations</p>
+                                    <p class="ejercicioSemana12">Reverse curls</p>
+                
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>repeticiones</h3>
+                                    <p>12</p>
+                                    <p>10</p>
+                                    <p>10</p>
+                                    <p>14</p>
+                                    <p>10</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>series</h3>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    <p>3</p>
+                                    
+                                </div>
+                                <div class="ejercicio">
+                                    <h3>descanso</h3>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                    <p>3-5 min</p>
+                                
+                                </div>
+                            </div>
+                        </div>
                     </div>
         
                 </div>
@@ -703,6 +1393,9 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./controller/swiper.js"></script>
     <script src="./controller/planes.js"></script>
+    <script src="./controller/ejercicios.js"></script>
+    <script src="./controller/gifs.js"></script>
+
 </body>
 
 </html>

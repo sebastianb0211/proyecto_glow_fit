@@ -13,6 +13,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+    margin-bottom: 30px;
 }
 .nav-planes{
 	position: relative;
@@ -80,7 +81,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
 }
 
 .semanas{
@@ -98,6 +100,7 @@
     width: 85%;
     height: 100%;
     display: flex;
+    
 }
 
 .dia{
@@ -148,5 +151,39 @@
 .titulo-dia h4{
     font-size: 25px;
 }
-
+.menu p {
+    width: 9em;
+    height: 2.4em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+                cursor: pointer;
+   }
+.menu p::before {
+    content: '';
+    width: 0;
+    height: 2.4em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #F96D00 0%, #ff9d00 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   .menu p:hover::before {
+    width: 9em;
+   }
+   .menu{
+    display: flex;
+    justify-content: center;
+   }
+   
    

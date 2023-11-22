@@ -9,7 +9,7 @@ let footer = document.getElementById("footer");
 let cargador = document.getElementById("cargador");
 let planes = document.getElementById("contenedor-planes");
 let botonSalirPlanes = document.getElementById("boton-salir");
-let testimonios = document.getElementById("testimonios")
+let testimonios = document.getElementById("testimonios");
 
 cotizar.addEventListener("click", function () {
   portada.style.display = "none";
@@ -21,7 +21,6 @@ cotizar.addEventListener("click", function () {
   footer.style.display = "none";
   testimonios.style.display = "none";
   cargador.style.display = "flex";
-  
 
   setTimeout(function () {
     cargador.style.display = "none";
@@ -41,11 +40,12 @@ botonSalirPlanesReal.addEventListener("click", function () {
   cargador.style.display = "none";
   planes.style.display = "none";
   botonSalirPlanes.style.display = "none";
+  testimonios.style.display = "flex";
 
   setTimeout(function () {
     cargador.style.display = "none";
     portada.style.display = "flex";
-    imagenPrincipal.style.display = "flex"
+    imagenPrincipal.style.display = "flex";
     razones.style.display = "flex";
     articulos.style.display = "flex";
     imagenParrafos.style.display = "flex";

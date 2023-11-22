@@ -300,14 +300,3 @@ body{
     }
 }
 
-
-
-
-.gorilla{
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    right: -50px;
-    background: rgb(57,62,70);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(255,255,255,0) 100%);
-}
