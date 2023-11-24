@@ -17,16 +17,6 @@ function quitarRegistro(){
     containerRegistro.style.display="none"
 }
 
-premium.addEventListener('click', function(){
-   mostrarRegistro()
-})
-semiPremium.addEventListener('click', function(){
-    mostrarRegistro()
-})
-basico.addEventListener('click', function(){
-    mostrarRegistro()
-})
-
 login.addEventListener('click', function(){
     containerRegistro.style.display= "none"
     containerLogin.style.display="block"
@@ -66,7 +56,7 @@ const userRegistrationRegex =
  function passRegistroRegex(){
     Swal.fire({
         icon: 'error',
-        title: 'La contrasela no es valida',
+        title: 'La contraseña no es valida',
         text: 'Debe tener al menos 8 caracteres y contener una letra mayúscula!',
         width: '40%',
         background: '#F96D00',

@@ -31,6 +31,7 @@
                 <form action="">
                     <section class="container-h2">
                         <h2>Registro</h2>
+                        <span onclick="quitarRegistro()"><img src="views/img/cerrar.png" alt="logo-cerrar"></span>
                     </section>
                     <section class="container-input">
                         <ion-icon name="person-circle-outline"></ion-icon>
@@ -59,6 +60,7 @@
                 <form action="">
                     <section class="container-h2">
                         <h2>Iniciar sesión</h2>
+                        <span onclick="quitarRegistro()"><img src="views/img/cerrar.png" alt="icono-cerrar"></span>
                     </section>
                     <section class="container-input">
                         <ion-icon name="mail-outline"></ion-icon>
@@ -93,8 +95,8 @@
                 <a href="#" class="enlace">Accesorios</a>
             </article>
             <article class="contenedor-botones-nav">
-                <button>Iniciar sesion</button>
-                <button>Empieza ya</button>
+                <button onclick="mostrarRegistro()">Iniciar sesion</button>
+                <button onclick="mostrarRegistro()">Empieza ya</button>
             </article>
         </nav>
 
