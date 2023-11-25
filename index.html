@@ -101,8 +101,8 @@
         <div class="contenedor-planes-ejercicio" id="contenedor-planes-ejercicio">
             <div class="contenedor-planes-nav">
                 <nav class="nav-planes">
-                    <a href="#">Planes de Ejercicios</a>
-                    <a href="#">Planes Alimenticios</a>
+                    <a id="botonPlanesEjercicio" href="#">Planes de Ejercicios</a>
+                    <a id="botonPlanesAlimenticio" href="#">Planes Alimenticios</a>
                     <a href="#">Recomendaciones</a>
                    
                     <div class="animation start-home"></div>
@@ -111,7 +111,13 @@
             </div>
            
             <div class="contenedor-plan-Alimenticion">
-                <div class="menu">
+                <div class="menuAlimentacion" id="menuAlimentacion">
+                    <p class="semanas" id="mesUno">Primer Mes</p>
+                    <p class="semanas" id="mesDos">Segundo mes</p>
+                    <p class="semanas" id="mesTres">Tercer mes</p>
+
+                </div>
+                <div class="menu" id="menuEjercicio">
                     <p class="semanas" id="semana1">semana 1</p>
                     <p class="semanas" id="semana2">semana 2</p>
                     <p class="semanas" id="semana3">semana 3</p>
@@ -125,7 +131,168 @@
                     <p class="semanas" id="semana11">semana 11</p>
                     <p class="semanas" id="semana12">semana 12</p>
                 </div>
-                <div class="contenido">
+                <div class="contenidoAlimentacion" id="contenidoAlimentario">
+                    <h1 class="titulosAlimentos1">Desayuno</h1>
+                    <div class="cardAlimentacion" id="primerMesDesayuno">
+                        <img src="./views/img/imgAlimentos/avena.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Avena con Frutas 🍓🍌</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Avena integral 🌾.</li>
+                                <li>Leche o yogur 🥛.</li>
+                                <li>Fresas y plátanos 🍓🍌.</li>
+                                <li>Semillas de chía 🌱.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cardAlimentacion" id="segundoMesDesayuno">
+                        <img src="./views/img/imgAlimentos/batido.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Batido Verde Energizante 🥬🍍</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Espinacas 🍃.</li>
+                                <li>Piña 🍍.</li>
+                                <li>Plátano 🍌.</li>
+                                <li>Agua o leche de almendras 🥤.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cardAlimentacion" id="tercerMesDesayuno">
+                        <img src="./views/img/imgAlimentos/tostada.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Tostadas de Aguacate 🥑🍞</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Pan integral 🍞.</li>
+                                <li>Aguacate maduro 🥑.</li>
+                                <li>Tomate cherry 🍅.</li>
+                                <li>Huevo(opcional) 🍳.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <h1 class="titulosAlimentos2">Almuerzo</h1>
+                      <div class="cardAlimentacion" id="primerMesAlmuerzo">
+                        <img src="./views/img/imgAlimentos/quinoa.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Ensalada de Quinoa 🥗🍤</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Quinoa cocida 🍚.</li>
+                                <li>Camarones a la parrilla 🍤.</li>
+                                <li>Espárragos 🌱.</li>
+                                <li>Tomate, pepino y aguacate 🍅🥒🥑.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cardAlimentacion" id="segundoMesAlmuerzo">
+                        <img src="./views/img/imgAlimentos/WrapPollo.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Wrap de Pollo y Vegetales 🌯🍗</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Pechuga de pollo a la parrilla 🍗.</li>
+                                <li>Tortilla integral 🌾.</li>
+                                <li>Espinacas, tomate y zanahorias ralladas 🥕.</li>
+                                <li>Yogurt griego como aderezo 🍦.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cardAlimentacion" id="tercerMesAlmuerzo">
+                        <img src="./views/img/imgAlimentos/sopaLentejas.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Sopa de Lentejas y Verduras 🍲:</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Lentejas 🍲.</li>
+                                <li>Zanahorias y apio 🥕.</li>
+                                <li>Tomate 🍅.</li>
+                                <li>Caldo de verduras 🍵.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+
+                      <h1 class="titulosAlimentos3">Cena</h1>
+                      <div class="cardAlimentacion" id="primerMesCena">
+                        <img src="./views/img/imgAlimentos/salmon.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Salmón al Horno con Espárragos 🍽️🐟</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Filete de salmón 🐟.</li>
+                                <li>Espárragos 🌱.</li>
+                                <li>Limón 🍋.</li>
+                                <li>Perejil 🌿.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cardAlimentacion" id="segundoMesCena">
+                        <img src="./views/img/imgAlimentos/pasta.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Pasta con Pesto de Aguacate 🥑🍝:</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>asta de trigo integral 🍝.</li>
+                                <li>Aguacate 🥑.</li>
+                                <li>Albahaca fresca 🌿.</li>
+                                <li>Piñones y queso parmesano 🧀.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cardAlimentacion" id="tercerMesCena">
+                        <img src="./views/img/imgAlimentos/enchiladas.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Enchiladas de Pollo con Salsa Verde 🌯🍗</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Pechuga de pollo cocida y desmenuzada 🍗.</li>
+                                <li>Tortillas de maíz 🌽.</li>
+                                <li>Salsa verde casera 🌶️.</li>
+                                <li>Queso rallado 🧀.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      
+                      
+                </div>
+                <div class="contenido" id="contenidoEjercicios">
                     <div class="contenedor-dias">
                         <div class="dia">
                             <div class="titulo-dia">
@@ -138,88 +305,83 @@
                                     <h3>ejercicio</h3>
                                 
                                     <!-- Semana 1 -->
-                                    <p class="ejercicioSemana1">Sentadillas</p>
-                                    <p class="ejercicioSemana1">Press de banca</p>
-                                    <p class="ejercicioSemana1">Dominadas</p>
-                                    <p class="ejercicioSemana1">Plancha</p>
-                                    <p class="ejercicioSemana1">Curl de bíceps</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarPlancha()">Plancha</p>
+                                    
                                 
                                     <!-- Semana 2 -->
-                                    <p class="ejercicioSemana2">Zancadas</p>
-                                    <p class="ejercicioSemana2">Fondos</p>
-                                    <p class="ejercicioSemana2">Pull-ups</p>
-                                    <p class="ejercicioSemana2">Mountain climbers</p>
-                                    <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarPlancha()">Plancha</p>
+                                    
+                                   
                                 
                                     <!-- Semana 3 -->
-                                    <p class="ejercicioSemana3">Peso muerto</p>
-                                    <p class="ejercicioSemana3">Flexiones</p>
-                                    <p class="ejercicioSemana3">Remo con barra</p>
-                                    <p class="ejercicioSemana3">Plancha lateral</p>
-                                    <p class="ejercicioSemana3">Martillo de bíceps</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarPlancha()">Plancha</p>
+                                    
                                 
                                     <!-- Semana 4 -->
-                                    <p class="ejercicioSemana4">Squats</p>
-                                    <p class="ejercicioSemana4">Bench press</p>
-                                    <p class="ejercicioSemana4">Pull-ups</p>
-                                    <p class="ejercicioSemana4">Russian twists</p>
-                                    <p class="ejercicioSemana4">Concentration curls</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarPlancha()">Plancha</p>
+                                    
                                 
                                     <!-- Semana 5 -->
-                                    <p class="ejercicioSemana5">Leg press</p>
-                                    <p class="ejercicioSemana5">Dumbbell flyes</p>
-                                    <p class="ejercicioSemana5">Chin-ups</p>
-                                    <p class="ejercicioSemana5">Plank with knee tucks</p>
-                                    <p class="ejercicioSemana5">Incline curls</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarLegPress()">Leg press</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarDumbbel()">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarChinUps()">Chin-ups</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarSidePlank()">Side Plank</p>
+                                   
                                 
                                     <!-- Semana 6 -->
-                                    <p class="ejercicioSemana6">Step-ups</p>
-                                    <p class="ejercicioSemana6">Chest press</p>
-                                    <p class="ejercicioSemana6">Wide grip pull-ups</p>
-                                    <p class="ejercicioSemana6">Side plank</p>
-                                    <p class="ejercicioSemana6">Preacher curls</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarLegPress()">Leg press</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarDumbbel()">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarChinUps()">Chin-ups</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarSidePlank()">Side Plank</p>
                                 
                                     <!-- Semana 7 -->
-                                    <p class="ejercicioSemana7">Hack squats</p>
-                                    <p class="ejercicioSemana7">Dips</p>
-                                    <p class="ejercicioSemana7">Muscle-ups</p>
-                                    <p class="ejercicioSemana7">Reverse plank</p>
-                                    <p class="ejercicioSemana7">Hammer curls</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarLegPress()">Leg press</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarDumbbel()">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarChinUps()">Chin-ups</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarSidePlank()">Side Plank</p>
                                 
                                     <!-- Semana 8 -->
-                                    <p class="ejercicioSemana8">Lunges</p>
-                                    <p class="ejercicioSemana8">Incline bench press</p>
-                                    <p class="ejercicioSemana8">Close grip pull-ups</p>
-                                    <p class="ejercicioSemana8">Plank with shoulder taps</p>
-                                    <p class="ejercicioSemana8">Spider curls</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarLegPress()">Leg press</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarDumbbel()">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarChinUps()">Chin-ups</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarSidePlank()">Side Plank</p>
                                 
                                     <!-- Semana 9 -->
-                                    <p class="ejercicioSemana9">Deadlifts</p>
-                                    <p class="ejercicioSemana9">Decline bench press</p>
-                                    <p class="ejercicioSemana9">Mixed grip pull-ups</p>
-                                    <p class="ejercicioSemana9">Russian twists</p>
-                                    <p class="ejercicioSemana9">Concentration curls</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana9" onclick="Mixedgrippullups()">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarFlutterKicks()">Flutter Kicks</p>
+                                    
                                 
                                     <!-- Semana 10 -->
-                                    <p class="ejercicioSemana10">Box jumps</p>
-                                    <p class="ejercicioSemana10">Cable flyes</p>
-                                    <p class="ejercicioSemana10">Assisted pull-ups</p>
-                                    <p class="ejercicioSemana10">Plank with knee tucks</p>
-                                    <p class="ejercicioSemana10">Incline curls</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana10" onclick="Mixedgrippullups()">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarFlutterKicks()">Flutter Kicks</p>
                                 
                                     <!-- Semana 11 -->
-                                    <p class="ejercicioSemana11">Front squats</p>
-                                    <p class="ejercicioSemana11">Dumbbell press</p>
-                                    <p class="ejercicioSemana11">Chin-ups</p>
-                                    <p class="ejercicioSemana11">Side plank</p>
-                                    <p class="ejercicioSemana11">Hammer curls</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana11" onclick="Mixedgrippullups()">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarFlutterKicks()" >Flutter Kicks</p>
                                 
                                     <!-- Semana 12 -->
-                                    <p class="ejercicioSemana12">Sumo squats</p>
-                                    <p class="ejercicioSemana12">Machine chest press</p>
-                                    <p class="ejercicioSemana12">Pull-ups with knee raises</p>
-                                    <p class="ejercicioSemana12">Plank variations</p>
-                                    <p class="ejercicioSemana12">Reverse curls</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana12" onclick="Mixedgrippullups()">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarFlutterKicks()">Flutter Kicks</p>
                                 
                                 </div>
                                 
@@ -261,88 +423,81 @@
                                 <div class="ejercicio">
                                     <h3>ejercicio</h3>
                                    <!-- Semana 1 -->
-                                   <p class="ejercicioSemana1">Sentadillas</p>
-                                   <p class="ejercicioSemana1">Press de banca</p>
-                                   <p class="ejercicioSemana1">Dominadas</p>
-                                   <p class="ejercicioSemana1">Plancha</p>
-                                   <p class="ejercicioSemana1">Curl de bíceps</p>
+                                   <p class="ejercicioSemana1" onclick="mostrarSquats()">Squats</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                
                                    <!-- Semana 2 -->
-                                   <p class="ejercicioSemana2">Zancadas</p>
-                                   <p class="ejercicioSemana2">Fondos</p>
-                                   <p class="ejercicioSemana2">Pull-ups</p>
-                                   <p class="ejercicioSemana2">Mountain climbers</p>
-                                   <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                                   <p class="ejercicioSemana2" onclick="mostrarSquats()">Squats</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                
                                    <!-- Semana 3 -->
-                                   <p class="ejercicioSemana3">Peso muerto</p>
-                                   <p class="ejercicioSemana3">Flexiones</p>
-                                   <p class="ejercicioSemana3">Remo con barra</p>
-                                   <p class="ejercicioSemana3">Plancha lateral</p>
-                                   <p class="ejercicioSemana3">Martillo de bíceps</p>
+                                   <p class="ejercicioSemana3" onclick="mostrarSquats()">Squats</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                
                                    <!-- Semana 4 -->
-                                   <p class="ejercicioSemana4">Squats</p>
-                                   <p class="ejercicioSemana4">Bench press</p>
-                                   <p class="ejercicioSemana4">Pull-ups</p>
-                                   <p class="ejercicioSemana4">Russian twists</p>
-                                   <p class="ejercicioSemana4">Concentration curls</p>
+                                   <p class="ejercicioSemana4" onclick="mostrarSquats()">Squats</p>
+                                   <p class="ejercicioSemana4" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
+                                   <p class="ejercicioSemana4" onclick="mostrarPullDowns()">Pull-downs</p>
+                                   <p class="ejercicioSemana4" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                
                                    <!-- Semana 5 -->
-                                   <p class="ejercicioSemana5">Leg press</p>
-                                   <p class="ejercicioSemana5">Dumbbell flyes</p>
-                                   <p class="ejercicioSemana5">Chin-ups</p>
-                                   <p class="ejercicioSemana5">Plank with knee tucks</p>
-                                   <p class="ejercicioSemana5">Incline curls</p>
+                                   <p class="ejercicioSemana5" onclick="mostrarOverheadPress()">Overhead press</p>
+                                   <p class="ejercicioSemana5" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                   <p class="ejercicioSemana5" onclick="mostrarSkullCrusher()">Skull Crusher</p>
+                                   <p class="ejercicioSemana5" onclick="mostrarHamerCurl()">Hamer curl</p>
+                                   
                                
                                    <!-- Semana 6 -->
-                                   <p class="ejercicioSemana6">Step-ups</p>
-                                   <p class="ejercicioSemana6">Chest press</p>
-                                   <p class="ejercicioSemana6">Wide grip pull-ups</p>
-                                   <p class="ejercicioSemana6">Side plank</p>
-                                   <p class="ejercicioSemana6">Preacher curls</p>
+                                   <p class="ejercicioSemana6" onclick="mostrarOverheadPress()">Overhead press</p>
+                                   <p class="ejercicioSemana6" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                   <p class="ejercicioSemana6" onclick="mostrarSkullCrusher()">Skull Crusher</p>
+                                   <p class="ejercicioSemana6" onclick="mostrarHamerCurl()">Hamer curl</p>
                                
                                    <!-- Semana 7 -->
-                                   <p class="ejercicioSemana7">Hack squats</p>
-                                   <p class="ejercicioSemana7">Dips</p>
-                                   <p class="ejercicioSemana7">Muscle-ups</p>
-                                   <p class="ejercicioSemana7">Reverse plank</p>
-                                   <p class="ejercicioSemana7">Hammer curls</p>
+                                   <p class="ejercicioSemana7" onclick="mostrarOverheadPress()">Overhead press</p>
+                                   <p class="ejercicioSemana7" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                   <p class="ejercicioSemana7" onclick="mostrarSkullCrusher()">Skull Crusher</p>
+                                   <p class="ejercicioSemana7" onclick="mostrarHamerCurl()">Hamer curl</p>
                                
                                    <!-- Semana 8 -->
-                                   <p class="ejercicioSemana8">Lunges</p>
-                                   <p class="ejercicioSemana8">Incline bench press</p>
-                                   <p class="ejercicioSemana8">Close grip pull-ups</p>
-                                   <p class="ejercicioSemana8">Plank with shoulder taps</p>
-                                   <p class="ejercicioSemana8">Spider curls</p>
+                                   <p class="ejercicioSemana8" onclick="mostrarOverheadPress()">Overhead press</p>
+                                   <p class="ejercicioSemana8" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                   <p class="ejercicioSemana8" onclick="mostrarSkullCrusher()">Skull Crusher</p>
+                                   <p class="ejercicioSemana8" onclick="mostrarHamerCurl()">Hamer curl</p>
                                
                                    <!-- Semana 9 -->
-                                   <p class="ejercicioSemana9">Deadlifts</p>
-                                   <p class="ejercicioSemana9">Decline bench press</p>
-                                   <p class="ejercicioSemana9">Mixed grip pull-ups</p>
-                                   <p class="ejercicioSemana9">Russian twists</p>
-                                   <p class="ejercicioSemana9">Concentration curls</p>
+                                   <p class="ejercicioSemana9" onclick="LeverlPushdown()">Leverl Pushdown</p>
+                                   <p class="ejercicioSemana9" onclick="mostrarWeightedBack()">Weighted Back </p>
+                                   <p class="ejercicioSemana9" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                   <p class="ejercicioSemana9" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                   
                                
                                    <!-- Semana 10 -->
-                                   <p class="ejercicioSemana10">Box jumps</p>
-                                   <p class="ejercicioSemana10">Cable flyes</p>
-                                   <p class="ejercicioSemana10">Assisted pull-ups</p>
-                                   <p class="ejercicioSemana10">Plank with knee tucks</p>
-                                   <p class="ejercicioSemana10">Incline curls</p>
+                                   <p class="ejercicioSemana10" onclick="LeverlPushdown()">Leverl Pushdown</p>
+                                   <p class="ejercicioSemana10" onclick="mostrarWeightedBack()">Weighted Back</p>
+                                   <p class="ejercicioSemana10" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                   <p class="ejercicioSemana10" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                  
                                
                                    <!-- Semana 11 -->
-                                   <p class="ejercicioSemana11">Front squats</p>
-                                   <p class="ejercicioSemana11">Dumbbell press</p>
-                                   <p class="ejercicioSemana11">Chin-ups</p>
-                                   <p class="ejercicioSemana11">Side plank</p>
-                                   <p class="ejercicioSemana11">Hammer curls</p>
+                                   <p class="ejercicioSemana11" onclick="LeverlPushdown()">Leverl Pushdown</p>
+                                   <p class="ejercicioSemana11" onclick="mostrarWeightedBack()">Weighted Back</p>
+                                   <p class="ejercicioSemana11" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                   <p class="ejercicioSemana11" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                   
                                
                                    <!-- Semana 12 -->
-                                   <p class="ejercicioSemana12">Sumo squats</p>
-                                   <p class="ejercicioSemana12">Machine chest press</p>
-                                   <p class="ejercicioSemana12">Pull-ups with knee raises</p>
-                                   <p class="ejercicioSemana12">Plank variations</p>
-                                   <p class="ejercicioSemana12">Reverse curls</p>
+                                   <p class="ejercicioSemana12" onclick="LeverlPushdown()">Leverl Pushdown</p>
+                                   <p class="ejercicioSemana12" onclick="mostrarWeightedBack()">Weighted Back</p>
+                                   <p class="ejercicioSemana12" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                   <p class="ejercicioSemana12" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                  
                 
                                 </div>
                                 <div class="ejercicio">
@@ -384,88 +539,78 @@
                                 <div class="ejercicio">
                                     <h3>ejercicio</h3>
                                     <!-- Semana 1 -->
-                                    <p class="ejercicioSemana1">Sentadillas</p>
-                                    <p class="ejercicioSemana1">Press de banca</p>
-                                    <p class="ejercicioSemana1">Dominadas</p>
-                                    <p class="ejercicioSemana1">Plancha</p>
-                                    <p class="ejercicioSemana1">Curl de bíceps</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarChinUps()">Chin-ups</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarSquats()">Squats</p>
+                                   
                                 
                                     <!-- Semana 2 -->
-                                    <p class="ejercicioSemana2">Zancadas</p>
-                                    <p class="ejercicioSemana2">Fondos</p>
-                                    <p class="ejercicioSemana2">Pull-ups</p>
-                                    <p class="ejercicioSemana2">Mountain climbers</p>
-                                    <p class="ejercicioSemana2">Flexiones de bíceps</p>
-                                
+                                    <p class="ejercicioSemana2" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarChinUps()">Chin-ups</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarSquats()">Squats</p>
+                                    
+                            
                                     <!-- Semana 3 -->
-                                    <p class="ejercicioSemana3">Peso muerto</p>
-                                    <p class="ejercicioSemana3">Flexiones</p>
-                                    <p class="ejercicioSemana3">Remo con barra</p>
-                                    <p class="ejercicioSemana3">Plancha lateral</p>
-                                    <p class="ejercicioSemana3">Martillo de bíceps</p>
-                                
+                                    <p class="ejercicioSemana3" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarChinUps()">Chin-ups</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarSquats()">Squats</p>
+                                   
+                            
                                     <!-- Semana 4 -->
-                                    <p class="ejercicioSemana4">Squats</p>
-                                    <p class="ejercicioSemana4">Bench press</p>
-                                    <p class="ejercicioSemana4">Pull-ups</p>
-                                    <p class="ejercicioSemana4">Russian twists</p>
-                                    <p class="ejercicioSemana4">Concentration curls</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarChinUps()">Chin-ups</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarSquats()">Squats</p>
+                                   
                                 
                                     <!-- Semana 5 -->
-                                    <p class="ejercicioSemana5">Leg press</p>
-                                    <p class="ejercicioSemana5">Dumbbell flyes</p>
-                                    <p class="ejercicioSemana5">Chin-ups</p>
-                                    <p class="ejercicioSemana5">Plank with knee tucks</p>
-                                    <p class="ejercicioSemana5">Incline curls</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarPlancha()">Plancha</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
+                                    
                                 
                                     <!-- Semana 6 -->
-                                    <p class="ejercicioSemana6">Step-ups</p>
-                                    <p class="ejercicioSemana6">Chest press</p>
-                                    <p class="ejercicioSemana6">Wide grip pull-ups</p>
-                                    <p class="ejercicioSemana6">Side plank</p>
-                                    <p class="ejercicioSemana6">Preacher curls</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarPlancha()">Plancha</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
                                 
                                     <!-- Semana 7 -->
-                                    <p class="ejercicioSemana7">Hack squats</p>
-                                    <p class="ejercicioSemana7">Dips</p>
-                                    <p class="ejercicioSemana7">Muscle-ups</p>
-                                    <p class="ejercicioSemana7">Reverse plank</p>
-                                    <p class="ejercicioSemana7">Hammer curls</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarPlancha()">Plancha</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
                                 
                                     <!-- Semana 8 -->
-                                    <p class="ejercicioSemana8">Lunges</p>
-                                    <p class="ejercicioSemana8">Incline bench press</p>
-                                    <p class="ejercicioSemana8">Close grip pull-ups</p>
-                                    <p class="ejercicioSemana8">Plank with shoulder taps</p>
-                                    <p class="ejercicioSemana8">Spider curls</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarPlancha()">Plancha</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
                                 
                                     <!-- Semana 9 -->
-                                    <p class="ejercicioSemana9">Deadlifts</p>
-                                    <p class="ejercicioSemana9">Decline bench press</p>
-                                    <p class="ejercicioSemana9">Mixed grip pull-ups</p>
-                                    <p class="ejercicioSemana9">Russian twists</p>
-                                    <p class="ejercicioSemana9">Concentration curls</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarDumbbel()">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarChinUps()">Chin-ups</p>
+                                    
                                 
                                     <!-- Semana 10 -->
-                                    <p class="ejercicioSemana10">Box jumps</p>
-                                    <p class="ejercicioSemana10">Cable flyes</p>
-                                    <p class="ejercicioSemana10">Assisted pull-ups</p>
-                                    <p class="ejercicioSemana10">Plank with knee tucks</p>
-                                    <p class="ejercicioSemana10">Incline curls</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarDumbbel()">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarChinUps()">Chin-ups</p>
                                 
                                     <!-- Semana 11 -->
-                                    <p class="ejercicioSemana11">Front squats</p>
-                                    <p class="ejercicioSemana11">Dumbbell press</p>
-                                    <p class="ejercicioSemana11">Chin-ups</p>
-                                    <p class="ejercicioSemana11">Side plank</p>
-                                    <p class="ejercicioSemana11">Hammer curls</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarDumbbel()">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarChinUps()">Chin-ups</p>
                                 
                                     <!-- Semana 12 -->
-                                    <p class="ejercicioSemana12">Sumo squats</p>
-                                    <p class="ejercicioSemana12">Machine chest press</p>
-                                    <p class="ejercicioSemana12">Pull-ups with knee raises</p>
-                                    <p class="ejercicioSemana12">Plank variations</p>
-                                    <p class="ejercicioSemana12">Reverse curls</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarDumbbel()">Dumbbell flyes</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarChinUps()">Chin-ups</p>
                 
                                 </div>
                                 <div class="ejercicio">
@@ -507,88 +652,77 @@
                                 <div class="ejercicio">
                                     <h3>ejercicio</h3>
                                     <!-- Semana 1 -->
-                                    <p class="ejercicioSemana1" id="gifSentadilla">Sentadillas</p>
-                                    <p class="ejercicioSemana1" id="gifPress" >Press de banca</p>
-                                    <p class="ejercicioSemana1" id="gifDominada">Dominadas</p>
-                                    <p class="ejercicioSemana1" id="gifPlancha">Plancha</p>
-                                    <p class="ejercicioSemana1" id="gifCurlBiceps">Curl de bíceps</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarSkullCrusher()">Skull Crusher</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarHamerCurl()">Hamer curl</p>
+                                    <p class="ejercicioSemana1" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana1" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                    
                                 
                                     <!-- Semana 2 -->
-                                    <p class="ejercicioSemana2">Zancadas</p>
-                                    <p class="ejercicioSemana2">Fondos</p>
-                                    <p class="ejercicioSemana2">Pull-ups</p>
-                                    <p class="ejercicioSemana2">Mountain climbers</p>
-                                    <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarSkullCrusher()">Skull Crusher</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarHamerCurl()">Hamer curl</p>
+                                    <p class="ejercicioSemana2" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana2" onclick=" mostrarHipTrust()">Hip Trust</p>
                                 
                                     <!-- Semana 3 -->
-                                    <p class="ejercicioSemana3">Peso muerto</p>
-                                    <p class="ejercicioSemana3">Flexiones</p>
-                                    <p class="ejercicioSemana3">Remo con barra</p>
-                                    <p class="ejercicioSemana3">Plancha lateral</p>
-                                    <p class="ejercicioSemana3">Martillo de bíceps</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarSkullCrusher()">Skull Crusher</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarHamerCurl()">Hamer curl</p>
+                                    <p class="ejercicioSemana3" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana3" onclick=" mostrarHipTrust()">Hip Trust</p>
                                 
                                     <!-- Semana 4 -->
-                                    <p class="ejercicioSemana4">Squats</p>
-                                    <p class="ejercicioSemana4">Bench press</p>
-                                    <p class="ejercicioSemana4">Pull-ups</p>
-                                    <p class="ejercicioSemana4">Russian twists</p>
-                                    <p class="ejercicioSemana4">Concentration curls</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarSkullCrusher()">Skull Crusher</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarHamerCurl()">Hamer curl</p>
+                                    <p class="ejercicioSemana4" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana4" onclick=" mostrarHipTrust()">Hip Trust</p>
                                 
                                     <!-- Semana 5 -->
-                                    <p class="ejercicioSemana5">Leg press</p>
-                                    <p class="ejercicioSemana5">Dumbbell flyes</p>
-                                    <p class="ejercicioSemana5">Chin-ups</p>
-                                    <p class="ejercicioSemana5">Plank with knee tucks</p>
-                                    <p class="ejercicioSemana5">Incline curls</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarOverheadPress()">Overhead press</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarPullDowns()">Pull-downs</p>
                                 
                                     <!-- Semana 6 -->
-                                    <p class="ejercicioSemana6">Step-ups</p>
-                                    <p class="ejercicioSemana6">Chest press</p>
-                                    <p class="ejercicioSemana6">Wide grip pull-ups</p>
-                                    <p class="ejercicioSemana6">Side plank</p>
-                                    <p class="ejercicioSemana6">Preacher curls</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarOverheadPress()">Overhead press</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarPullDowns()">Pull-downs</p>
                                 
                                     <!-- Semana 7 -->
-                                    <p class="ejercicioSemana7">Hack squats</p>
-                                    <p class="ejercicioSemana7">Dips</p>
-                                    <p class="ejercicioSemana7">Muscle-ups</p>
-                                    <p class="ejercicioSemana7">Reverse plank</p>
-                                    <p class="ejercicioSemana7">Hammer curls</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarOverheadPress()">Overhead press</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarPullDowns()">Pull-downs</p>
                                 
                                     <!-- Semana 8 -->
-                                    <p class="ejercicioSemana8">Lunges</p>
-                                    <p class="ejercicioSemana8">Incline bench press</p>
-                                    <p class="ejercicioSemana8">Close grip pull-ups</p>
-                                    <p class="ejercicioSemana8">Plank with shoulder taps</p>
-                                    <p class="ejercicioSemana8">Spider curls</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarOverheadPress()">Overhead press</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarPullDowns()">Pull-downs</p>
                                 
                                     <!-- Semana 9 -->
-                                    <p class="ejercicioSemana9">Deadlifts</p>
-                                    <p class="ejercicioSemana9">Decline bench press</p>
-                                    <p class="ejercicioSemana9">Mixed grip pull-ups</p>
-                                    <p class="ejercicioSemana9">Russian twists</p>
-                                    <p class="ejercicioSemana9">Concentration curls</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarChinUps()">Chin-ups</p>
                                 
                                     <!-- Semana 10 -->
-                                    <p class="ejercicioSemana10">Box jumps</p>
-                                    <p class="ejercicioSemana10">Cable flyes</p>
-                                    <p class="ejercicioSemana10">Assisted pull-ups</p>
-                                    <p class="ejercicioSemana10">Plank with knee tucks</p>
-                                    <p class="ejercicioSemana10">Incline curls</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarChinUps()">Chin-ups</p>
                                 
                                     <!-- Semana 11 -->
-                                    <p class="ejercicioSemana11">Front squats</p>
-                                    <p class="ejercicioSemana11">Dumbbell press</p>
-                                    <p class="ejercicioSemana11">Chin-ups</p>
-                                    <p class="ejercicioSemana11">Side plank</p>
-                                    <p class="ejercicioSemana11">Hammer curls</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarChinUps()">Chin-ups</p>
                                 
                                     <!-- Semana 12 -->
-                                    <p class="ejercicioSemana12">Sumo squats</p>
-                                    <p class="ejercicioSemana12">Machine chest press</p>
-                                    <p class="ejercicioSemana12">Pull-ups with knee raises</p>
-                                    <p class="ejercicioSemana12">Plank variations</p>
-                                    <p class="ejercicioSemana12">Reverse curls</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarChinUps()">Chin-ups</p>
                 
                                 </div>
                                 <div class="ejercicio">
@@ -630,88 +764,77 @@
                                 <div class="ejercicio">
                                     <h3>ejercicio</h3>
                                    <!-- Semana 1 -->
-                                   <p class="ejercicioSemana1">Sentadillas</p>
-                                   <p class="ejercicioSemana1">Press de banca</p>
-                                   <p class="ejercicioSemana1">Dominadas</p>
-                                   <p class="ejercicioSemana1">Plancha</p>
-                                   <p class="ejercicioSemana1">Curl de bíceps</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
+                                    
                                
                                    <!-- Semana 2 -->
-                                   <p class="ejercicioSemana2">Zancadas</p>
-                                   <p class="ejercicioSemana2">Fondos</p>
-                                   <p class="ejercicioSemana2">Pull-ups</p>
-                                   <p class="ejercicioSemana2">Mountain climbers</p>
-                                   <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                                   <p class="ejercicioSemana2" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                
                                    <!-- Semana 3 -->
-                                   <p class="ejercicioSemana3">Peso muerto</p>
-                                   <p class="ejercicioSemana3">Flexiones</p>
-                                   <p class="ejercicioSemana3">Remo con barra</p>
-                                   <p class="ejercicioSemana3">Plancha lateral</p>
-                                   <p class="ejercicioSemana3">Martillo de bíceps</p>
+                                   <p class="ejercicioSemana3" onclick="mostrarPress()">Press de banca</p>
+                                   <p class="ejercicioSemana3" onclick="mostrarDominada()">Dominadas</p>
+                                   <p class="ejercicioSemana3" onclick="mostrarPullDowns()">Pull-downs</p>
+                                   <p class="ejercicioSemana3" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                
                                    <!-- Semana 4 -->
-                                   <p class="ejercicioSemana4">Squats</p>
-                                   <p class="ejercicioSemana4">Bench press</p>
-                                   <p class="ejercicioSemana4">Pull-ups</p>
-                                   <p class="ejercicioSemana4">Russian twists</p>
-                                   <p class="ejercicioSemana4">Concentration curls</p>
-                               
+                                   <p class="ejercicioSemana4" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarDominada()">Dominadas</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
+                            
                                    <!-- Semana 5 -->
-                                   <p class="ejercicioSemana5">Leg press</p>
-                                   <p class="ejercicioSemana5">Dumbbell flyes</p>
-                                   <p class="ejercicioSemana5">Chin-ups</p>
-                                   <p class="ejercicioSemana5">Plank with knee tucks</p>
-                                   <p class="ejercicioSemana5">Incline curls</p>
+                                   <p class="ejercicioSemana5" onclick="LeverlPushdown()">Leverl Pushdown</p>
+                                   <p class="ejercicioSemana5" onclick="mostrarWeightedBack()">Weighted Back</p>
+                                   <p class="ejercicioSemana5" onclick="Mixedgrippullups()">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarFlutterKicks()" >Flutter Kicks</p>
                                
                                    <!-- Semana 6 -->
-                                   <p class="ejercicioSemana6">Step-ups</p>
-                                   <p class="ejercicioSemana6">Chest press</p>
-                                   <p class="ejercicioSemana6">Wide grip pull-ups</p>
-                                   <p class="ejercicioSemana6">Side plank</p>
-                                   <p class="ejercicioSemana6">Preacher curls</p>
+                                   <p class="ejercicioSemana6" onclick="LeverlPushdown()">Leverl Pushdown</p>
+                                   <p class="ejercicioSemana6" onclick="mostrarWeightedBack()">Weighted Back</p>
+                                   <p class="ejercicioSemana6" onclick="Mixedgrippullups()">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarFlutterKicks()" >Flutter Kicks</p>
                                
                                    <!-- Semana 7 -->
-                                   <p class="ejercicioSemana7">Hack squats</p>
-                                   <p class="ejercicioSemana7">Dips</p>
-                                   <p class="ejercicioSemana7">Muscle-ups</p>
-                                   <p class="ejercicioSemana7">Reverse plank</p>
-                                   <p class="ejercicioSemana7">Hammer curls</p>
+                                   <p class="ejercicioSemana7" onclick="LeverlPushdown()">Leverl Pushdown</p>
+                                   <p class="ejercicioSemana7" onclick="mostrarWeightedBack()">Weighted Back</p>
+                                   <p class="ejercicioSemana7" onclick="Mixedgrippullups()">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarFlutterKicks()" >Flutter Kicks</p>
                                
                                    <!-- Semana 8 -->
-                                   <p class="ejercicioSemana8">Lunges</p>
-                                   <p class="ejercicioSemana8">Incline bench press</p>
-                                   <p class="ejercicioSemana8">Close grip pull-ups</p>
-                                   <p class="ejercicioSemana8">Plank with shoulder taps</p>
-                                   <p class="ejercicioSemana8">Spider curls</p>
+                                   <p class="ejercicioSemana8" onclick="LeverlPushdown()">Leverl Pushdown</p>
+                                   <p class="ejercicioSemana8" onclick="mostrarWeightedBack()">Weighted Back</p>
+                                   <p class="ejercicioSemana8" onclick="Mixedgrippullups()">Mixed grip pull-ups</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarFlutterKicks()" >Flutter Kicks</p>
                                
                                    <!-- Semana 9 -->
-                                   <p class="ejercicioSemana9">Deadlifts</p>
-                                   <p class="ejercicioSemana9">Decline bench press</p>
-                                   <p class="ejercicioSemana9">Mixed grip pull-ups</p>
-                                   <p class="ejercicioSemana9">Russian twists</p>
-                                   <p class="ejercicioSemana9">Concentration curls</p>
+                                   <p class="ejercicioSemana9" onclick="mostrarOverheadPress()">Overhead press</p>
+                                   <p class="ejercicioSemana9" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                   <p class="ejercicioSemana9" onclick="mostrarChinUps()">Chin-ups</p>
+                                   <p class="ejercicioSemana9" onclick="mostrarSquats()">Squats</p>
                                
                                    <!-- Semana 10 -->
-                                   <p class="ejercicioSemana10">Box jumps</p>
-                                   <p class="ejercicioSemana10">Cable flyes</p>
-                                   <p class="ejercicioSemana10">Assisted pull-ups</p>
-                                   <p class="ejercicioSemana10">Plank with knee tucks</p>
-                                   <p class="ejercicioSemana10">Incline curls</p>
+                                   <p class="ejercicioSemana10" onclick="mostrarOverheadPress()">Overhead press</p>
+                                   <p class="ejercicioSemana10" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                   <p class="ejercicioSemana10" onclick="mostrarChinUps()">Chin-ups</p>
+                                   <p class="ejercicioSemana10" onclick="mostrarSquats()">Squats</p>
                                
                                    <!-- Semana 11 -->
-                                   <p class="ejercicioSemana11">Front squats</p>
-                                   <p class="ejercicioSemana11">Dumbbell press</p>
-                                   <p class="ejercicioSemana11">Chin-ups</p>
-                                   <p class="ejercicioSemana11">Side plank</p>
-                                   <p class="ejercicioSemana11">Hammer curls</p>
+                                   <p class="ejercicioSemana11" onclick="mostrarOverheadPress()">Overhead press</p>
+                                   <p class="ejercicioSemana11" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                   <p class="ejercicioSemana11" onclick="mostrarChinUps()">Chin-ups</p>
+                                   <p class="ejercicioSemana11" onclick="mostrarSquats()">Squats</p>
                                
                                    <!-- Semana 12 -->
-                                   <p class="ejercicioSemana12">Sumo squats</p>
-                                   <p class="ejercicioSemana12">Machine chest press</p>
-                                   <p class="ejercicioSemana12">Pull-ups with knee raises</p>
-                                   <p class="ejercicioSemana12">Plank variations</p>
-                                   <p class="ejercicioSemana12">Reverse curls</p>
+                                   <p class="ejercicioSemana12" onclick="mostrarOverheadPress()">Overhead press</p>
+                                   <p class="ejercicioSemana12" onclick="mostrarDumbbellPress()">Dumbbell press</p>
+                                   <p class="ejercicioSemana12" onclick="mostrarChinUps()">Chin-ups</p>
+                                   <p class="ejercicioSemana12" onclick="mostrarSquats()">Squats</p>
                 
                                 </div>
                                 <div class="ejercicio">
@@ -753,88 +876,80 @@
                                 <div class="ejercicio">
                                     <h3>ejercicio</h3>
                                     <!-- Semana 1 -->
-                                    <p class="ejercicioSemana1">Sentadillas</p>
-                                    <p class="ejercicioSemana1">Press de banca</p>
-                                    <p class="ejercicioSemana1">Dominadas</p>
-                                    <p class="ejercicioSemana1">Plancha</p>
-                                    <p class="ejercicioSemana1">Curl de bíceps</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana1" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana1" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana1" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                   
                                 
                                     <!-- Semana 2 -->
-                                    <p class="ejercicioSemana2">Zancadas</p>
-                                    <p class="ejercicioSemana2">Fondos</p>
-                                    <p class="ejercicioSemana2">Pull-ups</p>
-                                    <p class="ejercicioSemana2">Mountain climbers</p>
-                                    <p class="ejercicioSemana2">Flexiones de bíceps</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana2" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana2" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana2" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                   
                                 
                                     <!-- Semana 3 -->
-                                    <p class="ejercicioSemana3">Peso muerto</p>
-                                    <p class="ejercicioSemana3">Flexiones</p>
-                                    <p class="ejercicioSemana3">Remo con barra</p>
-                                    <p class="ejercicioSemana3">Plancha lateral</p>
-                                    <p class="ejercicioSemana3">Martillo de bíceps</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana3" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana3" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana3" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                   
                                 
                                     <!-- Semana 4 -->
-                                    <p class="ejercicioSemana4">Squats</p>
-                                    <p class="ejercicioSemana4">Bench press</p>
-                                    <p class="ejercicioSemana4">Pull-ups</p>
-                                    <p class="ejercicioSemana4">Russian twists</p>
-                                    <p class="ejercicioSemana4">Concentration curls</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarDeadlifts()">Deadlifts</p>
+                                    <p class="ejercicioSemana4" onclick="mostrarDeclinebenchpress()">Decline bench press</p>
+                                    <p class="ejercicioSemana4" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana4" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                    
                                 
                                     <!-- Semana 5 -->
-                                    <p class="ejercicioSemana5">Leg press</p>
-                                    <p class="ejercicioSemana5">Dumbbell flyes</p>
-                                    <p class="ejercicioSemana5">Chin-ups</p>
-                                    <p class="ejercicioSemana5">Plank with knee tucks</p>
-                                    <p class="ejercicioSemana5">Incline curls</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana5" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                 
                                     <!-- Semana 6 -->
-                                    <p class="ejercicioSemana6">Step-ups</p>
-                                    <p class="ejercicioSemana6">Chest press</p>
-                                    <p class="ejercicioSemana6">Wide grip pull-ups</p>
-                                    <p class="ejercicioSemana6">Side plank</p>
-                                    <p class="ejercicioSemana6">Preacher curls</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana6" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                 
                                     <!-- Semana 7 -->
-                                    <p class="ejercicioSemana7">Hack squats</p>
-                                    <p class="ejercicioSemana7">Dips</p>
-                                    <p class="ejercicioSemana7">Muscle-ups</p>
-                                    <p class="ejercicioSemana7">Reverse plank</p>
-                                    <p class="ejercicioSemana7">Hammer curls</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana7" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                 
                                     <!-- Semana 8 -->
-                                    <p class="ejercicioSemana8">Lunges</p>
-                                    <p class="ejercicioSemana8">Incline bench press</p>
-                                    <p class="ejercicioSemana8">Close grip pull-ups</p>
-                                    <p class="ejercicioSemana8">Plank with shoulder taps</p>
-                                    <p class="ejercicioSemana8">Spider curls</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarSentadilla()">Sentadillas</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarPress()">Press de banca</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarPullDowns()">Pull-downs</p>
+                                    <p class="ejercicioSemana8" onclick="mostrarDumbbellSquat()">Dumbbell Squat</p>
                                 
                                     <!-- Semana 9 -->
-                                    <p class="ejercicioSemana9">Deadlifts</p>
-                                    <p class="ejercicioSemana9">Decline bench press</p>
-                                    <p class="ejercicioSemana9">Mixed grip pull-ups</p>
-                                    <p class="ejercicioSemana9">Russian twists</p>
-                                    <p class="ejercicioSemana9">Concentration curls</p>
+                                    <p class="ejercicioSemana9" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana9" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarSquats()">Squats</p>
+                                    <p class="ejercicioSemana9" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
                                 
                                     <!-- Semana 10 -->
-                                    <p class="ejercicioSemana10">Box jumps</p>
-                                    <p class="ejercicioSemana10">Cable flyes</p>
-                                    <p class="ejercicioSemana10">Assisted pull-ups</p>
-                                    <p class="ejercicioSemana10">Plank with knee tucks</p>
-                                    <p class="ejercicioSemana10">Incline curls</p>
+                                    <p class="ejercicioSemana10" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana10" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarSquats()">Squats</p>
+                                    <p class="ejercicioSemana10" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
                                 
                                     <!-- Semana 11 -->
-                                    <p class="ejercicioSemana11">Front squats</p>
-                                    <p class="ejercicioSemana11">Dumbbell press</p>
-                                    <p class="ejercicioSemana11">Chin-ups</p>
-                                    <p class="ejercicioSemana11">Side plank</p>
-                                    <p class="ejercicioSemana11">Hammer curls</p>
+                                    <p class="ejercicioSemana11" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana11" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarSquats()">Squats</p>
+                                    <p class="ejercicioSemana11" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
                                 
                                     <!-- Semana 12 -->
-                                    <p class="ejercicioSemana12">Sumo squats</p>
-                                    <p class="ejercicioSemana12">Machine chest press</p>
-                                    <p class="ejercicioSemana12">Pull-ups with knee raises</p>
-                                    <p class="ejercicioSemana12">Plank variations</p>
-                                    <p class="ejercicioSemana12">Reverse curls</p>
+                                    <p class="ejercicioSemana12" onclick=" mostrarRearLungue()">Rear Lungue</p>
+                                    <p class="ejercicioSemana12" onclick=" mostrarHipTrust()">Hip Trust</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarSquats()">Squats</p>
+                                    <p class="ejercicioSemana12" onclick="mostrarEstocadaBosu()">Estocada en bosu</p>
                 
                                 </div>
                                 <div class="ejercicio">
@@ -1394,6 +1509,7 @@
     <script src="./controller/swiper.js"></script>
     <script src="./controller/planes.js"></script>
     <script src="./controller/ejercicios.js"></script>
+    <script src="./controller/alimentacion.js"></script>
     <script src="./controller/gifs.js"></script>
 
 </body>
