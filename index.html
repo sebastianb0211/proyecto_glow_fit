@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="views/css/swiper.css">
     <link rel="stylesheet" href="views/css/planes-ejercicios.css">
     <link rel="stylesheet" href="./views/css/ejercicios.css">
+    <link rel="stylesheet" href="views/css/modalDatos.css">
     
     <title>Glow-fit</title>
 </head>
@@ -994,9 +995,10 @@
             <img class="loader" src="views/img/logo.png" alt="">
             <h2>Cargando planes...</h2>
         </div>
+
         <section class="contenedor-planes" id="contenedor-planes">
             <div class="container" id="basico">
-                <div class="card_box">
+                <div class="card_box" onclick="abrirModal()">
                     <span class="gratis"></span>
                     <div class="contenedor-premium">
                         <h1>0$</h1>
@@ -1008,8 +1010,6 @@
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Recetas saludables.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Seguimiento de progreso.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Recomendaciones del plan.</p>
-
-
                     </div>
 
 
@@ -1017,7 +1017,7 @@
 
             </div>
             <div class="container" id="semiPremium">
-                <div class="card_box">
+                <div class="card_box" onclick="abrirModal()">
                     <span class="master"></span>
                     <div class="contenedor-premium">
                         <h1>50$</h1>
@@ -1030,13 +1030,11 @@
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Seguimiento avanzado.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Soporte de expertos.</p>
                         <p><img class="cheque" src="views/img/cheque.png" alt=""> Recetas exclusivas.</p>
-
-
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="card_box" id="premium">
+                <div class="card_box" id="premium" onclick="abrirModal()">
                     <span class="premium"></span>
                     <div class="contenedor-premium">
                         <h1>100$</h1>
@@ -1055,9 +1053,23 @@
 
                 </div>
             </div>
-
-
         </section>
+
+        <div class="ventana-modal" style="display: none;" id="ventana-modal">
+            <div class="contenido-modal">
+                <h2>Ingresa tus datos para generarte una rutina</h2>
+                <input type="number" placeholder="cuanto mides?">
+                <input type="number" placeholder="cuanto pesas?">
+                <select value="Genero">
+                    <option value="">Genero</option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option >cualquiera de los 39 tipos de gay</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+
         <div class="boton-salir-planes" id="boton-salir">
             <button class="pushable" id="boton-salir-naranja">
                 <span class="shadow"></span>
@@ -1066,7 +1078,6 @@
                     Volver
                 </span>
             </button>
-
         </div>
 
         <section id="portada" class="contenedor-portada">
@@ -1513,6 +1524,7 @@
     <script src="./controller/ejercicios.js"></script>
     <script src="./controller/alimentacion.js"></script>
     <script src="./controller/gifs.js"></script>
+    <script src="controller/modalDatos.js"></script>
 
 </body>
 
