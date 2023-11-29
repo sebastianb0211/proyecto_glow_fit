@@ -99,6 +99,9 @@
                 <button onclick="mostrarRegistro()">Iniciar sesion</button>
                 <button onclick="mostrarRegistro()">Empieza ya</button>
             </article>
+            <article class="contenedor-botones-cerrar" style="display: none;" id="cerrar">
+                <button onclick="salir()">Cerrar sesion</button>
+            </article>
         </nav>
 
         <div class="contenedor-planes-ejercicio" id="contenedor-planes-ejercicio">
@@ -1066,7 +1069,7 @@
                     <option>Femenino</option>
                     <option >cualquiera de los 39 tipos de gay</option>
                 </select>
-                <button type="submit">Enviar</button>
+                <button type="submit" onclick="empezarPlanes()">Enviar</button>
             </div>
         </div>
 
@@ -1088,7 +1091,7 @@
             </div>
             <div class="botones-planes">
                 <button class="planes-boton1">CONTACTANOS</button>
-                <button class="planes-boton" id="cotiza-plan">COTIZAR PLANES</button>
+                <button class="planes-boton" id="cotiza-plan" disabled="true">COTIZAR PLANES</button>
             </div>
         </section>
 

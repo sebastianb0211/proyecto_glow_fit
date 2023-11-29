@@ -17,6 +17,37 @@ function quitarRegistro(){
     containerRegistro.style.display="none"
 }
 
+var cerrar = document.getElementById("cerrar")
+function salir(){
+    let ventana=document.getElementById("ventana-modal")
+    let planesEjercicios = document.getElementById("contenedor-planes-ejercicio");
+    let portada = document.getElementById("portada");
+    let imagenPrincipal = document.getElementById("imagen-principal");
+    let razones = document.getElementById("razones");
+    let articulos = document.getElementById("articulos");
+    let imagenParrafos = document.getElementById("imagen-parrafos");
+    let nosotros = document.getElementById("nosotros");
+    let footer = document.getElementById("footer");
+    let testimonios = document.getElementById("testimonios");
+    let containerLogin = document.getElementById("container-login");
+    let loginContainer = document.getElementById("login-container");
+    let planes = document.getElementById("contenedor-planes");
+    let botonSalirPlanes = document.getElementById("boton-salir");
+    planesEjercicios.style.display = "none";
+    portada.style.display = "flex";
+    imagenPrincipal.style.display = "flex";
+    razones.style.display = "flex";
+    articulos.style.display = "flex";
+    imagenParrafos.style.display = "flex";
+    nosotros.style.display = "flex";
+    footer.style.display = "flex";
+    testimonios.style.display = "flex";
+    containerLogin.style.display = "flex";
+    loginContainer.style.display = "flex";
+    planes.style.display = "none";
+   
+}
+
 login.addEventListener('click', function(){
     containerRegistro.style.display= "none"
     containerLogin.style.display="block"
@@ -39,7 +70,7 @@ const userRegistrationRegex =
         title: 'El nombre no es valido',
         text: 'Debe contener un minimo de 3 caracteres y un maximo de 20 y no contener numeros!', 
         width: '40%',
-        background: '#F96D00',
+        background: '#F2F2F2',
         backdrop: true
       })
 }
@@ -49,7 +80,7 @@ const userRegistrationRegex =
         title: 'El Correo electronico no es valido',
         text: 'Ingresa un correo electronico correcto!',
         width: '40%',
-        background: '#F96D00',
+        background: '#F2F2F2',
         backdrop: true
       })         
 }
@@ -59,7 +90,7 @@ const userRegistrationRegex =
         title: 'La contraseña no es valida',
         text: 'Debe tener al menos 8 caracteres y contener una letra mayúscula!',
         width: '40%',
-        background: '#F96D00',
+        background: '#F2F2F2',
         backdrop: true
       })         
 }
@@ -69,7 +100,7 @@ const userRegistrationRegex =
         title: 'Cuenta ya registrada inicie sesion',
         text: 'Correo electrónico ya registrado!',
         width: '40%',
-        background: '#F96D00',
+        background: '#F2F2F2',
         backdrop: true
       })
 }
@@ -168,11 +199,13 @@ document.getElementById('button-registro').addEventListener('click', function re
 
 })
 let correoUsuario = ''
+var botonPlanes=document.getElementById("cotiza-plan")
+
 document.getElementById('button-login').addEventListener('click', function loginUsuario() {
     correoUsuario = document.getElementById('email-login').value
     const passUsuario = document.getElementById('pass-login').value
 
-    if (correoUsuario && passUsuario) {
+    if (true) {
         if (!userRegistrationRegex.email.test(correoUsuario)) {
             correoUsuarioRegex()
         } else if (!userRegistrationRegex.password.test(passUsuario)) {
@@ -182,8 +215,13 @@ document.getElementById('button-login').addEventListener('click', function login
         if (usuario) {
                 correoUsuario = correoUsuario;
                 quitarRegistro()
+                botonPlanes.disabled=false
+                cerrar.style.display="block"
+
         }else{
             correoNoRegistrado()
         }
     }
 })
+
+
