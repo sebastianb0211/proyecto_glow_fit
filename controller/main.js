@@ -28,6 +28,7 @@ cotizar.addEventListener("click", function () {
     botonSalirPlanes.style.display = "flex";
   }, 1200);
 });
+
 let botonSalirPlanesReal = document.getElementById("boton-salir-naranja");
 botonSalirPlanesReal.addEventListener("click", function () {
   portada.style.display = "none";
@@ -53,3 +54,9 @@ botonSalirPlanesReal.addEventListener("click", function () {
     footer.style.display = "flex";
   }, 200);
 });
+
+let logo = document.getElementById("logo");
+
+logo.addEventListener("click", function(){
+  window.location.href="index.html";
+})

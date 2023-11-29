@@ -86,13 +86,13 @@
     <main>
         <nav class="nav">
             <article class="contenedor-logo">
-                <img  src="views/img/logo.png" alt="logotipo">
+                <img id="logo" class="logo" src="views/img/logo.png" alt="logotipo">
             </article>
             <article class="contenedor-enlaces">
-                <a href="#" class="enlace">Entrenamiento </a>
-                <a href="#" class="enlace">Nutricion</a>
-                <a href="#" class="enlace">Comunidad</a>
-                <a href="#" class="enlace">Accesorios</a>
+                <a href="#contenedor-planes" class="enlace" id="entrenamientos">Entrenamiento </a>
+                <a href="https://cuidateplus.marca.com/alimentacion/dietas/2017/02/08/ocho-pautas-clave-dieta-sana-equilibrada-141140.html" class="enlace" target="_blank">Nutricion</a>
+                <a href="#testimonios" class="enlace">Comunidad</a>
+                <a href="https://sportfitness.co/collections/accesorios" class="enlace" target="_blank">Accesorios</a>
             </article>
             <article class="contenedor-botones-nav">
                 <button onclick="mostrarRegistro()">Iniciar sesion</button>
@@ -105,7 +105,7 @@
                 <nav class="nav-planes">
                     <a id="botonPlanesEjercicio" href="#">Planes de Ejercicios</a>
                     <a id="botonPlanesAlimenticio" href="#">Planes Alimenticios</a>
-                    <a href="#">Recomendaciones</a>
+                    <a id="botonPlanRecomendacion" href="#">Recomendaciones</a>
                    
                     <div class="animation start-home"></div>
                 </nav>
@@ -117,6 +117,12 @@
                     <p class="semanas" id="mesUno">Primer Mes</p>
                     <p class="semanas" id="mesDos">Segundo mes</p>
                     <p class="semanas" id="mesTres">Tercer mes</p>
+
+                </div>
+                <div class="menuRecomendaciones" id="menuRecomendaciones">
+                    <p class="semanas" id="mesUnoR">Primer Mes</p>
+                    <p class="semanas" id="mesDosR">Segundo mes</p>
+                    <p class="semanas" id="mesTresR">Tercer mes</p>
 
                 </div>
                 <div class="menu" id="menuEjercicio">
@@ -132,6 +138,56 @@
                     <p class="semanas" id="semana10">semana 10</p>
                     <p class="semanas" id="semana11">semana 11</p>
                     <p class="semanas" id="semana12">semana 12</p>
+                </div>
+
+                <div class="contenidoRecomendaciones" id="contenidoRecomendacion">
+
+                    <article class="cardRecomendaciones" id="primerMesRecomendaciones">
+                        <div class="card-intRecomendaciones">
+                            <span class="card__spanRecomendaciones">Recomendacion Primer mes</span>
+                            
+                            <div class="card-dataRecomendaciones">
+                              <p class="titleRecomendaciones"><ul class="contenidoTexto">
+                                <li><p class="tituloRecomendacion">Seguir el plan alimenticio: 🥗</p> Asegúrate de seguir el plan alimenticio proporcionado por la página web. Controla las porciones y mantén un equilibrio adecuado de proteínas, carbohidratos y grasas.</li>
+                                <li><P class="tituloRecomendacion">Registrar la ingesta: 📝</P> Utiliza una aplicación o un diario para registrar diariamente lo que comes. Esto puede ayudarte a tomar conciencia de tus elecciones alimenticias y a identificar áreas de mejora.</li>
+                                <li><P class="tituloRecomendacion">Aumentar la actividad física: 🏋️‍♂️</P> Si el plan de entrenamiento actual permite ajustes, considera aumentar gradualmente la intensidad o la duración de tus sesiones de ejercicio. También, intenta incorporar actividad física en tu rutina diaria, como caminar más o subir escaleras.</li>
+                                <li><P class="tituloRecomendacion">Hidratación: 🚰 </P>Asegúrate de beber suficiente agua durante el día. La hidratación adecuada es esencial para el funcionamiento óptimo del cuerpo y puede ayudar a controlar el apetito.</li>
+                              </ul></p>
+                              <button class="buttonRecomendaciones">Gracias</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cardRecomendaciones" id="segundoMesRecomendaciones">
+                        <div class="card-intRecomendaciones">
+                            <span class="card__spanRecomendaciones">Recomendacion Segundo mes</span>
+                            
+                            <div class="card-dataRecomendaciones">
+                              <p class="titleRecomendaciones"><ul class="contenidoTexto">
+                                <li><p class="tituloRecomendacion">Evaluar el progreso: 📊 </p>  Revisa tus registros de comida y ejercicio para evaluar tu progreso. Observa cualquier patrón que pueda estar afectando tus objetivos de pérdida de peso.</li>
+                                <li><P class="tituloRecomendacion">Introducir variedad en la dieta: 🍏</P>Aunque estés siguiendo un plan alimenticio específico, trata de introducir variedad en tus comidas. Esto no solo puede hacer que la dieta sea más atractiva, sino que también asegura que estás obteniendo una gama completa de nutrientes.</li>
+                                <li><P class="tituloRecomendacion">Aumentar la actividad física: 🏋️‍♂️</P> Considera incorporar ejercicios de entrenamiento de fuerza en tu rutina. El músculo quema más calorías en reposo que la grasa, lo que puede ayudar en la pérdida de peso a largo plazo.</li>
+                                <li><P class="tituloRecomendacion">Gestión del estrés: 🧘‍♂️  </P>Practica técnicas de manejo del estrés, como la meditación o el yoga. El estrés puede afectar negativamente los hábitos alimenticios y el peso.</li>
+                              </ul></p>
+                              <button class="buttonRecomendaciones">Gracias</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cardRecomendaciones" id="tercerMesRecomendaciones">
+                        <div class="card-intRecomendaciones">
+                            <span class="card__spanRecomendaciones">Recomendacion Tercer mes</span>
+                            
+                            <div class="card-dataRecomendaciones">
+                              <p class="titleRecomendaciones"><ul class="contenidoTexto">
+                                <li><p class="tituloRecomendacion">Ajuste del plan: 🔄 </p>  Revisa tu plan alimenticio y de entrenamiento. Si es necesario, haz ajustes para mantener la progresión y evitar la meseta en la pérdida de peso.</li>
+                                <li><P class="tituloRecomendacion">Incrementar la intensidad: 🔥</P> Si tu condición física lo permite, considera aumentar la intensidad de tus entrenamientos. Esto puede incluir intervalos de alta intensidad o sesiones más largas.</li>
+                                <li><P class="tituloRecomendacion">Revisión de metas a corto plazo: 🎯</P> Evalúa las metas que estableciste al principio y ajusta según sea necesario. Celebrar los logros alcanzados puede ser motivador y proporcionar un impulso adicional.</li>
+                                <li><P class="tituloRecomendacion">Consulta profesional: 🩺 </P> Si es posible, considera hablar con un nutricionista o entrenador personal para obtener orientación personalizada y ajustes específicos a tus necesidades.</li>
+                              </ul></p>
+                              <button class="buttonRecomendaciones">Gracias</button>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
                 <div class="contenidoAlimentacion" id="contenidoAlimentario">
                     <h1 class="titulosAlimentos1">Desayuno</h1>
