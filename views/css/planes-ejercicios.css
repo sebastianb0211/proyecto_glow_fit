@@ -89,11 +89,19 @@ a:nth-child(1):focus ~ .animation {
   width: 15%;
   height: 100%;
   display: flex;
-  gap: 20px;
-
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   display: none;
+  gap: 30px;
+}
+.menuRecomendaciones{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+  gap: 30px;
 }
 
 .semanas {
@@ -112,12 +120,21 @@ a:nth-child(1):focus ~ .animation {
   height: 100%;
   display: flex;
 }
+.contenidoRecomendaciones{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: none;
+  justify-content: center;
+}
 .contenidoAlimentacion {
 
   width: 85%;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   display: none;
 }
 
@@ -172,7 +189,7 @@ a:nth-child(1):focus ~ .animation {
 .menuAlimentacion p {
   width: 9em;
   height: 2.4em;
-  border-radius: 30em;
+  border-radius: 7px;
   font-size: 15px;
   font-family: inherit;
   border: none;
@@ -186,7 +203,7 @@ a:nth-child(1):focus ~ .animation {
   content: "";
   width: 0;
   height: 2.4em;
-  border-radius: 30em;
+  border-radius: 7px;
   position: absolute;
   top: 0;
   left: 0;
@@ -197,10 +214,38 @@ a:nth-child(1):focus ~ .animation {
 .menuAlimentacion p:hover::before {
   width: 9em;
 }
+.menuRecomendaciones p {
+  width: 9em;
+  height: 2.4em;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  cursor: pointer;
+}
+.menuRecomendaciones p::before {
+  content: "";
+  width: 0;
+  height: 2.4em;
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #f96d00 0%, #ff9d00 100%);
+  transition: 0.5s ease;
+  z-index: -1;
+}
+.menuRecomendaciones p:hover::before {
+  width: 9em;
+}
 .menu p {
   width: 9em;
   height: 2.4em;
-  border-radius: 30em;
+  border-radius: 7px;
   font-size: 15px;
   font-family: inherit;
   border: none;
@@ -214,7 +259,7 @@ a:nth-child(1):focus ~ .animation {
   content: "";
   width: 0;
   height: 2.4em;
-  border-radius: 30em;
+  border-radius: 7px;
   position: absolute;
   top: 0;
   left: 0;
@@ -232,7 +277,6 @@ a:nth-child(1):focus ~ .animation {
 }
 
 .cardAlimentacion {
-  margin-right: 30px;
   position: relative;
   width: 350px;
   height: 250px;
@@ -284,7 +328,7 @@ a:nth-child(1):focus ~ .animation {
   color: black;
   font-weight: 700;
   position: relative;
-  left: 20px;
+  
 }
 .card__subtitleAlimentacion {
   margin: 0;
@@ -307,20 +351,20 @@ a:nth-child(1):focus ~ .animation {
 .titulosAlimentos1 {
   position: absolute;
   z-index: 20;
-  top: 255px;
-  right: 850px;
+  top: 40%;
+  right: 68%;
 }
 .titulosAlimentos2 {
   position: absolute;
   z-index: 20;
-  top: 255px;
-  right: 500px;
+  top: 40%;
+  right: 40%;
 }
 .titulosAlimentos3 {
   position: absolute;
   z-index: 20;
-  top: 255px;
-  right: 150px;
+  top: 40%;
+  right: 16%;
 }
 
 #segundoMesDesayuno,
@@ -329,4 +373,100 @@ a:nth-child(1):focus ~ .animation {
 #tercerMesDesayuno,
 #tercerMesCena,#tercerMesAlmuerzo {
   display: none;
+}
+
+
+/* recomendaciones */
+
+.cardRecomendaciones {
+  width: 85%;
+  height: 90%;
+  padding: 10px;
+  background-image: linear-gradient(to right bottom,#f96d00, #f98500, rgb(215, 84, 13), #e75100, #e79600);
+  background-size: 200% 200%;
+  border-radius: 12px;
+  
+  
+}
+#segundoMesRecomendaciones,#tercerMesRecomendaciones{
+  display: none;
+}
+
+.card-intRecomendaciones {
+  height: 100%;
+  overflow: hidden;
+  font-size: 40px;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  
+}
+.tituloRecomendacion{
+  color: #f96d00;
+}
+
+
+.titleRecomendaciones {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-dataRecomendaciones {
+  padding: 20px;
+  font-size: 50px;
+ 
+  
+  
+}
+
+.card__spanRecomendaciones {
+  font-family: 'Lucida Sans' sans-serif;
+  font-size: 20px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  
+}
+.logo{
+  cursor: pointer;
+
+}
+.contenidoTexto{
+  font-size: 16px;
+}
+
+.buttonRecomendaciones {
+  width: 50%;
+  background-image: linear-gradient(to right bottom, #f96d00, #f96d00, #f96d00, #f96d00, #f96d00);
+  background-size: 200% 200%;
+  border: none;
+  padding: 8px 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.1s ease-in;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+.buttonRecomendaciones:active {
+  transform: translateY(3px);
+}
+
+.card:hover, .buttonRecomendaciones:hover {
+  animation: gradient 0.8s ease-in 1;
+  cursor: pointer;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 200% 200%;
+  }
+
+  100% {
+    background-position: 400% 400%;
+  }
 }
