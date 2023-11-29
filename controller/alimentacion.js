@@ -1,15 +1,24 @@
+
+/* Ejercicios */
+
+
 let botonPlanEjercicio = document.getElementById('botonPlanesEjercicio');
 let botonPlanesAlimenticio= document.getElementById('botonPlanesAlimenticio');
 let menuAlimentacion = document.getElementById('menuAlimentacion');
 let menuEjercicio= document.getElementById('menuEjercicio');
 let contenidoAlimentario = document.getElementById('contenidoAlimentario');
 let contenidoEjercicios = document.getElementById('contenidoEjercicios');
+let botonPlenesRecomendaciones = document.getElementById("botonPlanRecomendacion")
+let contenidoRecomendacion = document.getElementById("contenidoRecomendacion")
+let menuRecomendaciones = document.getElementById("menuRecomendaciones")
 
 function ocultarContenido(){
     menuAlimentacion.style.display="none";
     menuEjercicio.style.display="none";
+    menuRecomendaciones.style.display="none";
     contenidoAlimentario.style.display="none";
     contenidoEjercicios.style.display="none";
+    contenidoRecomendacion.style.display="none";
 }
 
 
@@ -23,16 +32,24 @@ function aparecerPlanAlimenticio(){
     menuAlimentacion.style.display="flex";
     contenidoAlimentario.style.display="flex";
 }
+function aparecerRecomendaciones(){
+    ocultarContenido()
+    menuRecomendaciones.style.display="flex";
+    contenidoRecomendacion.style.display="flex";
+}
 
 botonPlanEjercicio.addEventListener('click', aparecerPlanEjercicio)
 botonPlanesAlimenticio.addEventListener('click', aparecerPlanAlimenticio)
+botonPlenesRecomendaciones.addEventListener('click', aparecerRecomendaciones)
+
+/* Alimentacion */
 
 let mesUno = document.getElementById("mesUno")
 let mesDos = document.getElementById("mesDos")
 let mesTres = document.getElementById("mesTres")
 
 
-let primerMesDesayuno = document.getElementById("primerMesDesayuno");
+    let primerMesDesayuno = document.getElementById("primerMesDesayuno");
     let segundoMesDesayuno = document.getElementById("segundoMesDesayuno");
     let tercerMesDesayuno = document.getElementById("tercerMesDesayuno");
     let primerMesAlmuerzo = document.getElementById("primerMesAlmuerzo");
@@ -82,3 +99,39 @@ function mostrarAlimentosTres(){
 mesUno.addEventListener("click",mostrarAlimentosUno)
 mesDos.addEventListener("click",mostrarAlimentosDos)
 mesTres.addEventListener("click",mostrarAlimentosTres)
+
+/* Recomendaciones */
+let primerMesRecomendaciones = document.getElementById("primerMesRecomendaciones")
+let segundoMesRecomendaciones = document.getElementById("segundoMesRecomendaciones")
+let tercerMesRecomendaciones = document.getElementById("tercerMesRecomendaciones")
+
+let mesUnoR = document.getElementById("mesUnoR")
+let mesDosR = document.getElementById("mesDosR")
+let mesTresR = document.getElementById("mesTresR")
+
+function ocultarRecomendaciones(){
+    primerMesRecomendaciones.style.display="none";
+    segundoMesRecomendaciones.style.display="none";
+    tercerMesRecomendaciones.style.display="none";
+
+
+}
+function MostrarRecomendaciones1(){
+    ocultarRecomendaciones()
+    primerMesRecomendaciones.style.display="flex";
+   
+}
+function MostrarRecomendaciones2(){
+    ocultarRecomendaciones()
+    segundoMesRecomendaciones.style.display="flex";
+   
+}
+function MostrarRecomendaciones3(){
+    ocultarRecomendaciones()
+    tercerMesRecomendaciones.style.display="flex";
+   
+}
+
+mesUnoR.addEventListener("click",MostrarRecomendaciones1)
+mesDosR.addEventListener("click",MostrarRecomendaciones2)
+mesTresR.addEventListener("click",MostrarRecomendaciones3)
