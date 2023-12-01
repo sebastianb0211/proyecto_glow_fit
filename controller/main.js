@@ -1,4 +1,4 @@
-let cotizar = document.getElementById("cotiza-plan");
+// let cotizar = document.getElementById("cotiza-plan");
 let portada = document.getElementById("portada");
 let imagenPrincipal = document.getElementById("imagen-principal");
 let razones = document.getElementById("razones");
