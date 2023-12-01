@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="views/css/cargador.css">
     <link rel="stylesheet" href="views/css/planes.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Noto+Serif:ital,wght@1,700&family=Nova+Square&family=PT+Sans:ital,wght@0,400;1,700&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="views/css/login.css">
     <link rel="stylesheet" href="./views/css/testimonios.css">
     <link rel="stylesheet" href="views/css/swiper.css">
@@ -95,12 +99,13 @@
                 <a href="#testimonios" class="enlace">Comunidad</a>
                 <a href="https://sportfitness.co/collections/accesorios" class="enlace" target="_blank">Accesorios</a>
             </article>
-            <article class="contenedor-botones-nav">
+            <article class="contenedor-botones-nav" id="contenedor-botones-nav" style="display: flex;">
                 <button onclick="mostrarRegistro()">Iniciar sesion</button>
                 <button onclick="mostrarRegistro()">Empieza ya</button>
             </article>
             <article class="contenedor-botones-cerrar" style="display: none;" id="cerrar">
                 <button onclick="salir()">Cerrar sesion</button>
+                <button>Perfil</button>
             </article>
         </nav>
 
@@ -1637,16 +1642,20 @@
 
         <div class="ventana-modal"  id="ventana-modal">
             <div class="contenido-modal">
-              <h2>Ingresa tus datos para generarte una rutina</h2>
-              <div>
+                <div class="img-titulo">
+                    <img src="views/img/logo.png" alt="" class="contenedor-logo">
+                    <h2>Ingresa tus datos para generarte una rutina</h2>
+                    <h3>Nombre usuario</h3>
+                </div>
+              <div class="container-form-ecxel">
                 <div class="archivo-ecxel">
                     <input type="file" class="" id="ecxel-input">
                 </div>
-                <table class="tabla-">
-                    <thead>
-                        <tr>
-                            <th scope="col">Peso:</th>
-                            <th scope="col">Estatura:</th>
+                <table class="tabla-form">
+                    <thead class="thead-form">
+                        <tr class="tr-col">
+                            <th scope="col" class="th-titulo">Peso:</th>
+                            <th scope="col" class="th-titulo">Estatura:</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1661,6 +1670,19 @@
                         </tr>
                     </tbody>
                 </table>
+                <!-- <div class="btn-g-p">
+                <button class="btn-diseño" onclick="guardarDatos()">Guardar</button>
+                </div> -->
+                <div class="select-form"> 
+
+                    <select id="inputGenero">
+                        <option value="">Genero</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>cualquiera de los 39 tipos de gay</option>
+                    </select>
+                    <button type="submit" class="btn-diseño" onclick="empezarPlanes()">Enviar</button>
+                </div>
               </div>
               <select id="inputGenero">
                 <option value="">Genero</option>
@@ -2106,7 +2128,7 @@
 
 
 
-
+    <script src="controller/login.js"></script>
     <script src="controller/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -2117,7 +2139,6 @@
     <script src="controller/ecxel.js"></script>
     <script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
-    <script src="controller/login.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="controller/alert.js"></script>

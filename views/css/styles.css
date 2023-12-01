@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Cinzel Decorative', serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Nova Square', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -49,9 +53,28 @@ body{
 }
 
 .contenedor-botones-nav{
-    width: 15%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
+    margin-right: 2%;
+}
+
+.contenedor-botones-cerrar{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+.contenedor-botones-cerrar button{
+    height: 45px;
+    width: 45%;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    background-color: #F96D00;
+    color: #393E46;
+    cursor: pointer;
 }
 
 .contenedor-botones-nav button{

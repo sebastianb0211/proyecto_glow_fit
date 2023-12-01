@@ -3,7 +3,9 @@ let semiPremium = document.getElementById("semiPremium")
 let basico = document.getElementById("basico")
 let containerRegistro = document.getElementById("container-registro")
 let containerLogin = document.getElementById("container-login")
-let loginContainer = document.getElementById("login-container")
+var loginContainer = document.getElementById("login-container")
+var botonesInicio=document.getElementById("contenedor-botones-nav")
+var botonCerrarSesion=document.getElementById("contenedor-botones-cerrar")
 
 let login = document.getElementById("login")
 let registro = document.getElementById("registro")
@@ -45,7 +47,10 @@ function salir(){
     containerLogin.style.display = "flex";
     loginContainer.style.display = "flex";
     planes.style.display = "none";
-   
+    loginContainer.style.display="none"
+    botonesInicio.style.display="flex"
+    cerrar.style.display="none"
+    botonSalirPlanes.style.display="none"
 }
 
 login.addEventListener('click', function(){
@@ -148,6 +153,7 @@ const userRegistrationRegex =
       })
 }
 
+var cotizar=document.getElementById("cotiza-plan")
 document.getElementById('button-registro').addEventListener('click', function registroUsuario() {
     const nombreUsuario = document.getElementById('nombre-usuario').value
     const correoRegistro = document.getElementById('email-registro').value
@@ -218,9 +224,11 @@ document.getElementById('button-login').addEventListener('click', function login
                 quitarRegistro()
                 botonPlanes.disabled=false
                 cerrar.style.display="block"
-
+                botonesInicio.style.display="none"
+                cotizar.disabled=false
         }else{
             correoNoRegistrado()
+            cotizar.disabled=true
         }
     }
 })
