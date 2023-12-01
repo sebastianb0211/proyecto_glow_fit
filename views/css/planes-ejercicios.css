@@ -395,7 +395,7 @@ a:nth-child(1):focus ~ .animation {
 .card-intRecomendaciones {
   height: 100%;
   overflow: hidden;
-  font-size: 40px;
+  font-size: 50px;
   border-radius: 6px;
   background-color: white;
   display: flex;
@@ -415,7 +415,7 @@ a:nth-child(1):focus ~ .animation {
 
 .card-dataRecomendaciones {
   padding: 20px;
-  font-size: 50px;
+  font-size: x-large;
  
   
   
