@@ -21,12 +21,11 @@
 .ejercicioSemana9,
 .ejercicioSemana10,
 .ejercicioSemana11,
-.ejercicioSemana12
-{
-display: none;
-cursor: pointer;
+.ejercicioSemana12 {
+  display: none;
+  cursor: pointer;
 }
-.ejercicioSemana1{
+.ejercicioSemana1 {
   cursor: pointer;
 }
 .ejercicioSemana1:hover,
@@ -40,7 +39,36 @@ cursor: pointer;
 .ejercicioSemana9:hover,
 .ejercicioSemana10:hover,
 .ejercicioSemana11:hover,
-.ejercicioSemana12:hover{
- color: #F96D00;
+.ejercicioSemana12:hover {
+  color: #f96d00;
   zoom: 1.1;
+}
+#botonesPlanAdelgazar,
+#botonesPlanTonificar,
+#botonesPlanPeso {
+  display: none;
+}
+#segundoMesDesayunoAdelgazar,
+#segundoMesAlmuerzoAdelgazar,
+#segundoMesCenaAdelgazar,
+#tercerMesDesayunoAdelgazar,
+#tercerMesAlmuerzoAdelgazar,
+#tercerMesCenaAdelgazar {
+  display: none;
+}
+#segundoMesDesayunoTonificar,
+#segundoMesAlmuerzoTonificar,
+#segundoMesCenaTonificar,
+#tercerMesDesayunoTonificar,
+#tercerMesAlmuerzoTonificar,
+#tercerMesCenaTonificar {
+  display: none;
+}
+#segundoMesDesayunoPeso,
+#segundoMesAlmuerzoPeso,
+#segundoMesCenaPeso,
+#tercerMesDesayunoPeso,
+#tercerMesAlmuerzoPeso,
+#tercerMesCenaPeso {
+  display: none;
 }

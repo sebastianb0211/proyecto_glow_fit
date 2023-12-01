@@ -1,4 +1,5 @@
-function empezarPlanes() {
+ export function empezarPlanes() {
+  let ventana=document.getElementById("ventana-modal")
   let planesEjercicios = document.getElementById("contenedor-planes-ejercicio");
   let portada = document.getElementById("portada");
   let imagenPrincipal = document.getElementById("imagen-principal");
@@ -25,9 +26,7 @@ function empezarPlanes() {
   loginContainer.style.display = "none";
   planes.style.display = "none";
   botonSalirPlanes.style.display = "none"; 
+  ventana.style.display="none"
 }
-
-let botonEmpezar = document.getElementById("button-login");
-botonEmpezar.addEventListener("click", empezarPlanes);
 
 

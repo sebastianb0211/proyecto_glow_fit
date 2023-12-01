@@ -72,12 +72,11 @@ a:nth-child(1):focus ~ .animation {
 .contenedor-plan-Alimenticion {
   width: 100vw;
   height: 85vh;
-  border: 1px solid red;
   display: flex;
 }
 
 .menu {
-  border: 1px solid green;
+  background-color: #F5F7F8;
   width: 15%;
   height: 100%;
   display: flex;
@@ -115,7 +114,6 @@ a:nth-child(1):focus ~ .animation {
 }
 
 .contenido {
-  border: 1px solid blue;
   width: 85%;
   height: 100%;
   display: flex;
@@ -129,7 +127,7 @@ a:nth-child(1):focus ~ .animation {
   justify-content: center;
 }
 .contenidoAlimentacion {
-
+  
   width: 85%;
   height: 100%;
   display: flex;
@@ -139,9 +137,14 @@ a:nth-child(1):focus ~ .animation {
 }
 
 .dia {
-  border: 1px solid red;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  opacity: 0.9;
+  background-color: #c5c5c5;
   width: 30%;
   height: 45%;
+  border-radius: 7px;
+  
 }
 
 .contenedor-dias {
@@ -151,10 +154,11 @@ a:nth-child(1):focus ~ .animation {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  background-color: #F5F7F8;
 }
 
 .ejercicio-diario {
-  border: 1px solid rgb(1, 255, 1);
+  
   display: flex;
   justify-content: space-around;
   height: 75%;
@@ -176,7 +180,6 @@ a:nth-child(1):focus ~ .animation {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid salmon;
 }
 
 .titulo-dia h3 {
@@ -185,6 +188,7 @@ a:nth-child(1):focus ~ .animation {
 
 .titulo-dia h4 {
   font-size: 25px;
+  color: #f96d00;
 }
 .menuAlimentacion p {
   width: 9em;
@@ -395,7 +399,7 @@ a:nth-child(1):focus ~ .animation {
 .card-intRecomendaciones {
   height: 100%;
   overflow: hidden;
-  font-size: 40px;
+  font-size: 50px;
   border-radius: 6px;
   background-color: white;
   display: flex;
@@ -415,7 +419,7 @@ a:nth-child(1):focus ~ .animation {
 
 .card-dataRecomendaciones {
   padding: 20px;
-  font-size: 50px;
+  font-size: x-large;
  
   
   
