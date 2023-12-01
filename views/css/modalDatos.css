@@ -1,45 +1,65 @@
-.ventana-modal{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+/* .container2 {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #ff6600;
 }
-  
-.contenido-modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
+
+input {
+  margin-top: 20px;
+}
+
+.tabla {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .tabla {
+      flex-direction: column;
+  }
+} */
+.container-form{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  z-index: 1001;
+
+}
+
+.contenedor-total {
+    display: grid;
+    place-items: center;
+    width: 40%;
+    height: 60%;
+    background-color: #ff6600; /* Color de fondo que puedes cambiar */
+    border-radius: 10%;
+    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
-.contenido-modal input{
-  margin-top: 5%;
-  width: 70%;
-  height: 1.375rem;
-  border-radius: 4px;
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.contenido-modal select{
-  margin-bottom: 5%;
-  margin-top: 5%;
-  width: 70%;
-  height: 1.375rem;
-  border-radius: 4px;
+.input-group input {
+    flex: 1;
+    margin-right: 10px;
+    
 }
-
-.contenido-modal button{
-  width: 35%;
-  height: 1.875rem;
-  cursor: pointer;
-  border-radius: 4px;
+.btn-guardar-peso{
+    background-color: #393E46;
+    border-radius: 10%;
+    width: 30%;
+    height: 40px;
+    color: #ffff;
 }
