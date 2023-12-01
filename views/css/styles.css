@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Cinzel Decorative', serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Nova Square', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
