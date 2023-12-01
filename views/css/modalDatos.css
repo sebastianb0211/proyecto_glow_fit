@@ -1,21 +1,50 @@
-/* .container2 {
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
-  background-color: #ff6600;
+ .ventana-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.contenido-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-input {
-  margin-top: 20px;
+.contenido-modal input{
+  margin-top: 5%;
+  width: 90%;
+  height: 1.375rem;
+  border-radius: 4px;
 }
 
-.tabla {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+.contenido-modal select{
+  margin-bottom: 5%;
+  margin-top: 5%;
+  width: 70%;
+  height: 1.375rem;
+  border-radius: 4px;
 }
 
-table {
+.contenido-modal button{
+  width: 35%;
+  height: 1.875rem;
+  cursor: pointer;
+  border-radius: 4px;
+} 
+.archivo-ecxel{
+  background-color: red;
   width: 100%;
 }
 

@@ -1471,11 +1471,33 @@
             </div>
         </section>
 
-        <div class="ventana-modal" style="display: none;" id="ventana-modal">
+        <div class="ventana-modal"  id="ventana-modal">
             <div class="contenido-modal">
               <h2>Ingresa tus datos para generarte una rutina</h2>
-              <input type="number" placeholder="cuanto mides?" id="inputEstatura">
-              <input type="number" placeholder="cuanto pesas?" id="inputPeso">
+              <div>
+                <div class="archivo-ecxel">
+                    <input type="file" class="" id="ecxel-input">
+                </div>
+                <table class="tabla-">
+                    <thead>
+                        <tr>
+                            <th scope="col">Peso:</th>
+                            <th scope="col">Estatura:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="pesoDato"></td>
+                            <td id="estaturaDato">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="inputEstatura" placeholder="Ingrese estatura">
+                                    <button class="btn-guardar-peso" onclick="guardarDatos()">Guardar</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
               <select id="inputGenero">
                 <option value="">Genero</option>
                 <option>Masculino</option>
@@ -1979,7 +2001,7 @@
     <script src="./controller/gifs.js"></script>
 
 
-    
+
     <script src="controller/modalDatos.js"></script>
 
     <script src="./controller/planesPeso.js"></script>
