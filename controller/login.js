@@ -176,6 +176,8 @@ document.getElementById('button-registro').addEventListener('click', function re
                     correoRegistro,
                     passRegistro,
                     nombreUsuario,
+                    peso: 0,
+                    estatura:0
                 }
                 usuarioRegistrados.push(nuevoUsuario)
                 Swal.fire({
@@ -222,5 +224,8 @@ document.getElementById('button-login').addEventListener('click', function login
         }
     }
 })
+// Limpiar todo el localStorage
+//localStorage.clear();
+
 
 
