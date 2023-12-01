@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="views/css/planes-ejercicios.css">
     <link rel="stylesheet" href="./views/css/ejercicios.css">
     <link rel="stylesheet" href="views/css/modalDatos.css">
+    <link rel="stylesheet" href="/views/css/tiposPlan.css">
     
     <title>Glow-fit</title>
 </head>
@@ -103,12 +104,51 @@
             </article>
         </nav>
 
+        <!-- los tres requerimientos que el cliente quiere para tener su plan alimenticio -->
+        <div class="title-cardsTiposPlan" id="tiuloTiposPlan">
+          <h2>Servicios que Ofrecemos</h2>
+        </div>
+      <div class="container-cardTiposPlan" id="contenedorTiposPlan">
+        
+      <div class="cardTiposPlan">
+        <figure>
+          <img src="views/img/imagenesPlanes/perderpeso.jpg">
+        </figure>
+        <div class="contenido-cardTiposPlan">
+          <h3>Plan para Perder peso</h3>
+          <p>Este plan está diseñado para ayudarte a perder peso de forma saludable y efectiva. Consiste en una combinación de ejercicios aeróbicos, como correr, saltar o nadar, y una dieta equilibrada, baja en calorías y rica en proteínas, fibra y agua. </p>
+          <a  id="botonActivarPerderPeso" type="button">Adquirir</a>
+        </div>
+      </div>
+      <div class="cardTiposPlan">
+        <figure>
+          <img src="views/img/imagenesPlanes/tonificar.jpg">
+        </figure>
+        <div class="contenido-cardTiposPlan">
+          <h3>Plan para tonificar</h3>
+          <p>Este plan está pensado para ayudarte a definir y fortalecer tus músculos, sin aumentar demasiado tu volumen. Consiste en una combinación de ejercicios de resistencia, como pesas, bandas elásticas o máquinas, y una dieta moderada en calorías y alta en proteínas, carbohidratos complejos y grasas saludables.</p>
+          <a id="botonActivarTonificar" type="button">Adquirir</a>
+        </div>
+      </div>
+      <div class="cardTiposPlan">
+        <figure>
+          <img src="views/img/imagenesPlanes/masaMuscular.jpg">
+        </figure>
+        <div class="contenido-cardTiposPlan">
+          <h3>Plan para Aumentar masa</h3>
+          <p> Este plan está orientado a ayudarte a ganar peso de forma saludable y progresiva. Consiste en una combinación de ejercicios de fuerza, como levantamiento de potencia, culturismo o calistenia, y una dieta alta en calorías y proteínas, con un balance adecuado de carbohidratos y grasas. </p>
+          <a id="botonActivarAumentarPeso" type="button">Adquirir</a>
+        </div>
+      </div>
+      </div>
+
+        <!-- Contenedor de los planes de los botones para cada plan que ofrecemos -->
         <div class="contenedor-planes-ejercicio" id="contenedor-planes-ejercicio">
             <div class="contenedor-planes-nav" id="botonesPlanAdelgazar">
                 <nav class="nav-planes">
-                    <a id="botonPlanesEjercicio" href="#">Planes de Ejercicios</a>
+                    <a id="botonPlanesEjercicioAdelgazar" href="#">Planes de Ejercicios</a>
                     <a id="botonPlanesAlimenticioAdelgazar" href="#">Planes Alimenticios</a>
-                    <a id="botonPlanRecomendacion" href="#">Recomendaciones</a>
+                    <a id="botonPlanRecomendacionAdelgazar" href="#">Recomendaciones</a>
                    
                     <div class="animation start-home"></div>
                 </nav>
@@ -116,9 +156,9 @@
             </div>
             <div class="contenedor-planes-nav" id="botonesPlanTonificar">
                 <nav class="nav-planes">
-                    <a id="botonPlanesEjercicio" href="#">Planes de Ejercicios</a>
+                    <a id="botonPlanesEjercicioTonificar" href="#">Planes de Ejercicios</a>
                     <a id="botonPlanesAlimenticioTonificar" href="#">Planes Alimenticios</a>
-                    <a id="botonPlanRecomendacion" href="#">Recomendaciones</a>
+                    <a id="botonPlanRecomendacionTonificar" href="#">Recomendaciones</a>
                    
                     <div class="animation start-home"></div>
                 </nav>
@@ -126,15 +166,15 @@
             </div>
             <div class="contenedor-planes-nav" id="botonesPlanPeso" >
                 <nav class="nav-planes">
-                    <a id="botonPlanesEjercicio" href="#">Planes de Ejercicios</a>
+                    <a id="botonPlanesEjercicioPeso" href="#">Planes de Ejercicios</a>
                     <a id="botonPlanesAlimenticioPeso" href="#">Planes Alimenticios</a>
-                    <a id="botonPlanRecomendacion" href="#">Recomendaciones</a>
+                    <a id="botonPlanRecomendacionPeso" href="#">Recomendaciones</a>
                    
                     <div class="animation start-home"></div>
                 </nav>
 
             </div>
-           // menu alimentaciones
+           <!-- Menu alimentacion de adelgazar -->
             <div class="contenedor-plan-Alimenticion">
                 <div class="menuAlimentacion" id="menuAlimentacionAdelgazar">
                     <p class="semanas" id="mesUnoA">Primer Mes</p>
@@ -142,24 +182,38 @@
                     <p class="semanas" id="mesTresA">Tercer mes</p>
 
                 </div>
+                <!-- Menu alimentacion de tonificar -->
                 <div class="menuAlimentacion" id="menuAlimentacionTonificar">
                     <p class="semanas" id="mesUnoT">Primer Mes</p>
                     <p class="semanas" id="mesDosT">Segundo mes</p>
                     <p class="semanas" id="mesTresT">Tercer mes</p>
 
                 </div>
+                <!-- Menu alimentacion de peso -->
                 <div class="menuAlimentacion" id="menuAlimentacionPeso">
                     <p class="semanas" id="mesUnoP">Primer Mes</p>
                     <p class="semanas" id="mesDosP">Segundo mes</p>
                     <p class="semanas" id="mesTresP">Tercer mes</p>
 
                 </div>
-                <div class="menuRecomendaciones" id="menuRecomendaciones">
-                    <p class="semanas" id="mesUnoR">Primer Mes</p>
-                    <p class="semanas" id="mesDosR">Segundo mes</p>
-                    <p class="semanas" id="mesTresR">Tercer mes</p>
+                <div class="menuRecomendaciones" id="menuRecomendacionesAdelgazar">
+                    <p class="semanas" id="mesUnoRa">Primer Mes</p>
+                    <p class="semanas" id="mesDosRa">Segundo mes</p>
+                    <p class="semanas" id="mesTresRa">Tercer mes</p>
 
                 </div>
+                <div class="menuRecomendaciones" id="menuRecomendacionesTonificar">
+                  <p class="semanas" id="mesUnoRt">Primer Mes</p>
+                  <p class="semanas" id="mesDosRt">Segundo mes</p>
+                  <p class="semanas" id="mesTresRt">Tercer mes</p>
+
+              </div>
+              <div class="menuRecomendaciones" id="menuRecomendacionesPeso">
+                <p class="semanas" id="mesUnoRp">Primer Mes</p>
+                <p class="semanas" id="mesDosRp">Segundo mes</p>
+                <p class="semanas" id="mesTresRp">Tercer mes</p>
+
+            </div>
                 <div class="menu" id="menuEjercicio">
                     <p class="semanas" id="semana1">semana 1</p>
                     <p class="semanas" id="semana2">semana 2</p>
@@ -175,9 +229,9 @@
                     <p class="semanas" id="semana12">semana 12</p>
                 </div>
 
-                <div class="contenidoRecomendaciones" id="contenidoRecomendacion">
+                <div class="contenidoRecomendaciones" id="contenidoRecomendacionAdelgazar">
 
-                    <article class="cardRecomendaciones" id="primerMesRecomendaciones">
+                    <article class="cardRecomendaciones" id="primerMesRecomendacionesAdelgazar">
                         <div class="card-intRecomendaciones">
                             <span class="card__spanRecomendaciones">Recomendacion Primer mes</span>
                             
@@ -194,7 +248,7 @@
                     </article>
                     <article class="cardRecomendaciones" id="segundoMesRecomendaciones">
                         <div class="card-intRecomendaciones">
-                            <span class="card__spanRecomendaciones">Recomendacion Segundo mes</span>
+                            <span class="card__spanRecomendaciones">Recomendacion Segundo mes </span>
                             
                             <div class="card-dataRecomendaciones">
                               <p class="titleRecomendaciones"><ul class="contenidoTexto">
@@ -209,7 +263,7 @@
                     </article>
                     <article class="cardRecomendaciones" id="tercerMesRecomendaciones">
                         <div class="card-intRecomendaciones">
-                            <span class="card__spanRecomendaciones">Recomendacion Tercer mes</span>
+                            <span class="card__spanRecomendaciones">Recomendacion Tercer mes </span>
                             
                             <div class="card-dataRecomendaciones">
                               <p class="titleRecomendaciones"><ul class="contenidoTexto">
@@ -224,14 +278,112 @@
                     </article>
 
                 </div>
-                //Para persona que quiere adelgazar
+                <div class="contenidoRecomendaciones" id="contenidoRecomendacionTonificar">
+
+                  <article class="cardRecomendaciones" id="primerMesRecomendacionesTonificar">
+                      <div class="card-intRecomendaciones">
+                          <span class="card__spanRecomendaciones">Recomendacion Primer mes</span>
+                          
+                          <div class="card-dataRecomendaciones">
+                            <p class="titleRecomendaciones"><ul class="contenidoTexto">
+                              <li><p class="tituloRecomendacion">Compromiso Inicial: 🎯</p> Ponte metas claras y realistas para el mes. Comprométete a seguir el plan de entrenamiento y alimentación.</li>
+                              <li><P class="tituloRecomendacion">Entrenamiento Focalizado: 🏋️‍♂️</P> Concéntrate en ejercicios clave para todos los grupos musculares. Asegúrate de ejecutar cada movimiento con precisión.</li>
+                              <li><P class="tituloRecomendacion">Alimentación Equilibrada: 🍲</P>Sigue de cerca tu plan alimenticio, dando prioridad a proteínas magras, vegetales y carbohidratos integrales.</li>
+                              <li><P class="tituloRecomendacion">Monitorización: 📊 </P>Lleva un registro de tus entrenamientos y comidas para evaluar tu progreso al final del mes.</li>
+                            </ul></p>
+                            <button class="buttonRecomendaciones">Gracias</button>
+                          </div>
+                      </div>
+                  </article>
+                  <article class="cardRecomendaciones" id="segundoMesRecomendaciones">
+                      <div class="card-intRecomendaciones">
+                          <span class="card__spanRecomendaciones">Recomendacion Segundo mes</span>
+                          
+                          <div class="card-dataRecomendaciones">
+                            <p class="titleRecomendaciones"><ul class="contenidoTexto">
+                              <li><p class="tituloRecomendacion">Introduce Nuevos Ejercicios: 🆕 </p> grega variedad a tu rutina para desafiar diferentes músculos. Puedes probar entrenamientos de alta intensidad o nuevas disciplinas.</li>
+                              <li><P class="tituloRecomendacion">Cardio Intenso: 🏃‍♂️</P>Incorpora sesiones de cardio más intensas para mejorar la resistencia y la definición muscular.</li>
+                              <li><P class="tituloRecomendacion">Enfoque en la Recuperación: 😴</P> Presta atención a la recuperación. Duerme lo suficiente y considera técnicas como la crioterapia o masajes para reducir la fatiga muscular.</li>
+                              <li><P class="tituloRecomendacion">Reevaluación: 🔄  </P>Analiza tus registros y ajusta tu plan según tus necesidades y metas específicas.</li>
+                            </ul></p>
+                            <button class="buttonRecomendaciones">Gracias</button>
+                          </div>
+                      </div>
+                  </article>
+                  <article class="cardRecomendaciones" id="tercerMesRecomendaciones">
+                      <div class="card-intRecomendaciones">
+                          <span class="card__spanRecomendaciones">Recomendacion Tercer mes</span>
+                          
+                          <div class="card-dataRecomendaciones">
+                            <p class="titleRecomendaciones"><ul class="contenidoTexto">
+                              <li><p class="tituloRecomendacion">Últimos Desafíos: 🏆</p> Añade desafíos finales, como aumentar el peso en tus levantamientos o realizar circuitos más intensos.</li>
+                              <li><P class="tituloRecomendacion">Alimentación Sostenible: 🍏</P>Mantén una alimentación equilibrada y sostenible a largo plazo. Ajusta las porciones según tus necesidades energéticas.</li>
+                              <li><P class="tituloRecomendacion">Flexibilidad y Movilidad: 🤸‍♀️</P> Dedica tiempo a estiramientos y ejercicios de flexibilidad para mejorar la movilidad y reducir la rigidez muscular.</li>
+                              <li><P class="tituloRecomendacion">Celebración y Planificación Futura: 🎉 </P>Celebra tus logros y considera establecer nuevas metas para el siguiente trimestre. Puedes incluso buscar programas de entrenamiento más avanzados.</li>
+                            </ul></p>
+                            <button class="buttonRecomendaciones">Gracias</button>
+                          </div>
+                      </div>
+                  </article>
+
+              </div>
+              <div class="contenidoRecomendaciones" id="contenidoRecomendacionPeso">
+
+                <article class="cardRecomendaciones" id="primerMesRecomendacionesPeso">
+                    <div class="card-intRecomendaciones">
+                        <span class="card__spanRecomendaciones">Recomendacion Primer mes</span>
+                        
+                        <div class="card-dataRecomendaciones">
+                          <p class="titleRecomendaciones"><ul class="contenidoTexto">
+                            <li><p class="tituloRecomendacion">Seguir el Plan Alimenticio: 🍗 </p> Sigue de cerca tu plan alimenticio, asegurándote de obtener suficientes proteínas para favorecer el crecimiento muscular. Incluye fuentes de carbohidratos y grasas saludables.</li>
+                            <li><P class="tituloRecomendacion">Entrenamiento de Resistencia: 🏋️‍♂️</P> Presta atención al entrenamiento de resistencia con énfasis en levantamientos compuestos. Asegúrate de alcanzar la fatiga muscular en cada serie.</li>
+                            <li><P class="tituloRecomendacion">Registro de Progreso: 📊</P> Lleva un registro de tus levantamientos y medidas corporales. Esto te permitirá evaluar tu progreso y ajustar tu plan según sea necesario.</li>
+                            <li><P class="tituloRecomendacion">Hidratación: 🚰 </P>Asegúrate de beber suficiente agua durante el día. La hidratación adecuada es esencial para el funcionamiento óptimo del cuerpo y puede ayudar a controlar el apetito.</li>
+                          </ul></p>
+                          <button class="buttonRecomendaciones">Gracias</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="cardRecomendaciones" id="segundoMesRecomendaciones">
+                    <div class="card-intRecomendaciones">
+                        <span class="card__spanRecomendaciones">Recomendacion Segundo mes</span>
+                        
+                        <div class="card-dataRecomendaciones">
+                          <p class="titleRecomendaciones"><ul class="contenidoTexto">
+                            <li><p class="tituloRecomendacion">Incremento de Peso y Repeticiones: 🏋️‍♀️ </p> Aumenta gradualmente el peso en tus levantamientos y considera realizar más repeticiones para desafiar tus músculos.</li>
+                            <li><P class="tituloRecomendacion">Variación en Rutinas: 🔄</P>Introduce variaciones en tus rutinas de entrenamiento. Cambia ejercicios, repeticiones y series para evitar adaptaciones excesivas.</li>
+                            <li><P class="tituloRecomendacion">Revisión del Plan Alimenticio: 🍚</P> valúa tu ingesta calórica y ajusta según tu respuesta al entrenamiento. Asegúrate de mantener un superávit calórico para respaldar el crecimiento muscular.</li>
+                            <li><P class="tituloRecomendacion">Gestión del estrés: 🧘‍♂️  </P>Practica técnicas de manejo del estrés, como la meditación o el yoga. El estrés puede afectar negativamente los hábitos alimenticios y el peso.</li>
+                          </ul></p>
+                          <button class="buttonRecomendaciones">Gracias</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="cardRecomendaciones" id="tercerMesRecomendaciones">
+                    <div class="card-intRecomendaciones">
+                        <span class="card__spanRecomendaciones">Recomendacion Tercer mes</span>
+                        
+                        <div class="card-dataRecomendaciones">
+                          <p class="titleRecomendaciones"><ul class="contenidoTexto">
+                            <li><p class="tituloRecomendacion">Intensificación del Entrenamiento: 🔥 </p> ntensifica aún más tu entrenamiento con técnicas como series descendentes, superseries o entrenamiento con intervalos cortos de descanso.</li>
+                            <li><P class="tituloRecomendacion">Enfoque en la Recuperación: 🛌</P>Presta atención a la recuperación. El descanso adecuado es crucial para el crecimiento muscular. Considera la inclusión de días de descanso activo.</li>
+                            <li><P class="tituloRecomendacion">Reajuste del Plan Alimenticio: 🥩</P> Reajusta tu plan alimenticio para mantener el superávit calórico. Asegúrate de obtener nutrientes esenciales, incluyendo proteínas de alta calidad.</li>
+                            <li><P class="tituloRecomendacion">Consulta profesional: 🩺 </P> Si es posible, considera hablar con un nutricionista o entrenador personal para obtener orientación personalizada y ajustes específicos a tus necesidades.</li>
+                          </ul></p>
+                          <button class="buttonRecomendaciones">Gracias</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+                <!-- //Para persona que quiere adelgazar -->
                 <div class="contenidoAlimentacion" id="contenidoAlimentarioAdelgazar">
                     <h1 class="titulosAlimentos1">Desayuno</h1>
-                    <div class="cardAlimentacion" id="primerMesDesayuno">
+                    <div class="cardAlimentacion" id="primerMesDesayunoAdelgazar">
                         <img src="./views/img/imgAlimentos/avena.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Avena con Frutas 🍓🍌</p>
+                          <p class="card__titleAlimentacion">ensalada de frutas🍓🍌</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
@@ -244,7 +396,7 @@
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="segundoMesDesayuno">
+                      <div class="cardAlimentacion" id="segundoMesDesayunoAdelgazar">
                         <img src="./views/img/imgAlimentos/batido.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
@@ -261,7 +413,7 @@
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="tercerMesDesayuno">
+                      <div class="cardAlimentacion" id="tercerMesDesayunoAdelgazar">
                         <img src="./views/img/imgAlimentos/tostada.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
@@ -279,7 +431,7 @@
                         </div>
                       </div>
                       <h1 class="titulosAlimentos2">Almuerzo</h1>
-                      <div class="cardAlimentacion" id="primerMesAlmuerzo">
+                      <div class="cardAlimentacion" id="primerMesAlmuerzoAdelgazar">
                         <img src="./views/img/imgAlimentos/quinoa.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
@@ -296,7 +448,7 @@
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="segundoMesAlmuerzo">
+                      <div class="cardAlimentacion" id="segundoMesAlmuerzoAdelgazar">
                         <img src="./views/img/imgAlimentos/WrapPollo.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
@@ -313,7 +465,7 @@
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="tercerMesAlmuerzo">
+                      <div class="cardAlimentacion" id="tercerMesAlmuerzoAdelgazar">
                         <img src="./views/img/imgAlimentos/sopaLentejas.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
@@ -332,7 +484,7 @@
                       </div>
 
                       <h1 class="titulosAlimentos3">Cena</h1>
-                      <div class="cardAlimentacion" id="primerMesCena">
+                      <div class="cardAlimentacion" id="primerMesCenaAdelgazar">
                         <img src="./views/img/imgAlimentos/salmon.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
@@ -349,7 +501,7 @@
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="segundoMesCena">
+                      <div class="cardAlimentacion" id="segundoMesCenaAdelgazar">
                         <img src="./views/img/imgAlimentos/pasta.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
@@ -366,7 +518,7 @@
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="tercerMesCena">
+                      <div class="cardAlimentacion" id="tercerMesCenaAdelgazar">
                         <img src="./views/img/imgAlimentos/enchiladas.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
@@ -386,107 +538,113 @@
                       
                       
                 </div>
-                // para persona que quiere tonificar
+                <!-- para persona que quiere tonificar -->
                 <div class="contenidoAlimentacion" id="contenidoAlimentarioTonificar">
                     <h1 class="titulosAlimentos1">Desayuno</h1>
-                    <div class="cardAlimentacion" id="primerMesDesayuno">
+                    <div class="cardAlimentacion" id="primerMesDesayunoTonificar">
                         <img src="./views/img/imgAlimentos/avena.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Avena con Frutas 🍓🍌</p>
+                          <p class="card__titleAlimentacion">Omelette  Champiñones con Queso Feta 🍳</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Avena integral 🌾.</li>
-                                <li>Leche o yogur 🥛.</li>
-                                <li>Fresas y plátanos 🍓🍌.</li>
-                                <li>Semillas de chía 🌱.</li>
+                                <li>Claras de huevo 🥚.</li>
+                                <li>Yogur con bayas y nueces 🍓🥜.</li>
+                                <li>Té verde o café ☕.</li>
+                                <li>Champiñones 🍄.</li>
+                                <li>Queso feta 🧀.</li>
+                                
                             </ul>
 
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="segundoMesDesayuno">
+                      <div class="cardAlimentacion" id="segundoMesDesayunoTonificar">
                         <img src="./views/img/imgAlimentos/batido.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Batido Verde Energizante 🥬🍍</p>
+                          <p class="card__titleAlimentacion">Batido Proteico de Plátano y Mantequilla 🥤</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Espinacas 🍃.</li>
-                                <li>Piña 🍍.</li>
-                                <li>Plátano 🍌.</li>
-                                <li>Agua o leche de almendras 🥤.</li>
+                                <li>Plátano 🍌</li>
+                                <li>Espinacas 🍃</li>
+                                <li>Leche de almendras 🥛</li>
+                                <li>Mantequilla de almendra 🥜</li>
+                                <li>Semillas de chía 🌱</li>
                             </ul>
 
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="tercerMesDesayuno">
+                      <div class="cardAlimentacion" id="tercerMesDesayunoTonificar">
                         <img src="./views/img/imgAlimentos/tostada.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Tostadas de Aguacate 🥑🍞</p>
+                          <p class="card__titleAlimentacion">Avena con Plátano, Nueces y Semillas de Chía 🍌🥜</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Pan integral 🍞.</li>
-                                <li>Aguacate maduro 🥑.</li>
-                                <li>Tomate cherry 🍅.</li>
-                                <li>Huevo(opcional) 🍳.</li>
+                                <li>Avena 🥣.</li>
+                                <li>Plátano 🍌.</li>
+                                <li>Batido verde 🌱 (espinacas 🍃, piña 🍍, jengibre 🧡, leche de coco 🥥, proteína en polvo)..</li>
+                                
                             </ul>
 
                           </p>
                         </div>
                       </div>
                       <h1 class="titulosAlimentos2">Almuerzo</h1>
-                      <div class="cardAlimentacion" id="primerMesAlmuerzo">
+                      <div class="cardAlimentacion" id="primerMesAlmuerzoTonificar">
                         <img src="./views/img/imgAlimentos/quinoa.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Ensalada de Quinoa 🥗🍤</p>
-                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
-                          <p class="card__descriptionAlimentacion">
-                            <ul> 
-                                <li>Quinoa cocida 🍚.</li>
-                                <li>Camarones a la parrilla 🍤.</li>
-                                <li>Espárragos 🌱.</li>
-                                <li>Tomate, pepino y aguacate 🍅🥒🥑.</li>
-                            </ul>
-
-                          </p>
-                        </div>
-                      </div>
-                      <div class="cardAlimentacion" id="segundoMesAlmuerzo">
-                        <img src="./views/img/imgAlimentos/WrapPollo.jpg" alt="">
-            
-                        <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Wrap de Pollo y Vegetales 🌯🍗</p>
+                          <p class="card__titleAlimentacion">Ensalada de Pollo con Aguacate y Quinoa 🥗</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
                                 <li>Pechuga de pollo a la parrilla 🍗.</li>
-                                <li>Tortilla integral 🌾.</li>
-                                <li>Espinacas, tomate y zanahorias ralladas 🥕.</li>
-                                <li>Yogurt griego como aderezo 🍦.</li>
+                                <li>Hojas verdes 🥬.</li>
+                                <li>Tomate 🍅.</li>
+                                <li>Aguacate 🥑.</li>
+                                <li>Quinoa 🍚..</li>
                             </ul>
 
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="tercerMesAlmuerzo">
-                        <img src="./views/img/imgAlimentos/sopaLentejas.jpg" alt="">
+                      <div class="cardAlimentacion" id="segundoMesAlmuerzoTonificar">
+                        <img src="./views/img/imgAlimentos/WrapPollo.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Sopa de Lentejas y Verduras 🍲:</p>
+                          <p class="card__titleAlimentacion">Pechuga de Pavo y Yogur Griego 🍗</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Lentejas 🍲.</li>
-                                <li>Zanahorias y apio 🥕.</li>
+                                <li>Pechuga de pavo a la parrilla 🍗.</li>
+                                <li>Espárragos 🌱.</li>
+                                <li>Quinoa 🍚.</li>
+                                <li>Yogurt griego como aderezo 🍦.</li>
+                                <li>Ensalada de col rizada 🥬.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cardAlimentacion" id="tercerMesAlmuerzoTonificar">
+                        <img src="./views/img/imgAlimentos/sopaLentejas.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Ensalada de Garbanzos con Pollo y Tahini🥗:</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Garbanzos 🥫.</li>
+                                <li>Sopa de lentejas 🍲.</li>
+                                <li>Aderezo de tahini 🍯.</li>
+                                <li>Pechuga de pollo a la parrilla 🍗.</li>
                                 <li>Tomate 🍅.</li>
-                                <li>Caldo de verduras 🍵.</li>
                             </ul>
 
                           </p>
@@ -494,52 +652,56 @@
                       </div>
 
                       <h1 class="titulosAlimentos3">Cena</h1>
-                      <div class="cardAlimentacion" id="primerMesCena">
+                      <div class="cardAlimentacion" id="primerMesCenaTonificar">
                         <img src="./views/img/imgAlimentos/salmon.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Salmón al Horno con Espárragos 🍽️🐟</p>
+                          <p class="card__titleAlimentacion">Salmón al Limón y Batata Asada 🐟</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
                                 <li>Filete de salmón 🐟.</li>
-                                <li>Espárragos 🌱.</li>
                                 <li>Limón 🍋.</li>
-                                <li>Perejil 🌿.</li>
+                                <li>Hierbas 🌿.</li>
+                                <li>Batata asada 🍠.</li>
+                                <li>Brócoli al vapor 🥦.</li>
                             </ul>
 
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="segundoMesCena">
+                      <div class="cardAlimentacion" id="segundoMesCenaTonificar">
                         <img src="./views/img/imgAlimentos/pasta.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Pasta con Pesto de Aguacate 🥑🍝:</p>
+                          <p class="card__titleAlimentacion">tir-fry de Ternera con Arroz Integral 🥩:</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>asta de trigo integral 🍝.</li>
-                                <li>Aguacate 🥑.</li>
-                                <li>Albahaca fresca 🌿.</li>
-                                <li>Piñones y queso parmesano 🧀.</li>
+                                <li>Ternera 🥩.</li>
+                                <li>Brócoli 🥦.</li>
+                                <li>Zanahorias 🥕.</li>
+                                <li>Arroz integral 🍚.</li>
+                                <li>engibre 🧄.</li>
                             </ul>
 
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="tercerMesCena">
+                      <div class="cardAlimentacion" id="tercerMesCenaTonificar">
                         <img src="./views/img/imgAlimentos/enchiladas.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Enchiladas de Pollo con Salsa Verde 🌯🍗</p>
+                          <p class="card__titleAlimentacion">Puré de Coliflor con Parmesano y pescado 🐟</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Pechuga de pollo cocida y desmenuzada 🍗.</li>
-                                <li>Tortillas de maíz 🌽.</li>
-                                <li>Salsa verde casera 🌶️.</li>
-                                <li>Queso rallado 🧀.</li>
+                                <li>Filete de pescado blanco 🐟.</li>
+                                <li>Limón 🍋.</li>
+                                <li>Hierbas 🌿.</li>
+                                <li>Ajo 🧄.</li>
+                                <li>Coliflor 🍲.</li>
+                                <li>Queso parmesano 🧀.</li>
                             </ul>
 
                           </p>
@@ -548,107 +710,109 @@
                       
                       
                 </div>
-                //para persona que quiere ganar peso
+                <!-- //para persona que quiere ganar peso -->
                  <div class="contenidoAlimentacion" id="contenidoAlimentarioPeso">
                     <h1 class="titulosAlimentos1">Desayuno</h1>
-                    <div class="cardAlimentacion" id="primerMesDesayuno">
+                    <div class="cardAlimentacion" id="primerMesDesayunoPeso">
                         <img src="./views/img/imgAlimentos/avena.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Avena con Frutas 🍓🍌</p>
+                          <p class="card__titleAlimentacion">Tortilla de Aguacate y Queso 🍳🥑</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Avena integral 🌾.</li>
-                                <li>Leche o yogur 🥛.</li>
-                                <li>Fresas y plátanos 🍓🍌.</li>
-                                <li>Semillas de chía 🌱.</li>
+                                <li>Huevos 🥚.</li>
+                                <li>Aguacate 🥑.</li>
+                                <li>Queso 🧀.</li>
+                                <li>Pan integral 🍞.</li>
+                                <li>Batido de leche  con plátano y avena 🍌🥛🌾.</li>
                             </ul>
 
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="segundoMesDesayuno">
+                      <div class="cardAlimentacion" id="segundoMesDesayunoPeso">
                         <img src="./views/img/imgAlimentos/batido.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Batido Verde Energizante 🥬🍍</p>
+                          <p class="card__titleAlimentacion">Batido de Proteínas  y Yogur 🍇🍓🥤</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Espinacas 🍃.</li>
-                                <li>Piña 🍍.</li>
-                                <li>Plátano 🍌.</li>
+                                <li>Proteína en polvo 🥤.</li>
+                                <li>Frutas mixtas 🍇🍓.</li>
+                                <li>Yogur entero 🍦.</li>
                                 <li>Agua o leche de almendras 🥤.</li>
                             </ul>
 
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="tercerMesDesayuno">
+                      <div class="cardAlimentacion" id="tercerMesDesayunoPeso">
                         <img src="./views/img/imgAlimentos/tostada.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Tostadas de Aguacate 🥑🍞</p>
+                          <p class="card__titleAlimentacion">Tostadas de Aguacate y Huevo 🥑🍞</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
                                 <li>Pan integral 🍞.</li>
                                 <li>Aguacate maduro 🥑.</li>
                                 <li>Tomate cherry 🍅.</li>
-                                <li>Huevo(opcional) 🍳.</li>
+                                <li>Huevo frito 🍳.</li>
                             </ul>
 
                           </p>
                         </div>
                       </div>
                       <h1 class="titulosAlimentos2">Almuerzo</h1>
-                      <div class="cardAlimentacion" id="primerMesAlmuerzo">
+                      <div class="cardAlimentacion" id="primerMesAlmuerzoPeso">
                         <img src="./views/img/imgAlimentos/quinoa.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Ensalada de Quinoa 🥗🍤</p>
+                          <p class="card__titleAlimentacion">Pollo al Curry con Arroz y Verduras 🍗🍛🌽</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Quinoa cocida 🍚.</li>
-                                <li>Camarones a la parrilla 🍤.</li>
-                                <li>Espárragos 🌱.</li>
-                                <li>Tomate, pepino y aguacate 🍅🥒🥑.</li>
+                                <li>Pechuga de pollo 🍗.</li>
+                                <li>Curry en polvo 🌶️.</li>
+                                <li>Arroz 🍚.</li>
+                                <li>Ensalada de aguacate y garbanzos 🥑🥗..</li>
                             </ul>
 
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="segundoMesAlmuerzo">
+                      <div class="cardAlimentacion" id="segundoMesAlmuerzoPeso">
                         <img src="./views/img/imgAlimentos/WrapPollo.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Wrap de Pollo y Vegetales 🌯🍗</p>
+                          <p class="card__titleAlimentacion">Hamburguesas Caseras con Papas Fritas 🍔🍟</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Pechuga de pollo a la parrilla 🍗.</li>
-                                <li>Tortilla integral 🌾.</li>
-                                <li>Espinacas, tomate y zanahorias ralladas 🥕.</li>
-                                <li>Yogurt griego como aderezo 🍦.</li>
+                                <li>Carne molida 🍔.</li>
+                                <li>Pan para hamburguesa 🍞.</li>
+                                <li>Queso cheddar 🧀.</li>
+                                <li>Papas 🥔.</li>
+                                <li>Ensalada de aguacate, tomate y queso feta 🥑🍅🧀.</li>
                             </ul>
 
                           </p>
                         </div>
                       </div>
-                      <div class="cardAlimentacion" id="tercerMesAlmuerzo">
+                      <div class="cardAlimentacion" id="tercerMesAlmuerzoPeso">
                         <img src="./views/img/imgAlimentos/sopaLentejas.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Sopa de Lentejas y Verduras 🍲:</p>
+                          <p class="card__titleAlimentacion">Burritos de Carne con Arroz y Frijoles 🌯🍚🌶️:</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
-                                <li>Lentejas 🍲.</li>
-                                <li>Zanahorias y apio 🥕.</li>
-                                <li>Tomate 🍅.</li>
-                                <li>Caldo de verduras 🍵.</li>
+                                <li>Carne de res 🥩.</li>
+                                <li>Tortillas de harina 🌯.</li>
+                                <li>Arroz 🍚.</li>
+                                <li>Frijoles 🌶️🥫.</li>
                             </ul>
 
                           </p>
@@ -656,52 +820,52 @@
                       </div>
 
                       <h1 class="titulosAlimentos3">Cena</h1>
-                      <div class="cardAlimentacion" id="primerMesCena">
+                      <div class="cardAlimentacion" id="primerMesCenaPeso">
                         <img src="./views/img/imgAlimentos/salmon.jpg" alt="">
             
                         <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Salmón al Horno con Espárragos 🍽️🐟</p>
+                          <p class="card__titleAlimentacion">Pizza Casera con Pollo🍕🍗🧀🥦:</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Masa para pizza 🍕.</li>
+                                <li>Salsa de tomate 🍅.</li>
+                                <li>Queso mozzarella 🧀.</li>
+                                <li>Pechuga de pollo 🍗.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cardAlimentacion" id="segundoMesCenaPeso">
+                        <img src="./views/img/imgAlimentos/pasta.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Pasta Alfredo con Pollo y Brócoli 🍝🍗🥦:</p>
+                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
+                          <p class="card__descriptionAlimentacion">
+                            <ul> 
+                                <li>Pasta 🍝.</li>
+                                <li>Pechuga de pollo 🍗.</li>
+                                <li>Salsa Alfredo 🥛🧀.</li>
+                                <li>Brócoli 🥦.</li>
+                            </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cardAlimentacion" id="tercerMesCenaPeso">
+                        <img src="./views/img/imgAlimentos/enchiladas.jpg" alt="">
+            
+                        <div class="card__contentAlimentacion">
+                          <p class="card__titleAlimentacion">Salmón al Horno con Patatasi 🐟🥔🥦</p>
                           <p class="card__subtitleAlimentacion">Ingredientes:</p>
                           <p class="card__descriptionAlimentacion">
                             <ul> 
                                 <li>Filete de salmón 🐟.</li>
-                                <li>Espárragos 🌱.</li>
-                                <li>Limón 🍋.</li>
-                                <li>Perejil 🌿.</li>
-                            </ul>
-
-                          </p>
-                        </div>
-                      </div>
-                      <div class="cardAlimentacion" id="segundoMesCena">
-                        <img src="./views/img/imgAlimentos/pasta.jpg" alt="">
-            
-                        <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Pasta con Pesto de Aguacate 🥑🍝:</p>
-                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
-                          <p class="card__descriptionAlimentacion">
-                            <ul> 
-                                <li>asta de trigo integral 🍝.</li>
-                                <li>Aguacate 🥑.</li>
-                                <li>Albahaca fresca 🌿.</li>
-                                <li>Piñones y queso parmesano 🧀.</li>
-                            </ul>
-
-                          </p>
-                        </div>
-                      </div>
-                      <div class="cardAlimentacion" id="tercerMesCena">
-                        <img src="./views/img/imgAlimentos/enchiladas.jpg" alt="">
-            
-                        <div class="card__contentAlimentacion">
-                          <p class="card__titleAlimentacion">Enchiladas de Pollo con Salsa Verde 🌯🍗</p>
-                          <p class="card__subtitleAlimentacion">Ingredientes:</p>
-                          <p class="card__descriptionAlimentacion">
-                            <ul> 
-                                <li>Pechuga de pollo cocida y desmenuzada 🍗.</li>
-                                <li>Tortillas de maíz 🌽.</li>
-                                <li>Salsa verde casera 🌶️.</li>
-                                <li>Queso rallado 🧀.</li>
+                                <li>Patatas 🥔.</li>
+                                <li>Brócoli 🥦.</li>
+                                <li>Aceite de oliva 🫒.</li>
                             </ul>
 
                           </p>
@@ -1491,7 +1655,7 @@
                             <td id="estaturaDato">
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control" id="inputEstatura" placeholder="Ingrese estatura">
-                                    <button class="btn-guardar-peso" onclick="guardarDatos()">Guardar</button>
+                                    <button " class="btn-guardar-peso" onclick="guardarDatos()">Guardar</button>
                                 </div>
                             </td>
                         </tr>
@@ -1504,46 +1668,10 @@
                 <option>Femenino</option>
                 <option>cualquiera de los 39 tipos de gay</option>
               </select>
-              <button type="submit" onclick="empezarPlanes()">Enviar</button>
+              <button  id="botonVetanaModal" type="button">Enviar</button>
             </div>
           </div>
-        <!-- <div class="container-formVentana" >  
-            <div class="contenedor-totalVentana py-4" >
-                <div class="contenedor-premium">
-                <img src="views/img/logo.png" alt="">
-                </div>
-                <div>
-                    <h1 class="nombre-Usuario mb-1">Nombre Usuario</h1>
-                </div>
-            
-                <form id="excelForm" class="mb-1">
-                    <input type="file" class="form-control" id="ecxel-input">
-                </form>
-                <div id="tablaDatos">
-                    <h2 class="mb-3">Datos</h2>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">Peso:</th>
-                                <th scope="col">Estatura:</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="pesoDato"></td>
-                                <td id="estaturaDato">
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" id="inputEstatura"          placeholder="Ingrese estatura">
-                                        <button class="btn-guardar-peso" onclick="guardarDatos()">Guardar</button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div> -->
-
+      
         <div class="boton-salir-planes" id="boton-salir">
             <button class="pushable" id="boton-salir-naranja">
                 <span class="shadow"></span>
@@ -1999,14 +2127,9 @@
     <script src="./controller/ejercicios.js"></script>
     <script src="./controller/alimentacion.js"></script>
     <script src="./controller/gifs.js"></script>
-
-
-
     <script src="controller/modalDatos.js"></script>
-
-    <script src="./controller/planesPeso.js"></script>
     
-
+   
 </body>
 
 </html>
