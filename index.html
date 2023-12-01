@@ -1117,38 +1117,47 @@
 
         <div class="ventana-modal"  id="ventana-modal">
             <div class="contenido-modal">
-              <h2>Ingresa tus datos para generarte una rutina</h2>
-              <div>
+                <div class="img-titulo">
+                    <img src="views/img/logo.png" alt="" class="contenedor-logo">
+                    <h2>Ingresa tus datos para generarte una rutina</h2>
+                    <h3>Nombre usuario</h3>
+                </div>
+              <div class="container-form-ecxel">
                 <div class="archivo-ecxel">
                     <input type="file" class="" id="ecxel-input">
                 </div>
-                <table class="tabla-">
-                    <thead>
-                        <tr>
-                            <th scope="col">Peso:</th>
-                            <th scope="col">Estatura:</th>
+                <table class="tabla-form">
+                    <thead class="thead-form">
+                        <tr class="tr-col">
+                            <th scope="col" class="th-titulo">Peso:</th>
+                            <th scope="col" class="th-titulo">Estatura:</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td id="pesoDato"></td>
-                            <td id="estaturaDato">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" id="inputEstatura" placeholder="Ingrese estatura">
-                                    <button class="btn-guardar-peso" onclick="guardarDatos()">Guardar</button>
+                        <tr class="tr-row">
+                            <td class="tr-peso" id="pesoDato"></td>
+                            <td class="estatura-input" id="estaturaDato">
+                                <div class="input-group">
+                                    <input type="text" class="" id="inputEstatura" placeholder="Ingrese estatura">
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <!-- <div class="btn-g-p">
+                <button class="btn-diseño" onclick="guardarDatos()">Guardar</button>
+                </div> -->
+                <div class="select-form"> 
+
+                    <select id="inputGenero">
+                        <option value="">Genero</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>cualquiera de los 39 tipos de gay</option>
+                    </select>
+                    <button type="submit" class="btn-diseño" onclick="empezarPlanes()">Enviar</button>
+                </div>
               </div>
-              <select id="inputGenero">
-                <option value="">Genero</option>
-                <option>Masculino</option>
-                <option>Femenino</option>
-                <option>cualquiera de los 39 tipos de gay</option>
-              </select>
-              <button type="submit" onclick="empezarPlanes()">Enviar</button>
             </div>
           </div>    
         <!-- <div class="container-form" >  
