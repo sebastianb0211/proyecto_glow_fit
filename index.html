@@ -1661,11 +1661,10 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="pesoDato"></td>
-                            <td id="estaturaDato">
-                                <div class="input-group mb-3">
+                            <td class="tr-peso" id="pesoDato"></td>
+                            <td class="estatura-input" id="estaturaDato">
+                                <div class="input-group">
                                     <input type="text" class="form-control" id="inputEstatura" placeholder="Ingrese estatura">
-                                    <button " class="btn-guardar-peso" onclick="guardarDatos()">Guardar</button>
                                 </div>
                             </td>
                         </tr>
@@ -1675,23 +1674,15 @@
                 <button class="btn-diseño" onclick="guardarDatos()">Guardar</button>
                 </div> -->
                 <div class="select-form"> 
-
                     <select id="inputGenero">
                         <option value="">Genero</option>
                         <option>Masculino</option>
                         <option>Femenino</option>
                         <option>cualquiera de los 39 tipos de gay</option>
                     </select>
-                    <button type="submit" class="btn-diseño" onclick="empezarPlanes()">Enviar</button>
+                    <button type="submit" class="btn-diseño" id="botonVetanaModal" onclick="empezarPlanes()">Enviar</button>
                 </div>
               </div>
-              <select id="inputGenero">
-                <option value="">Genero</option>
-                <option>Masculino</option>
-                <option>Femenino</option>
-                <option>cualquiera de los 39 tipos de gay</option>
-              </select>
-              <button  id="botonVetanaModal" type="button">Enviar</button>
             </div>
           </div>
       
