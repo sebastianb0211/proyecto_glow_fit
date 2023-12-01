@@ -2,15 +2,18 @@
 /* Ejercicios */
 
 
-let botonPlanEjercicio = document.getElementById('botonPlanesEjercicio');
-let botonPlanesAlimenticio= document.getElementById('botonPlanesAlimenticio');
+
 let menuAlimentacion = document.getElementById('menuAlimentacion');
 let menuEjercicio= document.getElementById('menuEjercicio');
 let contenidoAlimentario = document.getElementById('contenidoAlimentario');
-let contenidoEjercicios = document.getElementById('contenidoEjercicios');
-let botonPlenesRecomendaciones = document.getElementById("botonPlanRecomendacion")
+let contenidoEjercicios = document.getElementById('contenidoEjercicios')
 let contenidoRecomendacion = document.getElementById("contenidoRecomendacion")
 let menuRecomendaciones = document.getElementById("menuRecomendaciones")
+
+//botones
+let botonPlanesAlimenticio= document.getElementById('botonPlanesAlimenticio');
+let botonPlenesRecomendaciones = document.getElementById("botonPlanRecomendacion")
+let botonPlanEjercicio = document.getElementById('botonPlanesEjercicio');
 
 function ocultarContenido(){
     menuAlimentacion.style.display="none";

@@ -1,4 +1,4 @@
-function empezarPlanes() {
+ export function empezarPlanes() {
   let ventana=document.getElementById("ventana-modal")
   let planesEjercicios = document.getElementById("contenedor-planes-ejercicio");
   let portada = document.getElementById("portada");
@@ -29,5 +29,4 @@ function empezarPlanes() {
   ventana.style.display="none"
 }
 
-// let botonEmpezar = document.getElementById("button-login");
-// botonEmpezar.addEventListener("click", empezarPlanes);
+
