@@ -1,0 +1,91 @@
+@media screen and (max-width: 700px) {
+    .nav {        
+        flex-direction: column;
+        height: auto;
+    }
+    .contenedor-enlaces{
+        flex-direction: column;
+        height: auto; 
+        gap: 20px; 
+        align-items: center;
+    }
+    .contenedor-botones-nav{
+        width: 50%;
+        padding: 5%;
+    }
+
+    .contenedor-portada{
+        height: 140px;
+    }
+
+    .contenedor-titulos p{
+        display: none;
+    }
+    .contenedor-titulos h1{
+        font-size:30px;
+    }
+    .container-registro{
+        width:70vw;
+        left: 10%;
+    }
+    .container-login{
+        width: 70vw;
+        left: 10%; 
+    }
+
+    .contenedor-planes{
+        flex-direction: column;
+        height: auto; 
+        gap: 20px; 
+        align-items: center;
+    }
+    .boton-salir-planes{
+        margin-top: 10% !important;
+    }
+
+    .contenedor-imagen-portada {
+      top: 350px;
+        
+    }
+    .contenedor-razones{
+        display: none;
+    }
+
+    .contenedor-cards{
+        margin-top: 300px;
+    }
+    .contenedor-cards article img{
+        width: auto;
+    }
+
+    .testimonios{
+        margin-top: 320px;
+    }
+    .testimonios-text{
+        margin-top: -180px;
+    }
+    .carrusel-imagenes{
+        margin-top: -90px;
+    }
+
+    .contenedor-imagen-parrafos{
+        flex-direction: column;
+    }
+    .contenedor-imagen-parrafos article{
+        width: 100%;
+        gap: -250px;
+        margin-top: 30px;
+    }
+    .contenedor-imagen-parrafos article p{
+        font-size: 30px;
+    }
+    .contenedor-imagen-parrafos article h3{
+        display: none;
+    }
+    
+
+   
+    
+
+
+  }
