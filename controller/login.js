@@ -51,6 +51,7 @@ function salir(){
     botonesInicio.style.display="flex"
     cerrar.style.display="none"
     botonSalirPlanes.style.display="none"
+    location.reload()
 }
 
 login.addEventListener('click', function(){
