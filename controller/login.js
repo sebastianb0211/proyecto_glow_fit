@@ -116,7 +116,6 @@ const userRegistrationRegex =
         title: 'Bienvenido ' + nombreUsuario + ' inicia session para acceder a tu cuenta',
         showConfirmButton: false,
         width: '40%',
-       
         backdrop: true,
         timer: 5000
     })
@@ -315,3 +314,92 @@ class Ecxel{
 function userContainerNone(){
     document.getElementById('userContainer').style.display = 'none';
 }
+function mostrarMensajeBajoPeso() {
+    Swal.fire({
+      icon: 'warning',
+      title: '¡Peso Bajo!',
+      text: 'Tu categoría de peso es Bajo Peso. ¡Recuerda mantener una dieta equilibrada!',
+      showConfirmButton: false,
+      width: '40%',
+      backdrop: true,
+      timer: 5000
+    });
+  }
+  function mostrarMensajePesoNormal() {
+    Swal.fire({
+      icon: 'success',
+      title: '¡Peso Normal!',
+      text: 'Tu categoría de peso es Normal. ¡Sigue manteniendo hábitos saludables!',
+      showConfirmButton: false,
+      width: '40%',
+      backdrop: true,
+      timer: 5000
+    });
+  }
+  function mostrarMensajeSobrepeso() {
+    Swal.fire({
+      icon: 'warning',
+      title: '¡Sobrepeso!',
+      text: 'Tu categoría de peso es Sobrepeso. ¡Considera adoptar un estilo de vida más activo!',
+      showConfirmButton: false,
+      width: '40%',
+      backdrop: true,
+      timer: 5000
+    });
+  }
+  function mostrarMensajeObesidad() {
+    Swal.fire({
+      icon: 'warning',
+      title: '¡Obesidad!',
+      text: 'Tu categoría de peso es Obesidad. ¡Considera consultar a un profesional de la salud para obtener orientación y adoptar un estilo de vida más activo!',
+      showConfirmButton: false,
+      width: '40%',
+      backdrop: true,
+      timer: 5000
+    });
+  }
+  function noSeAgregoNada(){
+    Swal.fire({
+        title: "No aregaste valores?",
+        text: "No agregaste valores",
+        icon: "error"
+      });
+  }
+
+
+function calcularIMCUsuario() {
+    const usuarioActualizado = usuarioRegistrados.find(usuario => usuario.correoRegistro === correoUsuario);
+  
+    if (usuarioActualizado) {
+      const pesoUsuario = usuarioActualizado.peso;
+      const estaturaUsuario = usuarioActualizado.estatura;
+  
+      const imcUsuario = calcularIMC(pesoUsuario, estaturaUsuario);
+  
+      const categoriaIMCUsuario = determinarCategoriaIMC(imcUsuario);
+  
+      console.log("IMC: " + imcUsuario.toFixed(2));
+      console.log("Categoría de Peso: " + categoriaIMCUsuario);
+  
+    }
+  }
+  
+
+  function calcularIMC(peso, estatura) {
+    return peso / (estatura * estatura);
+  }
+  
+  function determinarCategoriaIMC(imc) {
+    if (imc < 18.5) {
+      return mostrarMensajeBajoPeso();
+    } else if (imc >= 18.5 && imc < 25) {
+      return mostrarMensajePesoNormal();
+    } else if(imc >= 25 && imc < 30) {
+      return mostrarMensajeSobrepeso();
+    }else if(imc >= 30){
+        return mostrarMensajeObesidad()
+    }
+    else{
+        noSeAgregoNada()
+    }
+  }
