@@ -10,6 +10,10 @@ let ventanaModal=document.getElementById("ventana-modal")
 function abrirModal(){
   ventanaModal.style.display="block"
 }
+function actualizarDatos(){
+  document.getElementById('userContainer').style.display = 'none';
+  abrirModal()
+}
 // botones para mostrar  el contenido de cada plan 
 
 let botonesPlanAdelgazar = document.getElementById("botonesPlanAdelgazar")

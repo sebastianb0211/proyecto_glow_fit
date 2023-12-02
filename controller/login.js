@@ -290,5 +290,28 @@ class Ecxel{
   console.log(estaturaIngresada);
   
   });
-  
 
+  function mostrarDatosUsuario() {
+    const usuarioActualizado = usuarioRegistrados.find(usuario => usuario.correoRegistro === correoUsuario);
+    if (usuarioActualizado) {
+        // Muestra el contenedor
+        document.getElementById('userContainer').style.display = 'block';
+
+        // Actualiza el nombre del usuario
+        document.getElementById('userName').innerText = usuarioActualizado.nombreUsuario;
+
+        // Actualiza el peso y la estatura
+        document.getElementById('userWeight').innerText = usuarioActualizado.peso.toFixed(2);
+        document.getElementById('userHeight').innerText = usuarioActualizado.estatura;
+
+        // Agrega un evento al botón "Actualizar Datos"
+        document.getElementById('updateDataButton').addEventListener('click', function () {
+            // Aquí puedes abrir tu ventana para actualizar datos
+            // Puedes agregar el código necesario para mostrar tu ventana modal u otra interfaz de actualización
+            // Por ejemplo: abrirVentanaModalActualizarDatos();
+        });
+    }
+}
+function userContainerNone(){
+    document.getElementById('userContainer').style.display = 'none';
+}

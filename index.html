@@ -106,7 +106,7 @@
             </article>
             <article class="contenedor-botones-cerrar" style="display: none;" id="cerrar">
                 <button onclick="salir()">Cerrar sesion</button>
-                <button class="usuario-perfil" id="usuario-perfil">Perfil</button>
+                <button onclick="mostrarDatosUsuario()" class="usuario-perfil" id="usuario-perfil">Perfil</button>
             </article>
         </nav>
 
@@ -1684,6 +1684,17 @@
               </div>
             </div>
           </div>
+          
+          <div id="userContainer">
+            <h2 id="userName">Nombre de Usuario</h2>
+            <p>Peso: <span id="userWeight"></span> kg</p>
+            <p>Estatura: <span id="userHeight"></span> m</p>
+            <div>
+              <button id="updateDataButton" onclick="actualizarDatos()" >Actualizar Datos</button>
+              <button id="updateDataButton" onclick="userContainerNone()">Salir</button>
+            </div>
+          </div>
+          
       
         <div class="boton-salir-planes" id="boton-salir">
             <button class="pushable" id="boton-salir-naranja">
