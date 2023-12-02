@@ -235,6 +235,60 @@ document.getElementById('button-login').addEventListener('click', function login
 })
 // Limpiar todo el localStorage
 //localStorage.clear();
+class Ecxel{
+    constructor(contenido){
+        this.contenido = contenido
+    }
+    header(){
+        return this.contenido[0]
+    }
+    rows(){
+        return this.contenido.slice(1,)
+    }
+  }
+  
+  const excelInput = document.getElementById("ecxel-input");
+  
+  excelInput.addEventListener('change', async function () {
+  const contenido = await readXlsxFile(excelInput.files[0]);
+  
+  const ecxel = new Ecxel(contenido)
+  
+  
+  const pesoDatoValue = ecxel.header()[0];
+  
+  const decimalesMostrados = 2;
+  const peso2 = Number(pesoDatoValue).toFixed(decimalesMostrados);
+  
+  
+  // Obtén el valor ingresado
+  
+  const inputEstatura = document.getElementById('inputEstatura');
+  const estaturaIngresada = inputEstatura.value;
+  // Muestra el valor en el elemento con ID "pesoDato"
+  document.getElementById('pesoDato').innerText = peso2;
 
+  const usuarioRegistrados = JSON.parse(localStorage.getItem('usuario')) || [];
 
+    const usuarioActualizado = usuarioRegistrados.map(usuario => {
+        if (usuario.correoRegistro === correoUsuario) {
+            return {
+                ...usuario,
+                peso: parseFloat(peso2),
+                estatura: parseFloat(estaturaIngresada).toFixed(2)
+            };
+        }
+        return usuario;
+    });
+
+    // Guarda el usuario actualizado en el localStorage
+    localStorage.setItem('usuario', JSON.stringify(usuarioActualizado));
+  
+  console.log(ecxel.header());
+  console.log(ecxel.rows());
+  console.log(peso2);
+  console.log(estaturaIngresada);
+  
+  });
+  
 
